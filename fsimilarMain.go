@@ -11,6 +11,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 
 	"github.com/mkideal/cli"
 )
@@ -36,4 +37,31 @@ func main() {
 		fmt.Fprintln(os.Stderr, err)
 	}
 	fmt.Println("")
+}
+
+//==========================================================================
+// support functions
+
+// Basename returns the file name without extension.
+func Basename(s string) string {
+	n := strings.LastIndexByte(s, '.')
+	if n > 0 {
+		return s[:n]
+	}
+	return s
+}
+
+// abortOn will quit on anticipated errors gracefully without stack trace
+func abortOn(errCase string, e error) {
+	if e != nil {
+		fmt.Fprintf(os.Stderr, "[%s] %s error: %v\n", progname, errCase, e)
+		os.Exit(1)
+	}
+}
+
+// verbose will print info to stderr according to the verbose level setting
+func verbose(levelSet, levelNow int, format string, args ...interface{}) {
+	if levelNow >= levelSet {
+		fmt.Fprintf(os.Stderr, "["+progname+"] "+format+"\n", args...)
+	}
 }
