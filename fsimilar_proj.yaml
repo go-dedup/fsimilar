@@ -1,0 +1,8 @@
+Wireframe:
+  Proj: fsimilar
+  Desc: find/file similar
+  Lang: Go
+  Vendor: go-dedup
+  Author: Tong Sun <suntong@cpan.org>
+  License: MIT
+  
