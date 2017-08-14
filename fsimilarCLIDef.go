@@ -19,7 +19,7 @@ import (
 
 type rootT struct {
 	cli.Helper
-	Distance  int          `cli:"d,distance" usage:"the hamming distance of hashes within which to deem similar" dft:"3"`
+	Distance  uint8        `cli:"d,distance" usage:"the hamming distance of hashes within which to deem similar" dft:"3"`
 	SizeGiven bool         `cli:"S,size-given" usage:"size of the files are also available from input (as 1st field)"`
 	Filei     *clix.Reader `cli:"*i,input" usage:"input from stdin or the given file (mandatory)"`
 	Template  string       `cli:"t,template" usage:"template file name" dft:"fsimilar.tmpl"`

@@ -11,6 +11,7 @@ import (
 	"io"
 	"math/rand"
 	"os"
+	"path/filepath"
 	"time"
 
 	"github.com/mkideal/cli"
@@ -18,6 +19,19 @@ import (
 	"gopkg.in/pipe.v2"
 	//clix "github.com/mkideal/cli/ext"
 )
+
+////////////////////////////////////////////////////////////////////////////
+// Constant and data type/structure definitions
+
+// The FileT type defines all the necessary info for a file.
+type FileT struct {
+	Dir  string
+	Name string
+	Ext  string
+	Size int
+	Hash uint64
+	Dist uint8
+}
 
 //==========================================================================
 // Main dispatcher
@@ -27,6 +41,10 @@ func fsimilar(ctx *cli.Context) error {
 	ctx.JSON(ctx.Argv())
 	fmt.Println()
 	rootArgv = ctx.RootArgv().(*rootT)
+
+	Opts.Distance, Opts.SizeGiven, Opts.Template, Opts.Verbose =
+		rootArgv.Distance, rootArgv.SizeGiven, rootArgv.Template,
+		rootArgv.Verbose.Value()
 
 	return fSimilar(rootArgv.Filei)
 }
@@ -59,8 +77,22 @@ func scripttAwk() pipe.Pipe {
 		s := awk.NewScript()
 		s.Output = st.Stdout
 
+		s.AppendStmt(nil, func(s *awk.Script) {
+			file := FileT{}
+
+			if Opts.SizeGiven {
+				file.Size = s.F(1).Int()
+				// $1 = ""
+				// X: s.SetF(1, "")
+			}
+			p, n := filepath.Split(s.F(0).String())
+			file.Dir, file.Name, file.Ext = p, Basename(n), filepath.Ext(n)
+			fmt.Printf("  d='%s', n='%s', e='%s', s='%d'\n",
+				file.Dir, file.Name, file.Ext, file.Size)
+		})
+
 		// 1; # i.e., print all
-		s.AppendStmt(nil, nil)
+		//s.AppendStmt(nil, nil)
 
 		// == Run it
 		return s.Run(st.Stdin)

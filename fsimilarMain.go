@@ -17,6 +17,17 @@ import (
 )
 
 ////////////////////////////////////////////////////////////////////////////
+// Constant and data type/structure definitions
+
+// The OptsT type defines all the configurable options from cli.
+type OptsT struct {
+	Distance  uint8
+	SizeGiven bool
+	Template  string
+	Verbose   int
+}
+
+////////////////////////////////////////////////////////////////////////////
 // Global variables definitions
 
 var (
@@ -25,7 +36,11 @@ var (
 	date     = "2017-08-13"
 )
 
-var rootArgv *rootT
+var (
+	rootArgv *rootT
+	// Opts store all the configurable options for jsonfiddle.
+	Opts OptsT
+)
 
 ////////////////////////////////////////////////////////////////////////////
 // Function definitions

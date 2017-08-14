@@ -14,7 +14,7 @@ UsageLead: "Usage:\\n  fsimilar [Options] dir\\n\\nExample:\\n  find . \\\\( -ty
 
 Options:
   - Name: Distance
-    Type: int
+    Type: uint8
     Flag: d,distance
     Usage: the hamming distance of hashes within which to deem similar
     Value: 3
