@@ -7,17 +7,15 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"io"
 	"math/rand"
-	"os"
 	"path/filepath"
+	"regexp"
 	"time"
 
 	"github.com/mkideal/cli"
-	"github.com/spakin/awk"
-	"gopkg.in/pipe.v2"
-	//clix "github.com/mkideal/cli/ext"
 )
 
 ////////////////////////////////////////////////////////////////////////////
@@ -50,51 +48,26 @@ func fsimilar(ctx *cli.Context) error {
 }
 
 func fSimilar(cin io.Reader) error {
-	psrc, pdst := pipe.Script(
-		pipe.Read(cin),
-	), pipe.Script(
-		pipe.Write(os.Stdout),
-	)
-
 	rand.Seed(time.Now().UTC().UnixNano())
 	//tmpfile := fmt.Sprintf("%s.%d", file, 99999999-rand.Int31n(90000000))
 
-	p := pipe.Line(
-		psrc,
-		scripttAwk(),
-		pdst,
-	)
-	err := pipe.Run(p)
-	abortOn("Pipe.Run", err)
-	println("\nWrapping up.\n")
+	scanner := bufio.NewScanner(cin)
+	for scanner.Scan() {
+		file := FileT{}
+		fn := scanner.Text()
 
-	return nil
-}
+		if Opts.SizeGiven {
+			_, err := fmt.Sscan(fn, &file.Size)
+			abortOn("Parsing file size", err)
+			il := regexp.MustCompile(`^ *\d+ *(.*)$`).FindStringSubmatchIndex(fn)
+			//fmt.Println(il)
+			fn = fn[il[2]:]
+		}
+		p, n := filepath.Split(fn)
+		file.Dir, file.Name, file.Ext = p, Basename(n), filepath.Ext(n)
+		fmt.Printf("  d='%s', n='%s', e='%s', s='%d'\n",
+			file.Dir, file.Name, file.Ext, file.Size)
+	}
 
-func scripttAwk() pipe.Pipe {
-	return pipe.TaskFunc(func(st *pipe.State) error {
-		// == Setup
-		s := awk.NewScript()
-		s.Output = st.Stdout
-
-		s.AppendStmt(nil, func(s *awk.Script) {
-			file := FileT{}
-
-			if Opts.SizeGiven {
-				file.Size = s.F(1).Int()
-				// $1 = ""
-				// X: s.SetF(1, "")
-			}
-			p, n := filepath.Split(s.F(0).String())
-			file.Dir, file.Name, file.Ext = p, Basename(n), filepath.Ext(n)
-			fmt.Printf("  d='%s', n='%s', e='%s', s='%d'\n",
-				file.Dir, file.Name, file.Ext, file.Size)
-		})
-
-		// 1; # i.e., print all
-		//s.AppendStmt(nil, nil)
-
-		// == Run it
-		return s.Run(st.Stdin)
-	})
+	return scanner.Err()
 }
