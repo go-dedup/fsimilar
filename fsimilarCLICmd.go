@@ -14,6 +14,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"sort"
 	"time"
 
 	"github.com/go-dedup/simhash"
@@ -34,6 +35,8 @@ type FileT struct {
 	Hash uint64
 	Dist uint8
 }
+
+type Files []FileT
 
 //==========================================================================
 // Main dispatcher
@@ -58,6 +61,9 @@ func fSimilar(cin io.Reader) error {
 	oracle := sho.NewOracle()
 	sh := simhash.NewSimhash()
 	r := Opts.Distance
+	fAll := make(FAll)
+	fc := NewFCollection()
+	fClose := make(FCs, 16384)
 
 	// read input line by line
 	scanner := bufio.NewScanner(cin)
@@ -82,9 +88,14 @@ func fSimilar(cin io.Reader) error {
 		verbose(1, " n='%s', e='%s', s='%d', d='%s'",
 			file.Name, file.Ext, file.Size, file.Dir)
 
-		// == Check similarity
 		hash := sh.GetSimhash(sh.NewWordFeatureSet([]byte(file.Name)))
+		fi := FCItem{hash, fc.LenOf(hash)}
+		fAll[fn] = fi
+		fc.Set(hash, file)
+
+		// == Check similarity
 		if h, d, seen := oracle.Find(hash, r); seen == true {
+			fClose.SetClose(fi, h, d)
 			verbose(1, "=: Simhash of %x ignored for %x (%d).", hash, h, d)
 		} else {
 			oracle.See(hash)
@@ -92,5 +103,25 @@ func fSimilar(cin io.Reader) error {
 		}
 	}
 
-	return scanner.Err()
+	if err := scanner.Err(); err != nil {
+		return err
+	}
+
+	// process all, the sorted fAll map
+	visited := make(HVisited)
+	var keys []string
+	for k := range fAll {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	for _, k := range keys {
+		fi := fAll[k]
+		if visited[fi.Hash] {
+			continue
+		}
+
+		visited[fi.Hash] = true
+	}
+
+	return nil
 }
