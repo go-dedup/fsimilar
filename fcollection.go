@@ -23,7 +23,7 @@ func NewFCollection() FCollection {
 	return make(FCollection)
 }
 
-func (fc FCollection) Set(key uint64, value FileT) {
+func (fc FCollection) Add(key uint64, value FileT) {
 	fc[key] = append(fc[key], value)
 }
 
@@ -52,21 +52,3 @@ type FCItem struct {
 
 // The FAll type defines the lookup from file to FCItem.
 type FAll map[string]FCItem
-
-//==========================================================================
-
-// The FClose type defines a pair of hashes and files that are close.
-type FClose struct {
-	Item FCItem // The duplicated
-	Hash uint64 // that close to this hash
-	Dist uint8  // with this distance
-}
-
-//==========================================================================
-
-// The FCs type is the slice of FClose.
-type FCs []FClose
-
-func (fcs FCs) SetClose(item FCItem, hash uint64, dist uint8) {
-	fcs = append(fcs, FClose{item, hash, dist})
-}

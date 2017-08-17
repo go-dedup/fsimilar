@@ -8,6 +8,7 @@ package main
 
 import (
 	"bufio"
+	"errors"
 	"fmt"
 	"io"
 	"math/rand"
@@ -34,6 +35,7 @@ type FileT struct {
 	Size int
 	Hash uint64
 	Dist uint8
+	Vstd bool // Visited
 }
 
 type Files []FileT
@@ -61,9 +63,8 @@ func fSimilar(cin io.Reader) error {
 	oracle := sho.NewOracle()
 	sh := simhash.NewSimhash()
 	r := Opts.Distance
-	fAll := make(FAll)
-	fc := NewFCollection()
-	fClose := make(FCs, 16384)
+	fAll := make(FAll)     // the all file to FCItem map
+	fc := NewFCollection() // the FCollection that holds everything
 
 	// read input line by line
 	scanner := bufio.NewScanner(cin)
@@ -89,13 +90,12 @@ func fSimilar(cin io.Reader) error {
 			file.Name, file.Ext, file.Size, file.Dir)
 
 		hash := sh.GetSimhash(sh.NewWordFeatureSet([]byte(file.Name)))
-		fi := FCItem{hash, fc.LenOf(hash)}
+		fi := FCItem{Hash: hash, Index: fc.LenOf(hash)}
 		fAll[fn] = fi
-		fc.Set(hash, file)
+		fc.Add(hash, file)
 
-		// == Check similarity
+		// == Build similarity knowledge
 		if h, d, seen := oracle.Find(hash, r); seen == true {
-			fClose.SetClose(fi, h, d)
 			verbose(1, "=: Simhash of %x ignored for %x (%d).", hash, h, d)
 		} else {
 			oracle.See(hash)
@@ -114,13 +114,42 @@ func fSimilar(cin io.Reader) error {
 		keys = append(keys, k)
 	}
 	sort.Strings(keys)
+	// for each sorted item according to file path & name
 	for _, k := range keys {
+		// get next file item from FAll file to FCItem map
 		fi := fAll[k]
+		// and skip if the hash has already been visited
 		if visited[fi.Hash] {
 			continue
 		}
-
 		visited[fi.Hash] = true
+		// also skip if no similar items at this hash
+		if fc.LenOf(fi.Hash) <= 1 {
+			continue
+		}
+
+		// similarity exist, start digging
+		files, ok := fc.Get(fi.Hash)
+		if !ok {
+			abortOn("Internal error", errors.New("fc integrity checking"))
+		}
+		for ii, _ := range files {
+			files[ii].Dist = 0
+		}
+		for _, nigh := range oracle.Search(fi.Hash, r) {
+			visited[nigh.H] = true
+			// files more
+			fm, ok := fc.Get(nigh.H)
+			if ok {
+				for ii, _ := range fm {
+					fm[ii].Dist = nigh.D
+				}
+				files = append(files, fm...)
+			}
+		}
+
+		// One group of similar items found, output
+		verbose(1, "## Similar items\n %v.", files)
 	}
 
 	return nil
