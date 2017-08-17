@@ -27,19 +27,6 @@ import (
 ////////////////////////////////////////////////////////////////////////////
 // Constant and data type/structure definitions
 
-// The FileT type defines all the necessary info for a file.
-type FileT struct {
-	Dir  string
-	Name string
-	Ext  string
-	Size int
-	Hash uint64
-	Dist uint8
-	Vstd bool // Visited
-}
-
-type Files []FileT
-
 //==========================================================================
 // Main dispatcher
 

@@ -11,6 +11,21 @@ package main
 
 //==========================================================================
 
+// The FileT type defines all the necessary info for a file.
+type FileT struct {
+	Dir  string
+	Name string
+	Ext  string
+	Size int
+	Hash uint64
+	Dist uint8
+	Vstd bool // Visited
+}
+
+type Files []FileT
+
+//==========================================================================
+
 // The HVisited tells whether the hash has been visited.
 type HVisited map[uint64]bool
 
