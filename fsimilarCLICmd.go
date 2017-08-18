@@ -73,10 +73,11 @@ func fSimilar(cin io.Reader) error {
 		}
 		p, n := filepath.Split(fn)
 		file.Dir, file.Name, file.Ext = p, Basename(n), filepath.Ext(n)
-		verbose(1, " n='%s', e='%s', s='%d', d='%s'",
+		verbose(2, " n='%s', e='%s', s='%d', d='%s'",
 			file.Name, file.Ext, file.Size, file.Dir)
 
 		hash := sh.GetSimhash(sh.NewWordFeatureSet([]byte(file.Name)))
+		file.Hash = hash
 		fi := FCItem{Hash: hash, Index: fc.LenOf(hash)}
 		fAll[fn] = fi
 		fc.Add(hash, file)
@@ -84,9 +85,12 @@ func fSimilar(cin io.Reader) error {
 		// == Build similarity knowledge
 		if h, d, seen := oracle.Find(hash, r); seen == true {
 			verbose(1, "=: Simhash of %x ignored for %x (%d).", hash, h, d)
+			if d > 0 {
+				oracle.See(hash)
+			}
 		} else {
 			oracle.See(hash)
-			verbose(1, "+: Simhash of %x added.", hash)
+			verbose(2, "+: Simhash of %x added.", hash)
 		}
 	}
 
@@ -125,6 +129,7 @@ func fSimilar(cin io.Reader) error {
 		}
 		for _, nigh := range oracle.Search(fi.Hash, r) {
 			visited[nigh.H] = true
+			verbose(1, "## nigh found\n %v.", nigh)
 			// files more
 			fm, ok := fc.Get(nigh.H)
 			if ok {
@@ -136,7 +141,8 @@ func fSimilar(cin io.Reader) error {
 		}
 
 		// One group of similar items found, output
-		verbose(1, "## Similar items\n %v.", files)
+		sort.Sort(files)
+		verbose(2, "## Similar items\n %v.", files)
 	}
 
 	return nil

@@ -24,6 +24,24 @@ type FileT struct {
 
 type Files []FileT
 
+func (a Files) Len() int      { return len(a) }
+func (a Files) Swap(i, j int) { a[i], a[j] = a[j], a[i] }
+func (a Files) Less(i, j int) bool {
+	if a[i].Name < a[j].Name {
+		return true
+	}
+	if a[i].Name > a[j].Name {
+		return false
+	}
+	if a[i].Dist < a[j].Dist {
+		return true
+	}
+	if a[i].Dist > a[j].Dist {
+		return false
+	}
+	return a[i].Size < a[j].Size
+}
+
 //==========================================================================
 
 // The HVisited tells whether the hash has been visited.
