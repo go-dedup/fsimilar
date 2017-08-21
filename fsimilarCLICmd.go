@@ -84,10 +84,7 @@ func fSimilar(cin io.Reader) error {
 
 		// == Build similarity knowledge
 		if h, d, seen := oracle.Find(hash, r); seen == true {
-			verbose(1, "=: Simhash of %x ignored for %x (%d).", hash, h, d)
-			if d > 0 {
-				oracle.See(hash)
-			}
+			verbose(2, "=: Simhash of %x ignored for %x (%d).", hash, h, d)
 		} else {
 			oracle.See(hash)
 			verbose(2, "+: Simhash of %x added.", hash)
@@ -127,9 +124,9 @@ func fSimilar(cin io.Reader) error {
 		for ii, _ := range files {
 			files[ii].Dist = 0
 		}
-		for _, nigh := range oracle.Search(fi.Hash, r) {
+		for _, nigh := range oracle.Search(fi.Hash, r+1) {
 			visited[nigh.H] = true
-			verbose(1, "## nigh found\n %v.", nigh)
+			verbose(2, "### Nigh found <----- \n %v.", nigh)
 			// files more
 			fm, ok := fc.Get(nigh.H)
 			if ok {
