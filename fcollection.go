@@ -13,10 +13,10 @@ package main
 
 // The FileT type defines all the necessary info for a file.
 type FileT struct {
-	Dir  string
 	Name string
 	Ext  string
 	Size int
+	Dir  string
 	Hash uint64
 	Dist uint8
 	Vstd bool // Visited

@@ -27,6 +27,18 @@ import (
 ////////////////////////////////////////////////////////////////////////////
 // Constant and data type/structure definitions
 
+////////////////////////////////////////////////////////////////////////////
+// Global variables definitions
+
+var (
+	oracle = sho.NewOracle()
+	sh     = simhash.NewSimhash()
+	r      = Opts.Distance
+
+	fAll = make(FAll)       // the all file to FCItem map
+	fc   = NewFCollection() // the FCollection that holds everything
+)
+
 //==========================================================================
 // Main dispatcher
 
@@ -39,6 +51,7 @@ func fsimilar(ctx *cli.Context) error {
 	Opts.Distance, Opts.SizeGiven, Opts.Template, Opts.Verbose =
 		rootArgv.Distance, rootArgv.SizeGiven, rootArgv.Template,
 		rootArgv.Verbose.Value()
+	r = Opts.Distance
 
 	return fSimilar(rootArgv.Filei)
 }
@@ -46,13 +59,11 @@ func fsimilar(ctx *cli.Context) error {
 func fSimilar(cin io.Reader) error {
 	rand.Seed(time.Now().UTC().UnixNano())
 	//tmpfile := fmt.Sprintf("%s.%d", file, 99999999-rand.Int31n(90000000))
+	buildOracle(cin)
+	return dealDups()
+}
 
-	oracle := sho.NewOracle()
-	sh := simhash.NewSimhash()
-	r := Opts.Distance
-	fAll := make(FAll)     // the all file to FCItem map
-	fc := NewFCollection() // the FCollection that holds everything
-
+func buildOracle(cin io.Reader) error {
 	// read input line by line
 	scanner := bufio.NewScanner(cin)
 	for scanner.Scan() {
@@ -91,10 +102,10 @@ func fSimilar(cin io.Reader) error {
 		}
 	}
 
-	if err := scanner.Err(); err != nil {
-		return err
-	}
+	return scanner.Err()
+}
 
+func dealDups() error {
 	// process all, the sorted fAll map
 	visited := make(HVisited)
 	var keys []string
