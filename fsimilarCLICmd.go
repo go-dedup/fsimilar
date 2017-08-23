@@ -18,6 +18,10 @@ import (
 	"sort"
 	"time"
 
+	"github.com/fatih/structs"
+	"github.com/go-easygen/easygen"
+	"github.com/go-easygen/easygen/egVar"
+
 	"github.com/go-dedup/simhash"
 	"github.com/go-dedup/simhash/sho"
 
@@ -39,13 +43,18 @@ var (
 	fc   = NewFCollection() // the FCollection that holds everything
 )
 
+var tmplFileName = map[bool]string{
+	true:  "fsimilar_std.tmpl",
+	false: "fsimilar_plain.tmpl",
+}
+
 //==========================================================================
 // Main dispatcher
 
 func fsimilar(ctx *cli.Context) error {
-	ctx.JSON(ctx.RootArgv())
-	ctx.JSON(ctx.Argv())
-	fmt.Println()
+	// ctx.JSON(ctx.RootArgv())
+	// ctx.JSON(ctx.Argv())
+	// fmt.Println()
 	rootArgv = ctx.RootArgv().(*rootT)
 
 	Opts.Distance, Opts.SizeGiven, Opts.Template, Opts.Verbose =
@@ -106,6 +115,9 @@ func buildOracle(cin io.Reader) error {
 }
 
 func dealDups() error {
+	tmpl0 := easygen.NewTemplate().Customize()
+	tmpl := tmpl0.Funcs(easygen.FuncDefs()).Funcs(egVar.FuncDefs())
+
 	// process all, the sorted fAll map
 	visited := make(HVisited)
 	var keys []string
@@ -150,7 +162,9 @@ func dealDups() error {
 
 		// One group of similar items found, output
 		sort.Sort(files)
-		verbose(2, "## Similar items\n %v.", files)
+		m := structs.Map(struct{ Similars Files }{files})
+		verbose(2, "## Similar items\n %v.", m)
+		easygen.Execute(tmpl, os.Stdout, tmplFileName[false], easygen.EgData(m))
 	}
 
 	return nil
