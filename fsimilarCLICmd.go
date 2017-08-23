@@ -39,8 +39,9 @@ var (
 	sh     = simhash.NewSimhash()
 	r      = Opts.Distance
 
-	fAll = make(FAll)       // the all file to FCItem map
-	fc   = NewFCollection() // the FCollection that holds everything
+	empty = regexp.MustCompile(`^\s*$`)
+	fAll  = make(FAll)       // the all file to FCItem map
+	fc    = NewFCollection() // the FCollection that holds everything
 )
 
 var tmplFileName = map[bool]string{
@@ -57,8 +58,8 @@ func fsimilar(ctx *cli.Context) error {
 	// fmt.Println()
 	rootArgv = ctx.RootArgv().(*rootT)
 
-	Opts.Distance, Opts.SizeGiven, Opts.Template, Opts.Verbose =
-		rootArgv.Distance, rootArgv.SizeGiven, rootArgv.Template,
+	Opts.Distance, Opts.SizeGiven, Opts.QuerySize, Opts.Verbose =
+		rootArgv.Distance, rootArgv.SizeGiven, rootArgv.QuerySize,
 		rootArgv.Verbose.Value()
 	r = Opts.Distance
 
@@ -76,8 +77,11 @@ func buildOracle(cin io.Reader) error {
 	// read input line by line
 	scanner := bufio.NewScanner(cin)
 	for scanner.Scan() {
-		file := FileT{}
 		fn := scanner.Text()
+		if empty.MatchString(fn) {
+			continue
+		}
+		file := FileT{}
 
 		// == Gather file info
 		if Opts.SizeGiven {
@@ -86,10 +90,12 @@ func buildOracle(cin io.Reader) error {
 			il := regexp.MustCompile(`^ *\d+\s+(.*)$`).FindStringSubmatchIndex(fn)
 			//fmt.Println(il)
 			fn = fn[il[2]:]
-		} else {
+		} else if Opts.QuerySize {
 			s, err := os.Stat(fn)
 			warnOn("Get file size", err)
 			file.Size = int(s.Size())
+		} else {
+			file.Size = 1
 		}
 		p, n := filepath.Split(fn)
 		file.Dir, file.Name, file.Ext = p, Basename(n), filepath.Ext(n)

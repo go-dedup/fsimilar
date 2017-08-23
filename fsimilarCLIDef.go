@@ -19,18 +19,18 @@ import (
 
 type rootT struct {
 	cli.Helper
-	Distance  uint8        `cli:"d,distance" usage:"the hamming distance of hashes within which to deem similar" dft:"3"`
-	SizeGiven bool         `cli:"S,size-given" usage:"size of the files are also available from input (as 1st field)"`
+	Distance  uint8        `cli:"d,dist" usage:"the hamming distance of hashes within which to deem similar" dft:"3"`
+	SizeGiven bool         `cli:"S,size-given" usage:"size of the files available from input as 1st field"`
+	QuerySize bool         `cli:"Q,query-size" usage:"file size not available so query it from filesystem"`
 	Filei     *clix.Reader `cli:"*i,input" usage:"input from stdin or the given file (mandatory)"`
-	Template  string       `cli:"t,template" usage:"template file name" dft:"fsimilar.tmpl"`
-	Verbose   cli.Counter  `cli:"v,verbose" usage:"Verbose mode (Multiple -v options increase the verbosity.)"`
+	Verbose   cli.Counter  `cli:"v,verbose" usage:"verbose mode (multiple -v options increase the verbosity)"`
 }
 
 var root = &cli.Command{
 	Name: "fsimilar",
 	Desc: "find/file similar\nVersion " + version + " built on " + date,
 	Text: "Find similar files" +
-		"\n\nUsage:\n  fsimilar [Options] dir\n\nExample:\n  find . \\( -type f -o -type l \\) -printf '%%7s %%p\\n' | fsimilar -S -i\n  mlocate -i soccer | fsimilar -i",
+		"\n\nUsage:\n  fsimilar [Options]\n\nExample:\n  find . \\( -type f -o -type l \\) -printf '%%7s %%p\\n' | fsimilar -i -S\n  mlocate -i soccer | fsimilar -i | fsimilar -i -Q",
 	Argv: func() interface{} { return new(rootT) },
 	Fn:   fsimilar,
 
@@ -44,7 +44,7 @@ var root = &cli.Command{
 //  var (
 //          progname  = "fsimilar"
 //          version   = "0.1.0"
-//          date = "2017-08-13"
+//          date = "2017-08-22"
 //  )
 
 //  var rootArgv *rootT

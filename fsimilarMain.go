@@ -24,6 +24,7 @@ import (
 type OptsT struct {
 	Distance  uint8
 	SizeGiven bool
+	QuerySize bool
 	Template  string
 	Verbose   int
 }
@@ -48,7 +49,7 @@ var (
 
 // Function main
 func main() {
-	cli.SetUsageStyle(cli.ManualStyle)
+	// cli.SetUsageStyle(cli.ManualStyle)
 	if err := cli.Root(root).Run(os.Args[1:]); err != nil {
 		fmt.Fprintln(os.Stderr, err)
 	}

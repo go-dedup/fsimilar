@@ -10,33 +10,32 @@ Text: Find similar files
 NumOption: cli.AtLeast(1)
 #NumArg: cli.ExactN(1)
 
-UsageLead: "Usage:\\n  fsimilar [Options] dir\\n\\nExample:\\n  find . \\\\( -type f -o -type l \\\\) -printf '%%7s %%p\\\\n' | fsimilar -S -i\\n  mlocate -i soccer | fsimilar -i"
+UsageLead: "Usage:\\n  fsimilar [Options]\\n\\nExample:\\n  find . \\\\( -type f -o -type l \\\\) -printf '%%7s %%p\\\\n' | fsimilar -i -S\\n  mlocate -i soccer | fsimilar -i | fsimilar -i -Q"
 
 Options:
   - Name: Distance
     Type: uint8
-    Flag: d,distance
+    Flag: d,dist
     Usage: the hamming distance of hashes within which to deem similar
     Value: 3
     
   - Name: SizeGiven
     Type: bool
     Flag: S,size-given
-    Usage: size of the files are also available from input (as 1st field) 
+    Usage: size of the files available from input as 1st field
+
+  - Name: QuerySize 
+    Type: bool
+    Flag: Q,query-size
+    Usage: file size not available so query it from filesystem
 
   - Name: Filei
     Type: '*clix.Reader'
     Flag: '*i,input'
     Usage: input from stdin or the given file (mandatory)
 
-  - Name: Template
-    Type: string
-    Flag: t,template
-    Usage: template file name
-    Value: "fsimilar.tmpl"
-
   - Name: Verbose
     Type: cli.Counter
     Flag: v,verbose
-    Usage: Verbose mode (Multiple -v options increase the verbosity.)
+    Usage: verbose mode (multiple -v options increase the verbosity)
 
