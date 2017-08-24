@@ -147,11 +147,12 @@ func dealDups() error {
 
 		// similarity exist, start digging
 		files, ok := fc.Get(fi.Hash)
+		fSizeRef := files[0].Size
 		if !ok {
 			abortOn("Internal error", errors.New("fc integrity checking"))
 		}
 		for ii, _ := range files {
-			files[ii].Dist = 0
+			files[ii].Dist, files[ii].SizeRef = 0, fSizeRef
 		}
 		for _, nigh := range oracle.Search(fi.Hash, r+1) {
 			visited[nigh.H] = true
@@ -160,7 +161,7 @@ func dealDups() error {
 			fm, ok := fc.Get(nigh.H)
 			if ok {
 				for ii, _ := range fm {
-					fm[ii].Dist = nigh.D
+					fm[ii].Dist, fm[ii].SizeRef = nigh.D, fSizeRef
 				}
 				files = append(files, fm...)
 			}

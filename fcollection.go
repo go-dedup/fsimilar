@@ -19,7 +19,13 @@ type FileT struct {
 	Dir  string
 	Hash uint64
 	Dist uint8
-	Vstd bool // Visited
+
+	SizeRef int
+}
+
+func (f FileT) Similarity() int {
+	return int((1-float32(Abs(f.Size-f.SizeRef))/float32(f.SizeRef))*
+		(1-float32(f.Dist)/float32(64))*100 + 0.5)
 }
 
 type Files []FileT
