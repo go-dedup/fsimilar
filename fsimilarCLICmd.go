@@ -121,6 +121,7 @@ func buildOracle(cin io.Reader) error {
 }
 
 func dealDups() error {
+	verbose(2, "Deal Dups\n")
 	tmpl0 := easygen.NewTemplate().Customize()
 	tmpl := tmpl0.Funcs(easygen.FuncDefs()).Funcs(egVar.FuncDefs())
 
@@ -135,41 +136,51 @@ func dealDups() error {
 	for _, k := range keys {
 		// get next file item from FAll file to FCItem map
 		fi := fAll[k]
+		verbose(2, "# Item: %v.", fi)
 		// and skip if the hash has already been visited
 		if visited[fi.Hash] {
+			verbose(2, "  Visited hash ignored")
 			continue
 		}
 		visited[fi.Hash] = true
-		// also skip if no similar items at this hash
-		if fc.LenOf(fi.Hash) <= 1 {
-			continue
-		}
-
-		// similarity exist, start digging
 		files, ok := fc.Get(fi.Hash)
 		if !ok {
 			abortOn("Internal error", errors.New("fc integrity checking"))
 		}
+
+		fSizeRef := files[0].Size
+		// similarity exist, start digging
 		for ii, _ := range files {
-			files[ii].Dist = 0
+			files[ii].Vstd, files[ii].Dist, files[ii].SizeRef = true, 0, fSizeRef
 		}
-		for _, nigh := range oracle.Search(fi.Hash, r+1) {
+		neighbors := oracle.Search(fi.Hash, r+1)
+		// skip if no similar items at this hash
+		if len(neighbors) == 0 {
+			verbose(2, "  No similar items at this hash")
+			continue
+		}
+		verbose(2, "  Neighbors %v: %v.", oracle.Seen(fi.Hash, r), neighbors)
+		for _, nigh := range neighbors {
 			visited[nigh.H] = true
-			verbose(2, "### Nigh found <----- \n %v.", nigh)
+			// files to add
+			fta := Files{}
 			// files more
 			fm, ok := fc.Get(nigh.H)
 			if ok {
 				for ii, _ := range fm {
-					fm[ii].Dist = nigh.D
+					if !fm[ii].Vstd {
+						fm[ii].Vstd, fm[ii].Dist, fm[ii].SizeRef = true, nigh.D, fSizeRef
+						fta = append(fta, fm[ii])
+					}
 				}
-				files = append(files, fm...)
+				files = append(files, fta...)
 			}
 		}
 
 		// One group of similar items found, output
 		sort.Sort(files)
 		m := structs.Map(struct{ Similars Files }{files})
-		verbose(2, "## Similar items\n %v.", m)
+		verbose(2, "  Similar items -- \n %v.", m)
 		easygen.Execute(tmpl, os.Stdout, tmplFileName[false], easygen.EgData(m))
 	}
 
