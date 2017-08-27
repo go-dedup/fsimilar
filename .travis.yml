@@ -1,1 +1,7 @@
 language: go
+
+script:
+  - go get -t -v ./...
+  - go build -v
+  - go test -v ./...
+
