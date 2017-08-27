@@ -27,12 +27,12 @@ type rootT struct {
 }
 
 var root = &cli.Command{
-	Name: "fsimilar",
-	Desc: "find/file similar\nVersion " + version + " built on " + date,
-	Text: "Find similar files" +
-		"\n\nUsage:\n  fsimilar [Options]\n\nExample:\n  find . \\( -type f -o -type l \\) -printf '%%7s %%p\\n' | fsimilar -i -S\n  mlocate -i soccer | fsimilar -i | fsimilar -i -Q",
-	Argv: func() interface{} { return new(rootT) },
-	Fn:   fsimilar,
+	Name:   "fsimilar",
+	Desc:   "find/file similar\nVersion " + version + " built on " + date,
+	Text:   "Find similar files",
+	Global: true,
+	Argv:   func() interface{} { return new(rootT) },
+	Fn:     fsimilar,
 
 	NumOption: cli.AtLeast(1),
 }
@@ -44,7 +44,7 @@ var root = &cli.Command{
 //  var (
 //          progname  = "fsimilar"
 //          version   = "0.1.0"
-//          date = "2017-08-22"
+//          date = "2017-08-27"
 //  )
 
 //  var rootArgv *rootT
@@ -57,7 +57,8 @@ var root = &cli.Command{
 //  	cli.SetUsageStyle(cli.ManualStyle) // up-down, for left-right, use NormalStyle
 //  	//NOTE: You can set any writer implements io.Writer
 //  	// default writer is os.Stdout
-//  	if err := cli.Root(root,).Run(os.Args[1:]); err != nil {
+//  	if err := cli.Root(root,
+//  		cli.Tree(simDef)).Run(os.Args[1:]); err != nil {
 //  		fmt.Fprintln(os.Stderr, err)
 //  	}
 //  	fmt.Println("")
@@ -76,3 +77,26 @@ var root = &cli.Command{
 //  }
 
 // Template for CLI handling starts here
+
+////////////////////////////////////////////////////////////////////////////
+// sim
+
+//  func simCLI(ctx *cli.Context) error {
+//  	rootArgv = ctx.RootArgv().(*rootT)
+//  	argv := ctx.Argv().(*simT)
+//  	fmt.Printf("[sim]:\n  %+v\n  %+v\n  %v\n", rootArgv, argv, ctx.Args())
+//  	return nil
+//  }
+
+type simT struct {
+}
+
+var simDef = &cli.Command{
+	Name: "sim",
+	Desc: "Filter the input using simhash similarity check",
+	Text: "Usage:\n  mlocate -i soccer | fsimilar sim -i",
+	Argv: func() interface{} { return new(simT) },
+	Fn:   simCLI,
+
+	NumOption: cli.AtLeast(1),
+}

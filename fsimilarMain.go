@@ -35,7 +35,7 @@ type OptsT struct {
 var (
 	progname = "fsimilar"
 	version  = "0.1.0"
-	date     = "2017-08-13"
+	date     = "2017-08-27"
 )
 
 var (
@@ -47,10 +47,30 @@ var (
 ////////////////////////////////////////////////////////////////////////////
 // Function definitions
 
-// Function main
+//==========================================================================
+// Main dispatcher
+
+func fsimilar(ctx *cli.Context) error {
+	// ctx.JSON(ctx.RootArgv())
+	// ctx.JSON(ctx.Argv())
+	// fmt.Println()
+	rootArgv = ctx.RootArgv().(*rootT)
+
+	Opts.Distance, Opts.SizeGiven, Opts.QuerySize, Opts.Verbose =
+		rootArgv.Distance, rootArgv.SizeGiven, rootArgv.QuerySize,
+		rootArgv.Verbose.Value()
+	r = Opts.Distance
+
+	return fSimilar(rootArgv.Filei)
+}
+
+//==========================================================================
+// Main
+
 func main() {
 	// cli.SetUsageStyle(cli.ManualStyle)
-	if err := cli.Root(root).Run(os.Args[1:]); err != nil {
+	if err := cli.Root(root,
+		cli.Tree(simDef)).Run(os.Args[1:]); err != nil {
 		fmt.Fprintln(os.Stderr, err)
 	}
 	fmt.Println("")

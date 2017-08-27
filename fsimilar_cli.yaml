@@ -6,11 +6,11 @@ PackageName: main
 Name: fsimilar
 Desc: "find/file similar"
 Text: Find similar files
-#Global: true
+Global: true
 NumOption: cli.AtLeast(1)
 #NumArg: cli.ExactN(1)
 
-UsageLead: "Usage:\\n  fsimilar [Options]\\n\\nExample:\\n  find . \\\\( -type f -o -type l \\\\) -printf '%%7s %%p\\\\n' | fsimilar -i -S\\n  mlocate -i soccer | fsimilar -i | fsimilar -i -Q"
+#UsageLead: "Usage:\\n  fsimilar [Options]\\n\\nExample:\\n  find . \\\\( -type f -o -type l \\\\) -printf '%%7s %%p\\\\n' | fsimilar -i -S\\n  mlocate -i soccer | fsimilar -i | fsimilar -i -Q"
 
 Options:
   - Name: Distance
@@ -39,3 +39,10 @@ Options:
     Flag: v,verbose
     Usage: verbose mode (multiple -v options increase the verbosity)
 
+Command:
+
+  - Name: sim
+    Desc: "Filter the input using simhash similarity check"
+    Text: 'Usage:\n  mlocate -i soccer | fsimilar sim -i'
+    #NumArg: cli.AtLeast(1)
+    NumOption: cli.AtLeast(1)

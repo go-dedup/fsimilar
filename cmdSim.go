@@ -49,10 +49,7 @@ var tmplFileName = map[bool]string{
 	false: "fsimilar_plain.tmpl",
 }
 
-//==========================================================================
-// Main dispatcher
-
-func fsimilar(ctx *cli.Context) error {
+func simCLI(ctx *cli.Context) error {
 	// ctx.JSON(ctx.RootArgv())
 	// ctx.JSON(ctx.Argv())
 	// fmt.Println()
