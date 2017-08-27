@@ -1,1 +1,1 @@
- easygen -tf ../../suntong/cli/cli-tx fsimilar_cli | gofmt > fsimilarCLIDef.go
+ easygen -tf ../../suntong/cli/cli-ts fsimilar_cli | gofmt > fsimilar_cliDef.go

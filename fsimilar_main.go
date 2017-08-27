@@ -6,7 +6,7 @@
 
 package main
 
-//go:generate sh -v fsimilarCLIGen.sh
+//go:generate sh -v fsimilar_cliGen.sh
 
 import (
 	"fmt"
