@@ -24,8 +24,6 @@
 [fsimilar]   No similar items at this hash
 [fsimilar] # Item: {6184610222622303958 0}.
 [fsimilar]   Neighbors true: [{6175699711939618002 11} {15408562819203262167 8}].
-[fsimilar]   Similar items -- 
- map[Similars:[{GNU - 2001 - Python Standard Library .pdf 1 test/sim/ 6184610222622303958 0 true 1} {GNU - Python Standard Library (2001) .rar 1 test/sim/ 6184610222622303958 0 true 1} {Python Standard Library .zip 1 test/sim/ 6175699711939618002 11 true 1}]].
 test/sim/GNU - 2001 - Python Standard Library.pdf
 test/sim/GNU - Python Standard Library (2001).rar
 test/sim/Python Standard Library.zip

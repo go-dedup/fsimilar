@@ -177,7 +177,7 @@ func dealDups() error {
 		// One group of similar items found, output
 		sort.Sort(files)
 		m := structs.Map(struct{ Similars Files }{files})
-		verbose(2, "  Similar items -- \n %v.", m)
+		verbose(3, "  Similar items -- \n %v.", m)
 		easygen.Execute(tmpl, os.Stdout, tmplFileName[false], easygen.EgData(m))
 	}
 
