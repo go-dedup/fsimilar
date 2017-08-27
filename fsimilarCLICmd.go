@@ -144,6 +144,7 @@ func dealDups() error {
 		}
 		visited[fi.Hash] = true
 		files, ok := fc.Get(fi.Hash)
+		fSizeRef := files[0].Size
 		if !ok {
 			abortOn("Internal error", errors.New("fc integrity checking"))
 		}
