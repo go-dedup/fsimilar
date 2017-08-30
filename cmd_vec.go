@@ -7,6 +7,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/mkideal/cli"
 )
 

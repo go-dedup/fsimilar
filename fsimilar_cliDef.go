@@ -8,6 +8,7 @@ package main
 
 import (
 	"github.com/mkideal/cli"
+	clix "github.com/mkideal/cli/ext"
 )
 
 ////////////////////////////////////////////////////////////////////////////
@@ -43,7 +44,7 @@ var root = &cli.Command{
 //  var (
 //          progname  = "fsimilar"
 //          version   = "0.1.0"
-//          date = "2017-08-29"
+//          date = "2017-08-30"
 //  )
 
 //  var rootArgv *rootT
