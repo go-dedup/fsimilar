@@ -2,7 +2,8 @@ package main
 
 import (
 	"math"
-	"strings"
+
+	"github.com/go-dedup/text"
 )
 
 type Concordance map[string]float64
@@ -17,24 +18,19 @@ func (con Concordance) Magnitude() float64 {
 	return math.Sqrt(total)
 }
 
-func BuildConcordance(document string) Concordance {
+func BuildConcordance(document string, doc2words text.Doc2Words) Concordance {
 	var con map[string]float64
 	con = make(map[string]float64)
 
-	words := strings.Split(strings.ToLower(document), " ")
+	words := doc2words(document)
 
 	for _, key := range words {
-
 		_, ok := con[key]
-
-		key = strings.Trim(key, " ")
-
 		if ok && key != "" {
 			con[key] = con[key] + 1
 		} else {
 			con[key] = 1
 		}
-
 	}
 
 	return con

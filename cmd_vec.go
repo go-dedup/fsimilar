@@ -8,11 +8,24 @@ package main
 
 import (
 	"io"
+	"os"
+
+	"github.com/fatih/structs"
+	"github.com/go-dedup/text"
+	"github.com/go-easygen/easygen"
+	"github.com/go-easygen/easygen/egVar"
 
 	"github.com/mkideal/cli"
 )
 
 var (
+	vecDoc2Words = text.GetWordsFactory(text.Decorators(
+		text.SplitCamelCase,
+		text.ToLower,
+		text.RemovePunctuation,
+		text.Compact,
+	))
+
 	fv    = Files{}
 	simTh = 0.5
 )
@@ -35,6 +48,9 @@ func cmdVec(cin io.Reader) error {
 	for _, f := range fv {
 		verbose(1, "# C: %v.", f.concordance)
 	}
+
+	tmpl0 := easygen.NewTemplate().Customize()
+	tmpl := tmpl0.Funcs(easygen.FuncDefs()).Funcs(egVar.FuncDefs())
 
 	// each file from input
 	for ii := range fv {
@@ -61,6 +77,13 @@ func cmdVec(cin io.Reader) error {
 		// output unvisited potential similars by each row
 		if len(similar) > 1 {
 			verbose(1, "# S: %v.", similar)
+			files := make(Files, len(similar))
+			for kk := range similar {
+				files[kk] = fv[similar[kk]]
+			}
+			m := structs.Map(struct{ Similars Files }{files})
+			verbose(3, "  Similar items -- \n %v.", m)
+			easygen.Execute(tmpl, os.Stdout, tmplFileName[false], easygen.EgData(m))
 		}
 	}
 
@@ -68,6 +91,6 @@ func cmdVec(cin io.Reader) error {
 }
 
 func buildVecs(fn string, file FileT) {
-	file.concordance = BuildConcordance(file.Name)
+	file.concordance = BuildConcordance(file.Name, vecDoc2Words)
 	fv = append(fv, file)
 }
