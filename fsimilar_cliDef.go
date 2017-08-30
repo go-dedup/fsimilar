@@ -8,7 +8,6 @@ package main
 
 import (
 	"github.com/mkideal/cli"
-	clix "github.com/mkideal/cli/ext"
 )
 
 ////////////////////////////////////////////////////////////////////////////
@@ -44,7 +43,7 @@ var root = &cli.Command{
 //  var (
 //          progname  = "fsimilar"
 //          version   = "0.1.0"
-//          date = "2017-08-27"
+//          date = "2017-08-29"
 //  )
 
 //  var rootArgv *rootT
@@ -58,7 +57,8 @@ var root = &cli.Command{
 //  	//NOTE: You can set any writer implements io.Writer
 //  	// default writer is os.Stdout
 //  	if err := cli.Root(root,
-//  		cli.Tree(simDef)).Run(os.Args[1:]); err != nil {
+//  		cli.Tree(simDef),
+//  		cli.Tree(vecDef)).Run(os.Args[1:]); err != nil {
 //  		fmt.Fprintln(os.Stderr, err)
 //  	}
 //  	fmt.Println("")
@@ -97,6 +97,29 @@ var simDef = &cli.Command{
 	Text: "Usage:\n  mlocate -i soccer | fsimilar sim -i",
 	Argv: func() interface{} { return new(simT) },
 	Fn:   simCLI,
+
+	NumOption: cli.AtLeast(1),
+}
+
+////////////////////////////////////////////////////////////////////////////
+// vec
+
+//  func vecCLI(ctx *cli.Context) error {
+//  	rootArgv = ctx.RootArgv().(*rootT)
+//  	argv := ctx.Argv().(*vecT)
+//  	fmt.Printf("[vec]:\n  %+v\n  %+v\n  %v\n", rootArgv, argv, ctx.Args())
+//  	return nil
+//  }
+
+type vecT struct {
+}
+
+var vecDef = &cli.Command{
+	Name: "vec",
+	Desc: "Use Vector Space for similarity check",
+	Text: "Usage:\n  mlocate -i soccer | fsimilar sim -i | fsimilar vec -i",
+	Argv: func() interface{} { return new(vecT) },
+	Fn:   vecCLI,
 
 	NumOption: cli.AtLeast(1),
 }

@@ -46,3 +46,9 @@ Command:
     Text: 'Usage:\n  mlocate -i soccer | fsimilar sim -i'
     #NumArg: cli.AtLeast(1)
     NumOption: cli.AtLeast(1)
+
+  - Name: vec
+    Desc: "Use Vector Space for similarity check"
+    Text: 'Usage:\n  mlocate -i soccer | fsimilar sim -i | fsimilar vec -i'
+    #NumArg: cli.AtLeast(1)
+    NumOption: cli.AtLeast(1)
