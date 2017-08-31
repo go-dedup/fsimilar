@@ -25,6 +25,7 @@ type OptsT struct {
 	Distance  uint8
 	SizeGiven bool
 	QuerySize bool
+	Phonetic  bool
 	Template  string
 	Verbose   int
 }
@@ -70,7 +71,8 @@ func fsimilar(ctx *cli.Context) error {
 func main() {
 	// cli.SetUsageStyle(cli.ManualStyle)
 	if err := cli.Root(root,
-		cli.Tree(simDef)).Run(os.Args[1:]); err != nil {
+		cli.Tree(simDef),
+		cli.Tree(vecDef)).Run(os.Args[1:]); err != nil {
 		fmt.Fprintln(os.Stderr, err)
 	}
 	fmt.Println("")

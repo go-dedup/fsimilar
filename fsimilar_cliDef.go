@@ -23,6 +23,7 @@ type rootT struct {
 	SizeGiven bool         `cli:"S,size-given" usage:"size of the files available from input as 1st field"`
 	QuerySize bool         `cli:"Q,query-size" usage:"file size not available so query it from filesystem"`
 	Filei     *clix.Reader `cli:"*i,input" usage:"input from stdin or the given file (mandatory)"`
+	Phonetic  bool         `cli:"p,phonetic" usage:"use phonetic to group sound-similar words for further error tolerant"`
 	Verbose   cli.Counter  `cli:"v,verbose" usage:"verbose mode (multiple -v options increase the verbosity)"`
 }
 
@@ -118,7 +119,7 @@ type vecT struct {
 var vecDef = &cli.Command{
 	Name: "vec",
 	Desc: "Use Vector Space for similarity check",
-	Text: "Usage:\n  mlocate -i soccer | fsimilar sim -i | fsimilar vec -i",
+	Text: "Usage:\n  mlocate -i soccer | fsimilar sim -i | fsimilar vec -i -Q",
 	Argv: func() interface{} { return new(vecT) },
 	Fn:   vecCLI,
 

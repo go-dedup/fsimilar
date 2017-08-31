@@ -55,9 +55,9 @@ func simCLI(ctx *cli.Context) error {
 	// fmt.Println()
 	rootArgv = ctx.RootArgv().(*rootT)
 
-	Opts.Distance, Opts.SizeGiven, Opts.QuerySize, Opts.Verbose =
+	Opts.Distance, Opts.SizeGiven, Opts.QuerySize, Opts.Phonetic, Opts.Verbose =
 		rootArgv.Distance, rootArgv.SizeGiven, rootArgv.QuerySize,
-		rootArgv.Verbose.Value()
+		rootArgv.Phonetic, rootArgv.Verbose.Value()
 	r = Opts.Distance
 
 	return fSimilar(rootArgv.Filei)
@@ -66,11 +66,13 @@ func simCLI(ctx *cli.Context) error {
 func fSimilar(cin io.Reader) error {
 	rand.Seed(time.Now().UTC().UnixNano())
 	//tmpfile := fmt.Sprintf("%s.%d", file, 99999999-rand.Int31n(90000000))
-	buildOracle(cin)
+	processFileInfo(cin, buildOracle)
 	return dealDups()
 }
 
-func buildOracle(cin io.Reader) error {
+type processFileInfoFunc func(fn string, file FileT)
+
+func processFileInfo(cin io.Reader, fp processFileInfoFunc) error {
 	// read input line by line
 	scanner := bufio.NewScanner(cin)
 	for scanner.Scan() {
@@ -98,23 +100,26 @@ func buildOracle(cin io.Reader) error {
 		file.Dir, file.Name, file.Ext = p, Basename(n), filepath.Ext(n)
 		verbose(2, " n='%s', e='%s', s='%d', d='%s'",
 			file.Name, file.Ext, file.Size, file.Dir)
-
-		hash := sh.GetSimhash(sh.NewWordFeatureSet([]byte(file.Name)))
-		file.Hash = hash
-		fi := FCItem{Hash: hash, Index: fc.LenOf(hash)}
-		fAll[fn] = fi
-		fc.Add(hash, file)
-
-		// == Build similarity knowledge
-		if h, d, seen := oracle.Find(hash, r); seen == true {
-			verbose(2, "=: Simhash of %x ignored for %x (%d).", hash, h, d)
-		} else {
-			oracle.See(hash)
-			verbose(2, "+: Simhash of %x added.", hash)
-		}
+		fp(fn, file)
 	}
 
 	return scanner.Err()
+}
+
+func buildOracle(fn string, file FileT) {
+	hash := sh.GetSimhash(sh.NewWordFeatureSet([]byte(file.Name)))
+	file.Hash = hash
+	fi := FCItem{Hash: hash, Index: fc.LenOf(hash)}
+	fAll[fn] = fi
+	fc.Add(hash, file)
+
+	// == Build similarity knowledge
+	if h, d, seen := oracle.Find(hash, r); seen == true {
+		verbose(2, "=: Simhash of %x ignored for %x (%d).", hash, h, d)
+	} else {
+		oracle.See(hash)
+		verbose(2, "+: Simhash of %x added.", hash)
+	}
 }
 
 func dealDups() error {
