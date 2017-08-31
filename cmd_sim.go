@@ -37,7 +37,7 @@ import (
 var (
 	oracle = sho.NewOracle()
 	sh     = simhash.NewSimhash()
-	r      = Opts.Distance
+	r      = uint8(3)
 
 	empty = regexp.MustCompile(`^\s*$`)
 	fAll  = make(FAll)       // the all file to FCItem map
@@ -54,11 +54,12 @@ func simCLI(ctx *cli.Context) error {
 	// ctx.JSON(ctx.Argv())
 	// fmt.Println()
 	rootArgv = ctx.RootArgv().(*rootT)
+	argv := ctx.Argv().(*simT)
 
-	Opts.Distance, Opts.SizeGiven, Opts.QuerySize, Opts.Phonetic, Opts.Verbose =
-		rootArgv.Distance, rootArgv.SizeGiven, rootArgv.QuerySize,
+	Opts.SizeGiven, Opts.QuerySize, Opts.Phonetic, Opts.Verbose =
+		rootArgv.SizeGiven, rootArgv.QuerySize,
 		rootArgv.Phonetic, rootArgv.Verbose.Value()
-	r = Opts.Distance
+	r = argv.Distance
 
 	return fSimilar(rootArgv.Filei)
 }

@@ -22,7 +22,6 @@ import (
 
 // The OptsT type defines all the configurable options from cli.
 type OptsT struct {
-	Distance  uint8
 	SizeGiven bool
 	QuerySize bool
 	Phonetic  bool
@@ -52,17 +51,10 @@ var (
 // Main dispatcher
 
 func fsimilar(ctx *cli.Context) error {
-	// ctx.JSON(ctx.RootArgv())
-	// ctx.JSON(ctx.Argv())
-	// fmt.Println()
-	rootArgv = ctx.RootArgv().(*rootT)
-
-	Opts.Distance, Opts.SizeGiven, Opts.QuerySize, Opts.Verbose =
-		rootArgv.Distance, rootArgv.SizeGiven, rootArgv.QuerySize,
-		rootArgv.Verbose.Value()
-	r = Opts.Distance
-
-	return fSimilar(rootArgv.Filei)
+	ctx.JSON(ctx.RootArgv())
+	ctx.JSON(ctx.Argv())
+	fmt.Println()
+	return nil
 }
 
 //==========================================================================

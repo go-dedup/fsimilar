@@ -12,15 +12,19 @@ import (
 	"github.com/mkideal/cli"
 )
 
-var fv = Files{}
+var (
+	fv    = Files{}
+	simTh = 0.5
+)
 
 func vecCLI(ctx *cli.Context) error {
 	rootArgv = ctx.RootArgv().(*rootT)
-	// argv := ctx.Argv().(*vecT)
+	argv := ctx.Argv().(*vecT)
 	// fmt.Printf("[vec]:\n  %+v\n  %+v\n  %v\n", rootArgv, argv, ctx.Args())
 	Opts.SizeGiven, Opts.QuerySize, Opts.Phonetic, Opts.Verbose =
 		rootArgv.SizeGiven, rootArgv.QuerySize,
 		rootArgv.Phonetic, rootArgv.Verbose.Value()
+	simTh = argv.Threshold
 
 	return cmdVec(rootArgv.Filei)
 }
@@ -44,7 +48,7 @@ func cmdVec(cin io.Reader) error {
 				// compare it with *each* similar file found so far
 				for kk := range similar {
 					if !fv[jj].Vstd &&
-						Relation(fv[similar[kk]].concordance, fv[jj].concordance) > 0.5 {
+						Relation(fv[similar[kk]].concordance, fv[jj].concordance) >= simTh {
 						similar = append(similar, jj)
 						fv[jj].Vstd = true
 					}

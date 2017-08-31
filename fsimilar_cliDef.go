@@ -19,7 +19,6 @@ import (
 
 type rootT struct {
 	cli.Helper
-	Distance  uint8        `cli:"d,dist" usage:"the hamming distance of hashes within which to deem similar" dft:"3"`
 	SizeGiven bool         `cli:"S,size-given" usage:"size of the files available from input as 1st field"`
 	QuerySize bool         `cli:"Q,query-size" usage:"file size not available so query it from filesystem"`
 	Filei     *clix.Reader `cli:"*i,input" usage:"input from stdin or the given file (mandatory)"`
@@ -45,7 +44,7 @@ var root = &cli.Command{
 //  var (
 //          progname  = "fsimilar"
 //          version   = "0.1.0"
-//          date = "2017-08-30"
+//          date = "2017-08-31"
 //  )
 
 //  var rootArgv *rootT
@@ -91,6 +90,7 @@ var root = &cli.Command{
 //  }
 
 type simT struct {
+	Distance uint8 `cli:"d,dist" usage:"the hamming distance of hashes within which to deem similar" dft:"3"`
 }
 
 var simDef = &cli.Command{
@@ -114,6 +114,7 @@ var simDef = &cli.Command{
 //  }
 
 type vecT struct {
+	Threshold float64 `cli:"t,threshold" usage:"the threshold above which to deem similar" dft:"0.6"`
 }
 
 var vecDef = &cli.Command{

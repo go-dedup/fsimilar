@@ -13,12 +13,6 @@ NumOption: cli.AtLeast(1)
 #UsageLead: "Usage:\\n  fsimilar [Options]\\n\\nExample:\\n  find . \\\\( -type f -o -type l \\\\) -printf '%%7s %%p\\\\n' | fsimilar -i -S\\n  mlocate -i soccer | fsimilar -i | fsimilar -i -Q"
 
 Options:
-  - Name: Distance
-    Type: uint8
-    Flag: d,dist
-    Usage: the hamming distance of hashes within which to deem similar
-    Value: 3
-    
   - Name: SizeGiven
     Type: bool
     Flag: S,size-given
@@ -52,8 +46,23 @@ Command:
     #NumArg: cli.AtLeast(1)
     NumOption: cli.AtLeast(1)
 
+    Options:
+      - Name: Distance
+        Type: uint8
+        Flag: d,dist
+        Usage: the hamming distance of hashes within which to deem similar
+        Value: 3
+
+
   - Name: vec
     Desc: "Use Vector Space for similarity check"
     Text: 'Usage:\n  mlocate -i soccer | fsimilar sim -i | fsimilar vec -i -Q'
     #NumArg: cli.AtLeast(1)
     NumOption: cli.AtLeast(1)
+
+    Options:
+      - Name: Threshold
+        Type: float64
+        Flag: t,threshold
+        Usage: the threshold above which to deem similar
+        Value: 0.6
