@@ -22,6 +22,8 @@ type FileT struct {
 	Vstd bool // Visited
 
 	SizeRef int
+
+	concordance Concordance
 }
 
 func (f FileT) Similarity() int {

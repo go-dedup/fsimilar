@@ -12,7 +12,7 @@ import (
 	"github.com/mkideal/cli"
 )
 
-var concordance []Concordance
+var fv = Files{}
 
 func vecCLI(ctx *cli.Context) error {
 	rootArgv = ctx.RootArgv().(*rootT)
@@ -28,13 +28,40 @@ func vecCLI(ctx *cli.Context) error {
 func cmdVec(cin io.Reader) error {
 	processFileInfo(cin, buildVecs)
 
-	for _, c := range concordance {
-		verbose(1, "# C: %v.", c)
+	for _, f := range fv {
+		verbose(1, "# C: %v.", f.concordance)
+	}
+
+	// each file from input
+	for ii := range fv {
+		similar := []int{}
+		similar = append(similar, ii)
+		fv[ii].Vstd = true
+
+		// each remaining unvisited candidates
+		for jj := ii + 1; jj < len(fv); jj++ {
+			if !fv[jj].Vstd {
+				// compare it with *each* similar file found so far
+				for kk := range similar {
+					if !fv[jj].Vstd &&
+						Relation(fv[similar[kk]].concordance, fv[jj].concordance) > 0.5 {
+						similar = append(similar, jj)
+						fv[jj].Vstd = true
+					}
+				}
+			}
+		}
+
+		// output unvisited potential similars by each row
+		if len(similar) > 1 {
+			verbose(1, "# S: %v.", similar)
+		}
 	}
 
 	return nil
 }
 
 func buildVecs(fn string, file FileT) {
-	concordance = append(concordance, BuildConcordance(file.Name))
+	file.concordance = BuildConcordance(file.Name)
+	fv = append(fv, file)
 }
