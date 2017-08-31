@@ -51,6 +51,8 @@ func cmdVec(cin io.Reader) error {
 						Relation(fv[similar[kk]].concordance, fv[jj].concordance) >= simTh {
 						similar = append(similar, jj)
 						fv[jj].Vstd = true
+						// if similar to one, no need to compare with the rest
+						break
 					}
 				}
 			}
