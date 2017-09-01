@@ -38,6 +38,13 @@ func vecCLI(ctx *cli.Context) error {
 		rootArgv.SizeGiven, rootArgv.QuerySize,
 		rootArgv.Phonetic, rootArgv.Verbose.Value()
 	simTh = argv.Threshold
+	if Opts.Phonetic {
+		vecDoc2Words = text.GetDoubleMetaphoneFactory(text.Decorators(
+			text.SplitCamelCase,
+			text.RemovePunctuation,
+			text.Compact,
+		))
+	}
 
 	return cmdVec(rootArgv.Filei)
 }
@@ -46,7 +53,7 @@ func cmdVec(cin io.Reader) error {
 	processFileInfo(cin, buildVecs)
 
 	for _, f := range fv {
-		verbose(1, "# C: %v.", f.concordance)
+		verbose(1, "# C: %v.", f.concordance.String())
 	}
 
 	tmpl0 := easygen.NewTemplate().Customize()

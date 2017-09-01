@@ -1,7 +1,10 @@
 package main
 
 import (
+	"bytes"
+	"fmt"
 	"math"
+	"sort"
 
 	"github.com/go-dedup/text"
 )
@@ -54,4 +57,20 @@ func Relation(con1 Concordance, con2 Concordance) float64 {
 	} else {
 		return 0
 	}
+}
+
+func (con Concordance) String() string {
+	buf := bytes.NewBufferString("")
+
+	var keys []string
+	for k := range con {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	buf.WriteString("[ ")
+	for _, k := range keys {
+		fmt.Fprintf(buf, "%s:%d ", k, int(con[k]))
+	}
+	buf.WriteByte(']')
+	return buf.String()
 }

@@ -59,7 +59,8 @@ func testIt(t *testing.T, name string, argv string) {
 func TestExec(t *testing.T) {
 	os.Chdir(dirTest)
 
-	// == Test Basic Functions
+	// == Test Basic Simhash Function tests
+	t.Logf("\n\n== Testing Simhash Basic Functions\n\n")
 	// -- sim
 	testIt(t, "sim.lstA.sim", "sim -i sim.lstA -d 12 -vv")
 	testIt(t, "sim.lstB.sim", "sim -i sim.lstB -d 12 -vv")
@@ -67,4 +68,24 @@ func TestExec(t *testing.T) {
 	// -- test
 	testIt(t, "test1.sim", "sim -i test1.lst -d 6 -vv")
 	testIt(t, "test2.sim", "sim -i test2.lst -d 6 -vv")
+
+	// == Test Basic Vector Space Function tests
+	t.Logf("\n\n== Testing Vector Space Basic Functions\n\n")
+	// -- sim
+	testIt(t, "sim.lstA.vec", "vec -i sim.lstA -v")
+	testIt(t, "sim.lstB.vec", "vec -i sim.lstB -v")
+	testIt(t, "sim.lstS.vec", "vec -i sim.lstS -v")
+	// -- test
+	testIt(t, "test1.vec", "vec -i test1.lst -v")
+	testIt(t, "test2.vec", "vec -i test2.lst -v")
+
+	// == Test Basic Vector Space Phonetic Function tests
+	t.Logf("\n\n== Testing Vector Space Phonetic Functions\n\n")
+	// -- sim
+	testIt(t, "sim.lstA.vec.phonetic", "vec -i sim.lstA -p -v")
+	testIt(t, "sim.lstB.vec.phonetic", "vec -i sim.lstB -p -v")
+	testIt(t, "sim.lstS.vec.phonetic", "vec -i sim.lstS -p -v")
+	// -- test
+	testIt(t, "test1.vec.phonetic", "vec -i test1.lst -p -v")
+	testIt(t, "test2.vec.phonetic", "vec -i test2.lst -p -v")
 }
