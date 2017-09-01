@@ -61,10 +61,10 @@ func TestExec(t *testing.T) {
 
 	// == Test Basic Functions
 	// -- sim
-	testIt(t, "sim.lstA", "sim -i sim.lstA -d 12 -vv")
-	testIt(t, "sim.lstB", "sim -i sim.lstB -d 12 -vv")
-	testIt(t, "sim.lstS", "sim -i sim.lstS -d 12 -vv")
+	testIt(t, "sim.lstA.sim", "sim -i sim.lstA -d 12 -vv")
+	testIt(t, "sim.lstB.sim", "sim -i sim.lstB -d 12 -vv")
+	testIt(t, "sim.lstS.sim", "sim -i sim.lstS -d 12 -vv")
 	// -- test
-	testIt(t, "test1", "sim -i test1.lst -d 6 -vv")
-	testIt(t, "test2", "sim -i test2.lst -d 6 -vv")
+	testIt(t, "test1.sim", "sim -i test1.lst -d 6 -vv")
+	testIt(t, "test2.sim", "sim -i test2.lst -d 6 -vv")
 }
