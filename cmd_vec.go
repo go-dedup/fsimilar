@@ -8,12 +8,8 @@ package main
 
 import (
 	"io"
-	"os"
 
-	"github.com/fatih/structs"
 	"github.com/go-dedup/text"
-	"github.com/go-easygen/easygen"
-	"github.com/go-easygen/easygen/egVar"
 
 	"github.com/mkideal/cli"
 )
@@ -34,9 +30,9 @@ func vecCLI(ctx *cli.Context) error {
 	rootArgv = ctx.RootArgv().(*rootT)
 	argv := ctx.Argv().(*vecT)
 	// fmt.Printf("[vec]:\n  %+v\n  %+v\n  %v\n", rootArgv, argv, ctx.Args())
-	Opts.SizeGiven, Opts.QuerySize, Opts.Phonetic, Opts.Verbose =
+	Opts.SizeGiven, Opts.QuerySize, Opts.Phonetic, Opts.Final, Opts.Verbose =
 		rootArgv.SizeGiven, rootArgv.QuerySize,
-		rootArgv.Phonetic, rootArgv.Verbose.Value()
+		rootArgv.Phonetic, rootArgv.Final, rootArgv.Verbose.Value()
 	simTh = argv.Threshold
 	if Opts.Phonetic {
 		vecDoc2Words = text.GetDoubleMetaphoneFactory(text.Decorators(
@@ -53,29 +49,37 @@ func cmdVec(cin io.Reader) error {
 	processFileInfo(cin, buildVecs)
 
 	for _, f := range fv {
-		verbose(1, "# C: %v.", f.concordance.String())
+		verbose(1, "# C: %v.", f.Conc.String())
 	}
-
-	tmpl0 := easygen.NewTemplate().Customize()
-	tmpl := tmpl0.Funcs(easygen.FuncDefs()).Funcs(egVar.FuncDefs())
 
 	// each file from input
 	for ii := range fv {
+		// skip those that have already been visited
+		if fv[ii].Vstd {
+			verbose(2, " = Visited file ignored")
+			continue
+		}
+		// get next file item
 		similar := []int{}
 		similar = append(similar, ii)
-		fv[ii].Vstd = true
+		fSizeRef := fv[ii].Size
+		fv[ii].Vstd, fv[ii].Relation, fv[ii].SizeRef = true, 1, fSizeRef
 
 		// each remaining unvisited candidates
 		for jj := ii + 1; jj < len(fv); jj++ {
 			if !fv[jj].Vstd {
 				// compare it with *each* similar file found so far
 				for kk := range similar {
-					if !fv[jj].Vstd &&
-						Relation(fv[similar[kk]].concordance, fv[jj].concordance) >= simTh {
-						similar = append(similar, jj)
-						fv[jj].Vstd = true
-						// if similar to one, no need to compare with the rest
-						break
+					rel := Relation(fv[similar[kk]].Conc, fv[jj].Conc)
+					if !fv[jj].Vstd && rel >= simTh {
+						// prepare info for Similarity() computation
+						fv[jj].Relation, fv[jj].SizeRef = rel, fSizeRef
+						if fv[jj].Similarity() >= int(simTh*100) {
+							similar = append(similar, jj)
+							fv[jj].Vstd = true
+							// if similar to one, no need to compare with the rest
+							break
+						}
 					}
 				}
 			}
@@ -88,9 +92,7 @@ func cmdVec(cin io.Reader) error {
 			for kk := range similar {
 				files[kk] = fv[similar[kk]]
 			}
-			m := structs.Map(struct{ Similars Files }{files})
-			verbose(3, "  Similar items -- \n %v.", m)
-			easygen.Execute(tmpl, os.Stdout, tmplFileName[false], easygen.EgData(m))
+			outputSimilars(tmplFileName[Opts.Final], files, true)
 		}
 	}
 
@@ -98,6 +100,6 @@ func cmdVec(cin io.Reader) error {
 }
 
 func buildVecs(fn string, file FileT) {
-	file.concordance = BuildConcordance(file.Name, vecDoc2Words)
+	file.Conc = BuildConcordance(file.Name, vecDoc2Words)
 	fv = append(fv, file)
 }

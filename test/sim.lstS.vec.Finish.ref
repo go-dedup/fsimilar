@@ -1,0 +1,19 @@
+[fsimilar] # C: [ 0:1 at:2 klrt:2 kr:2 pk:2 pn:2 t:1 ].
+[fsimilar] # C: [ klrt:2 kr:2 pn:2 ].
+[fsimilar] # C: [ :1 a:4 lprr:2 n:2 p0n:1 pk:2 ptn:1 stntrt:2 ].
+[fsimilar] # C: [ :1 a:2 lprr:2 n:2 p0n:1 ptn:1 stntrt:2 ].
+[fsimilar] # C: [ :1 a:2 lprr:2 n:2 p0n:1 ptn:1 stntrt:2 ].
+[fsimilar] # C: [ lt:2 tst:2 ].
+[fsimilar] # C: [ ppp:2 tst:2 ].
+[fsimilar] # C: [ lprr:2 p0n:1 ptn:1 stntrt:2 ].
+[fsimilar] # S: [0 1].
+100        1 Audio Book - The Grey Coloured Bunnie.mp3	test/sim/
+ 74        1 ColoredGrayBunny.ogg	test/sim/
+
+[fsimilar] # S: [2 3 4 7].
+100        1 (eBook) GNU - Python Standard Library 2001.pdf	test/sim/
+ 89        1 GNU - 2001 - Python Standard Library.pdf	test/sim/
+ 89        1 GNU - Python Standard Library (2001).rar	test/sim/
+ 73        1 Python Standard Library.zip	test/sim/
+
+

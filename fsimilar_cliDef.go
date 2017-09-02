@@ -19,11 +19,13 @@ import (
 
 type rootT struct {
 	cli.Helper
-	SizeGiven bool         `cli:"S,size-given" usage:"size of the files available from input as 1st field"`
-	QuerySize bool         `cli:"Q,query-size" usage:"file size not available so query it from filesystem"`
+	SizeGiven bool         `cli:"S,size-given" usage:"size of the files in input as first field"`
+	QuerySize bool         `cli:"Q,query-size" usage:"query the file sizes from os"`
 	Filei     *clix.Reader `cli:"*i,input" usage:"input from stdin or the given file (mandatory)"`
-	Phonetic  bool         `cli:"p,phonetic" usage:"use phonetic to group sound-similar words for further error tolerant"`
-	Verbose   cli.Counter  `cli:"v,verbose" usage:"verbose mode (multiple -v options increase the verbosity)"`
+	Phonetic  bool         `cli:"p,phonetic" usage:"use phonetic as words for further error tolerant"`
+	Final     bool         `cli:"F,final" usage:"produce final output, the recommendations"`
+	CfgPath   string       `cli:"c,cp" usage:"config path, path that hold all template files" dft:"$FSIM_CP"`
+	Verbose   cli.Counter  `cli:"v,verbose" usage:"verbose mode (multiple -v increase the verbosity)"`
 }
 
 var root = &cli.Command{
@@ -44,7 +46,7 @@ var root = &cli.Command{
 //  var (
 //          progname  = "fsimilar"
 //          version   = "0.1.0"
-//          date = "2017-08-31"
+//          date = "2017-09-02"
 //  )
 
 //  var rootArgv *rootT
@@ -114,13 +116,13 @@ var simDef = &cli.Command{
 //  }
 
 type vecT struct {
-	Threshold float64 `cli:"t,threshold" usage:"the threshold above which to deem similar" dft:"0.6"`
+	Threshold float64 `cli:"t,thr" usage:"the threshold above which to deem similar (0.8 = 80%%)" dft:"0.86"`
 }
 
 var vecDef = &cli.Command{
 	Name: "vec",
 	Desc: "Use Vector Space for similarity check",
-	Text: "Usage:\n  mlocate -i soccer | fsimilar sim -i | fsimilar vec -i -Q",
+	Text: "Usage:\n  { mlocate -i soccer; mlocate -i football; } | fsimilar sim -i | fsimilar vec -i -S -Q -F",
 	Argv: func() interface{} { return new(vecT) },
 	Fn:   vecCLI,
 

@@ -16,12 +16,12 @@ Options:
   - Name: SizeGiven
     Type: bool
     Flag: S,size-given
-    Usage: size of the files available from input as 1st field
+    Usage: size of the files in input as first field
 
   - Name: QuerySize 
     Type: bool
     Flag: Q,query-size
-    Usage: file size not available so query it from filesystem
+    Usage: query the file sizes from os
 
   - Name: Filei
     Type: '*clix.Reader'
@@ -31,12 +31,23 @@ Options:
   - Name: Phonetic
     Type: bool
     Flag: p,phonetic
-    Usage: use phonetic to group sound-similar words for further error tolerant
+    Usage: use phonetic as words for further error tolerant
+
+  - Name: Final
+    Type: bool
+    Flag: F,final
+    Usage: produce final output, the recommendations
+
+  - Name: CfgPath
+    Type: string
+    Flag: c,cp
+    Usage: config path, path that hold all template files
+    Value: '$FSIM_CP'
 
   - Name: Verbose
     Type: cli.Counter
     Flag: v,verbose
-    Usage: verbose mode (multiple -v options increase the verbosity)
+    Usage: verbose mode (multiple -v increase the verbosity)
 
 Command:
 
@@ -56,13 +67,13 @@ Command:
 
   - Name: vec
     Desc: "Use Vector Space for similarity check"
-    Text: 'Usage:\n  mlocate -i soccer | fsimilar sim -i | fsimilar vec -i -Q'
+    Text: 'Usage:\n  { mlocate -i soccer; mlocate -i football; } | fsimilar sim -i | fsimilar vec -i -S -Q -F'
     #NumArg: cli.AtLeast(1)
     NumOption: cli.AtLeast(1)
 
     Options:
       - Name: Threshold
         Type: float64
-        Flag: t,threshold
-        Usage: the threshold above which to deem similar
-        Value: 0.6
+        Flag: t,thr
+        Usage: the threshold above which to deem similar (0.8 = 80%%)
+        Value: 0.86

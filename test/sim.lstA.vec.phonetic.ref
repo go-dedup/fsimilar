@@ -1,3 +1,11 @@
+[fsimilar]  n='Audio Book - The Grey Coloured Bunnie', e='.mp3', s='1', d='test/sim/'
+[fsimilar]  n='GNU - Python Standard Library (2001)', e='.rar', s='1', d='test/sim/'
+[fsimilar]  n='PopupTest', e='.java', s='1', d='test/sim/'
+[fsimilar]  n='(eBook) GNU - Python Standard Library 2001', e='.pdf', s='1', d='test/sim/'
+[fsimilar]  n='Python Standard Library', e='.zip', s='1', d='test/sim/'
+[fsimilar]  n='GNU - 2001 - Python Standard Library', e='.pdf', s='1', d='test/sim/'
+[fsimilar]  n='LayoutTest', e='.java', s='1', d='test/sim/'
+[fsimilar]  n='ColoredGrayBunny', e='.ogg', s='1', d='test/sim/'
 [fsimilar] # C: [ 0:1 at:2 klrt:2 kr:2 pk:2 pn:2 t:1 ].
 [fsimilar] # C: [ :1 a:2 lprr:2 n:2 p0n:1 ptn:1 stntrt:2 ].
 [fsimilar] # C: [ ppp:2 tst:2 ].
@@ -7,13 +15,17 @@
 [fsimilar] # C: [ lt:2 tst:2 ].
 [fsimilar] # C: [ klrt:2 kr:2 pn:2 ].
 [fsimilar] # S: [0 7].
-test/sim/Audio Book - The Grey Coloured Bunnie.mp3
-test/sim/ColoredGrayBunny.ogg
+       1 test/sim/Audio Book - The Grey Coloured Bunnie.mp3
+       1 test/sim/ColoredGrayBunny.ogg
 
 [fsimilar] # S: [1 3 4 5].
-test/sim/GNU - Python Standard Library (2001).rar
-test/sim/(eBook) GNU - Python Standard Library 2001.pdf
-test/sim/Python Standard Library.zip
-test/sim/GNU - 2001 - Python Standard Library.pdf
+       1 test/sim/GNU - Python Standard Library (2001).rar
+       1 test/sim/(eBook) GNU - Python Standard Library 2001.pdf
+       1 test/sim/Python Standard Library.zip
+       1 test/sim/GNU - 2001 - Python Standard Library.pdf
 
+[fsimilar]  = Visited file ignored
+[fsimilar]  = Visited file ignored
+[fsimilar]  = Visited file ignored
+[fsimilar]  = Visited file ignored
 

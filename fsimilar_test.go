@@ -66,26 +66,33 @@ func TestExec(t *testing.T) {
 	testIt(t, "sim.lstB.sim", "sim -i sim.lstB -d 12 -vv")
 	testIt(t, "sim.lstS.sim", "sim -i sim.lstS -d 12 -vv")
 	// -- test
-	testIt(t, "test1.sim", "sim -i test1.lst -d 6 -vv")
-	testIt(t, "test2.sim", "sim -i test2.lst -d 6 -vv")
+	testIt(t, "test1.sim", "sim -i test1.lst -S -d 6 -vv")
+	testIt(t, "test2.sim", "sim -i test2.lst -S -d 6 -vv")
 
-	// == Test Basic Vector Space Function tests
+	// == Test Vector Space Basic Function tests
 	t.Logf("\n\n== Testing Vector Space Basic Functions\n\n")
 	// -- sim
-	testIt(t, "sim.lstA.vec", "vec -i sim.lstA -v")
-	testIt(t, "sim.lstB.vec", "vec -i sim.lstB -v")
-	testIt(t, "sim.lstS.vec", "vec -i sim.lstS -v")
+	testIt(t, "sim.lstA.vec", "vec -i sim.lstA -t 0.65 -vv")
+	testIt(t, "sim.lstB.vec", "vec -i sim.lstB -t 0.65 -vv")
+	testIt(t, "sim.lstS.vec", "vec -i sim.lstS -t 0.65 -vv")
 	// -- test
-	testIt(t, "test1.vec", "vec -i test1.lst -v")
-	testIt(t, "test2.vec", "vec -i test2.lst -v")
+	testIt(t, "test1.vec", "vec -i test1.lst -S -v")
+	testIt(t, "test2.vec", "vec -i test2.lst -S -v")
 
-	// == Test Basic Vector Space Phonetic Function tests
+	// == Test Vector Space Phonetic Function tests
 	t.Logf("\n\n== Testing Vector Space Phonetic Functions\n\n")
 	// -- sim
-	testIt(t, "sim.lstA.vec.phonetic", "vec -i sim.lstA -p -v")
-	testIt(t, "sim.lstB.vec.phonetic", "vec -i sim.lstB -p -v")
-	testIt(t, "sim.lstS.vec.phonetic", "vec -i sim.lstS -p -v")
+	testIt(t, "sim.lstA.vec.phonetic", "vec -i sim.lstA -p -t 0.65 -vv")
+	testIt(t, "sim.lstB.vec.phonetic", "vec -i sim.lstB -p -t 0.65 -vv")
+	testIt(t, "sim.lstS.vec.phonetic", "vec -i sim.lstS -p -t 0.65 -vv")
 	// -- test
-	testIt(t, "test1.vec.phonetic", "vec -i test1.lst -p -v")
-	testIt(t, "test2.vec.phonetic", "vec -i test2.lst -p -v")
+	testIt(t, "test1.vec.phonetic", "vec -i test1.lst -S -p -v")
+	testIt(t, "test2.vec.phonetic", "vec -i test2.lst -S -p -v")
+
+	// == Test Basic Vector Space Finish Function tests
+	t.Logf("\n\n== Testing Vector Space Finish Functions\n\n")
+	// -- sim
+	testIt(t, "sim.lstA.vec.Finish", "vec -i sim.lstA -t 0.65 -p -F -v")
+	testIt(t, "sim.lstB.vec.Finish", "vec -i sim.lstB -t 0.65 -p -F -v")
+	testIt(t, "sim.lstS.vec.Finish", "vec -i sim.lstS -t 0.65 -p -F -v")
 }

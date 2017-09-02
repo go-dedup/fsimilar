@@ -18,10 +18,6 @@ import (
 	"sort"
 	"time"
 
-	"github.com/fatih/structs"
-	"github.com/go-easygen/easygen"
-	"github.com/go-easygen/easygen/egVar"
-
 	"github.com/go-dedup/simhash"
 	"github.com/go-dedup/simhash/sho"
 
@@ -56,9 +52,9 @@ func simCLI(ctx *cli.Context) error {
 	rootArgv = ctx.RootArgv().(*rootT)
 	argv := ctx.Argv().(*simT)
 
-	Opts.SizeGiven, Opts.QuerySize, Opts.Phonetic, Opts.Verbose =
+	Opts.SizeGiven, Opts.QuerySize, Opts.Phonetic, Opts.Final, Opts.Verbose =
 		rootArgv.SizeGiven, rootArgv.QuerySize,
-		rootArgv.Phonetic, rootArgv.Verbose.Value()
+		rootArgv.Phonetic, rootArgv.Final, rootArgv.Verbose.Value()
 	r = argv.Distance
 
 	return fSimilar(rootArgv.Filei)
@@ -125,8 +121,6 @@ func buildOracle(fn string, file FileT) {
 
 func dealDups() error {
 	verbose(2, "Deal Dups\n")
-	tmpl0 := easygen.NewTemplate().Customize()
-	tmpl := tmpl0.Funcs(easygen.FuncDefs()).Funcs(egVar.FuncDefs())
 
 	// process all, the sorted fAll map
 	visited := make(HVisited)
@@ -182,9 +176,7 @@ func dealDups() error {
 
 		// One group of similar items found, output
 		sort.Sort(files)
-		m := structs.Map(struct{ Similars Files }{files})
-		verbose(3, "  Similar items -- \n %v.", m)
-		easygen.Execute(tmpl, os.Stdout, tmplFileName[false], easygen.EgData(m))
+		outputSimilars(tmplFileName[Opts.Final], files, true)
 	}
 
 	return nil

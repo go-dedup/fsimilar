@@ -11,6 +11,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"path/filepath"
 	"strings"
 
 	"github.com/labstack/gommon/color"
@@ -25,7 +26,10 @@ type OptsT struct {
 	SizeGiven bool
 	QuerySize bool
 	Phonetic  bool
+	Final     bool
 	Template  string
+	ExecPath  string
+	CfgPath   string
 	Verbose   int
 }
 
@@ -35,7 +39,7 @@ type OptsT struct {
 var (
 	progname = "fsimilar"
 	version  = "0.1.0"
-	date     = "2017-08-27"
+	date     = "2017-09-02"
 )
 
 var (
@@ -61,6 +65,7 @@ func fsimilar(ctx *cli.Context) error {
 // Main
 
 func main() {
+	Opts.ExecPath = filepath.Dir(os.Args[0])
 	// cli.SetUsageStyle(cli.ManualStyle)
 	if err := cli.Root(root,
 		cli.Tree(simDef),
@@ -88,6 +93,12 @@ func Basename(s string) string {
 		return s[:n]
 	}
 	return s
+}
+
+// IsExist checks if the given file exist
+func IsExist(fileName string) bool {
+	_, err := os.Stat(fileName)
+	return err == nil || os.IsExist(err)
 }
 
 func warning(m string) {

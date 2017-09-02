@@ -19,16 +19,24 @@ type FileT struct {
 	Dir  string
 	Hash uint64
 	Dist uint8
+	Conc Concordance
 	Vstd bool // Visited
 
-	SizeRef int
+	SizeRef  int
+	Relation float64
+}
 
-	concordance Concordance
+func (f FileT) Distance() float32 {
+	if len(f.Conc) != 0 {
+		return float32(f.Relation)
+	} else {
+		return (1 - float32(f.Dist)/float32(64))
+	}
 }
 
 func (f FileT) Similarity() int {
 	return int((1-float32(Abs(f.Size-f.SizeRef))/float32(f.SizeRef))*
-		(1-float32(f.Dist)/float32(64))*100 + 0.5)
+		f.Distance()*100 + 0.5)
 }
 
 type Files []FileT
