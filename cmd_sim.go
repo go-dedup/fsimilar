@@ -20,6 +20,7 @@ import (
 
 	"github.com/go-dedup/simhash"
 	"github.com/go-dedup/simhash/sho"
+	"github.com/go-dedup/text"
 
 	"github.com/mkideal/cli"
 )
@@ -56,6 +57,14 @@ func simCLI(ctx *cli.Context) error {
 		rootArgv.SizeGiven, rootArgv.QuerySize,
 		rootArgv.Phonetic, rootArgv.Final, rootArgv.Verbose.Value()
 	r = argv.Distance
+	if Opts.Phonetic {
+		doc2words = text.GetDoubleMetaphoneFactory(text.Decorators(
+			text.SplitCamelCase,
+			text.RemovePunctuation,
+			text.Compact,
+			text.Trim,
+		))
+	}
 
 	return fSimilar(rootArgv.Filei)
 }
@@ -104,18 +113,19 @@ func processFileInfo(cin io.Reader, fp processFileInfoFunc) error {
 }
 
 func buildOracle(fn string, file FileT) {
-	hash := sh.GetSimhash(sh.NewWordFeatureSet([]byte(file.Name)))
+	hash := sh.BuildSimhash(file.Name, doc2words)
 	file.Hash = hash
 	fi := FCItem{Hash: hash, Index: fc.LenOf(hash)}
 	fAll[fn] = fi
 	fc.Add(hash, file)
+	//verbose(3, "  File collections: %v.", fc)
 
 	// == Build similarity knowledge
 	if h, d, seen := oracle.Find(hash, r); seen == true {
-		verbose(2, "=: Simhash of %x ignored for %x (%d).", hash, h, d)
+		verbose(2, "=: Simhash of %d ignored for %d (%d).", hash, h, d)
 	} else {
 		oracle.See(hash)
-		verbose(2, "+: Simhash of %x added.", hash)
+		verbose(2, "+: Simhash of %d added.", hash)
 	}
 }
 
@@ -144,6 +154,7 @@ func dealDups() error {
 		if !ok {
 			abortOn("Internal error", errors.New("fc integrity checking"))
 		}
+		verbose(3, "  Files: %v.", files)
 
 		fSizeRef := files[0].Size
 		// similarity exist, start digging

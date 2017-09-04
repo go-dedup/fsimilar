@@ -14,6 +14,7 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/go-dedup/text"
 	"github.com/labstack/gommon/color"
 	"github.com/mkideal/cli"
 )
@@ -46,6 +47,14 @@ var (
 	rootArgv *rootT
 	// Opts store all the configurable options for jsonfiddle.
 	Opts OptsT
+
+	doc2words = text.GetWordsFactory(text.Decorators(
+		text.SplitCamelCase,
+		text.ToLower,
+		text.RemovePunctuation,
+		text.Compact,
+		text.Trim,
+	))
 )
 
 ////////////////////////////////////////////////////////////////////////////

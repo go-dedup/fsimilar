@@ -6,12 +6,12 @@
 [fsimilar]  n='GNU - Python Standard Library (2001)', e='.rar', s='1', d='test/sim/'
 [fsimilar]  n='Python Standard Library', e='.zip', s='1', d='test/sim/'
 [fsimilar]  n='Audio Book - The Grey Coloured Bunnie', e='.mp3', s='1', d='test/sim/'
-[fsimilar] # C: [ layout:1 test:1 ].
-[fsimilar] # C: [ bunny:1 colored:1 gray:1 ].
-[fsimilar] # C: [ 2001:1 gn:1 library:1 python:1 standard:1 u:1 ].
-[fsimilar] # C: [ popup:1 test:1 ].
-[fsimilar] # C: [ :1 2001:1 book:1 e:1 gn:1 library:1 python:1 standard:1 u:1 ].
-[fsimilar] # C: [ :1 2001:1 gn:1 library:1 python:1 standard:1 u:1 ].
+[fsimilar] # C: [ :1 layout:1 test:1 ].
+[fsimilar] # C: [ :1 bunny:1 colored:1 gray:1 ].
+[fsimilar] # C: [ 2001:1 gnu:1 library:1 python:1 standard:1 ].
+[fsimilar] # C: [ :1 popup:1 test:1 ].
+[fsimilar] # C: [ :1 2001:1 ebook:1 gnu:1 library:1 python:1 standard:1 ].
+[fsimilar] # C: [ :1 2001:1 gnu:1 library:1 python:1 standard:1 ].
 [fsimilar] # C: [ library:1 python:1 standard:1 ].
 [fsimilar] # C: [ audio:1 book:1 bunnie:1 coloured:1 grey:1 the:1 ].
 [fsimilar] # S: [2 4 5 6].

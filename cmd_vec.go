@@ -15,13 +15,6 @@ import (
 )
 
 var (
-	vecDoc2Words = text.GetWordsFactory(text.Decorators(
-		text.SplitCamelCase,
-		text.ToLower,
-		text.RemovePunctuation,
-		text.Compact,
-	))
-
 	fv    = Files{}
 	simTh = 0.5
 )
@@ -35,10 +28,11 @@ func vecCLI(ctx *cli.Context) error {
 		rootArgv.Phonetic, rootArgv.Final, rootArgv.Verbose.Value()
 	simTh = argv.Threshold
 	if Opts.Phonetic {
-		vecDoc2Words = text.GetDoubleMetaphoneFactory(text.Decorators(
+		doc2words = text.GetDoubleMetaphoneFactory(text.Decorators(
 			text.SplitCamelCase,
 			text.RemovePunctuation,
 			text.Compact,
+			text.Trim,
 		))
 	}
 
@@ -100,6 +94,6 @@ func cmdVec(cin io.Reader) error {
 }
 
 func buildVecs(fn string, file FileT) {
-	file.Conc = BuildConcordance(file.Name, vecDoc2Words)
+	file.Conc = BuildConcordance(file.Name, doc2words)
 	fv = append(fv, file)
 }

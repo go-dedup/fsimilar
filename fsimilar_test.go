@@ -72,9 +72,9 @@ func TestExec(t *testing.T) {
 	// == Test Vector Space Basic Function tests
 	t.Logf("\n\n== Testing Vector Space Basic Functions\n\n")
 	// -- sim
-	testIt(t, "sim.lstA.vec", "vec -i sim.lstA -t 0.65 -vv")
-	testIt(t, "sim.lstB.vec", "vec -i sim.lstB -t 0.65 -vv")
-	testIt(t, "sim.lstS.vec", "vec -i sim.lstS -t 0.65 -vv")
+	testIt(t, "sim.lstA.vec", "vec -i sim.lstA -t 0.7 -vv")
+	testIt(t, "sim.lstB.vec", "vec -i sim.lstB -t 0.7 -vv")
+	testIt(t, "sim.lstS.vec", "vec -i sim.lstS -t 0.7 -vv")
 	// -- test
 	testIt(t, "test1.vec", "vec -i test1.lst -S -v")
 	testIt(t, "test2.vec", "vec -i test2.lst -S -v")
@@ -82,9 +82,9 @@ func TestExec(t *testing.T) {
 	// == Test Vector Space Phonetic Function tests
 	t.Logf("\n\n== Testing Vector Space Phonetic Functions\n\n")
 	// -- sim
-	testIt(t, "sim.lstA.vec.phonetic", "vec -i sim.lstA -p -t 0.65 -vv")
-	testIt(t, "sim.lstB.vec.phonetic", "vec -i sim.lstB -p -t 0.65 -vv")
-	testIt(t, "sim.lstS.vec.phonetic", "vec -i sim.lstS -p -t 0.65 -vv")
+	testIt(t, "sim.lstA.vec.phonetic", "vec -i sim.lstA -p -t 0.7 -vv")
+	testIt(t, "sim.lstB.vec.phonetic", "vec -i sim.lstB -p -t 0.7 -vv")
+	testIt(t, "sim.lstS.vec.phonetic", "vec -i sim.lstS -p -t 0.7 -vv")
 	// -- test
 	testIt(t, "test1.vec.phonetic", "vec -i test1.lst -S -p -v")
 	testIt(t, "test2.vec.phonetic", "vec -i test2.lst -S -p -v")
@@ -92,7 +92,7 @@ func TestExec(t *testing.T) {
 	// == Test Basic Vector Space Finish Function tests
 	t.Logf("\n\n== Testing Vector Space Finish Functions\n\n")
 	// -- sim
-	testIt(t, "sim.lstA.vec.Finish", "vec -i sim.lstA -t 0.65 -p -F -v")
-	testIt(t, "sim.lstB.vec.Finish", "vec -i sim.lstB -t 0.65 -p -F -v")
-	testIt(t, "sim.lstS.vec.Finish", "vec -i sim.lstS -t 0.65 -p -F -v")
+	testIt(t, "sim.lstA.vec.Finish", "vec -i sim.lstA -t 0.7 -p -F -v")
+	testIt(t, "sim.lstB.vec.Finish", "vec -i sim.lstB -t 0.7 -p -F -v")
+	testIt(t, "sim.lstS.vec.Finish", "vec -i sim.lstS -t 0.7 -p -F -v")
 }
