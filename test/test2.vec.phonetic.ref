@@ -6,10 +6,10 @@
 [fsimilar] # C: [ pl:2 prtkxn:2 tkmntr:2 tt:2 ].
 [fsimilar] # C: [ a:2 an:2 h:1 hf:1 klkpr:2 mk:2 sf:2 skls:4 sxr:6 t:2 ].
 [fsimilar] # C: [ :1 0:1 ap:2 ff:2 fs:2 ljntr:1 lkntr:1 pl:2 prtkt:2 skl:2 skls:2 t:1 trpl:2 trplnk:2 ttrl:2 xlnj:1 xlnk:1 ].
-[fsimilar] # C: [ :1 a0:1 afr:2 arjnl:1 arknl:1 ft:1 skt:2 strlnk:2 sxr:2 tp:2 xtt:2 ].
+[fsimilar] # C: [ a0:1 afr:2 arjnl:1 arknl:1 ft:1 skt:2 strlnk:2 sxr:2 tp:2 xtt:2 ].
 [fsimilar] # C: [ :1 0:1 ff:2 n:1 nf:1 pk:2 pl:2 prtkt:2 px:2 skrt:2 t:1 tk:2 tknk:2 tps:2 trks:2 ttrl:2 xltnk:2 ].
 [fsimilar] # C: [ :1 0:1 alpk:1 alt:2 an:2 ar:2 flpk:1 h:1 hf:1 kn:2 pl:2 r:2 t:3 tks:1 tn:2 txs:1 xlt:2 ].
-[fsimilar] # C: [ :1 0:1 an:6 ant:2 h:1 hf:1 pl:2 sxr:2 t:3 tfntr:2 trn:2 xlt:2 ].
+[fsimilar] # C: [ 0:1 an:6 ant:2 h:1 hf:1 pl:2 sxr:2 t:3 tfntr:2 trn:2 xlt:2 ].
 [fsimilar] # C: [ 0:2 an:2 ant:2 f:2 h:1 hf:1 pl:2 plr:2 sxr:2 t:4 tfnt:6 ].
 [fsimilar] # C: [ 0:1 h:1 hf:1 lsns:2 pl:2 sxr:2 t:3 xlt:2 ].
 [fsimilar] # C: [ an:2 h:1 hf:1 skls:2 sxr:4 t:2 xlt:2 ].
@@ -19,7 +19,7 @@
 [fsimilar] # C: [ :1 0:1 ar:2 as:2 atfnst:2 ff:2 pk:2 pl:2 prtkt:2 t:1 ttrl:2 ].
 [fsimilar] # C: [ a:4 afktf:2 an:2 as:2 ftpl:2 km:2 mfs:2 pst:2 pt:2 skls:2 sxr:4 t:4 tfntr:2 trks:2 ].
 [fsimilar] # C: [ a:2 h:1 hf:1 klkpr:2 pl:2 pr:2 sxr:2 t:2 trnnk:2 ].
-[fsimilar] # C: [ :1 0:1 asn:2 f:2 lk:2 mx:2 pl:2 skls:2 t:1 xlt:2 ].
+[fsimilar] # C: [ 0:1 asn:2 f:2 lk:2 mx:2 pl:2 skls:2 t:1 xlt:2 ].
 [fsimilar] # C: [ :1 0:1 afktf:2 an:2 as:4 ff:2 ftks:2 h:1 hf:1 k:2 pl:2 prtkt:2 t:5 trplnk:2 ttrl:2 ].
 [fsimilar] # C: [ 0:1 a:2 h:2 hf:2 pl:4 sxr:4 t:5 trpl:2 xlt:2 ].
 [fsimilar] # C: [ 0:1 a:2 an:2 ftpl:2 h:2 hf:2 pl:4 prtkt:2 sxr:2 t:5 xlt:2 ].
@@ -28,7 +28,7 @@
 [fsimilar] # C: [ 0:1 flp:2 h:1 hf:1 lk:2 lm:2 pl:2 sxr:2 t:3 trl:2 xlt:2 ].
 [fsimilar] # C: [ :1 0:1 an:2 apnnts:2 ff:4 h:2 hf:2 pl:2 prtkt:2 px:2 t:5 tps:2 trk:2 trks:2 ttrl:2 ].
 [fsimilar] # C: [ ansn:2 fr:2 ftpl:2 hlm:2 kks:2 sfs:2 ].
-[fsimilar] # C: [ :1 afn:2 ant:2 frm:2 ft:2 jsm:1 kn:2 knkrt:2 ksm:1 pls:2 pns:2 prtkt:2 slp:1 trp:2 tst:2 xlp:1 ].
+[fsimilar] # C: [ :1 a:2 ant:2 fn:2 frm:2 ft:2 jsm:1 kn:2 knkrt:2 ksm:1 pls:2 pns:2 prtkt:2 slp:1 trp:2 tst:2 xlp:1 ].
 [fsimilar] # C: [ 0:2 frm:2 pl:2 sxr:2 t:2 tfntr:2 tps:2 xlt:2 ].
 [fsimilar] # C: [ :1 0:1 afktf:2 ff:2 fr:1 ftks:2 k:2 p:2 pl:2 pr:1 prtkt:2 t:1 tps:2 trks:2 ttrl:2 ].
 [fsimilar] # C: [ amprf:2 ar:2 frkkrs:1 frkkrts:1 h:1 hf:1 kntrl:2 p:2 pl:2 sxr:2 t:2 trks:2 trplnks:2 ].
@@ -54,13 +54,13 @@
 [fsimilar] # C: [ amprf:2 h:1 hf:1 kntrl:2 krl:2 pl:2 prt:2 t:4 tn:2 ].
 [fsimilar] # C: [ :1 amprf:2 ant:2 fst:2 ftrk:2 kntrl:2 pl:2 spt:2 sxr:2 t:2 tk:2 tp:2 trls:2 ].
 [fsimilar] # C: [ 0:1 a:2 amprf:2 an:2 ar:2 h:2 hf:2 kntrl:2 pl:2 skls:2 sxr:4 t:5 ].
-[fsimilar] # C: [ :1 amprf:2 ff:2 kntrl:2 pl:2 sxr:2 t:2 trls:2 trnr:2 ].
+[fsimilar] # C: [ amprf:2 ff:2 kntrl:2 pl:2 sxr:2 t:2 trls:2 trnr:2 ].
 [fsimilar] # C: [ amprf:2 ftpl:2 kntrl:2 pl:2 sr:2 sxr:2 t:2 trls:4 ].
 [fsimilar] # C: [ amprf:2 frst:2 h:1 hf:1 kntrl:2 pl:2 sxr:2 t:2 tk:2 trls:2 trplnk:2 ].
 [fsimilar] # C: [ amprf:2 fr:2 ftpl:2 kntrl:4 pl:4 sxr:4 t:2 trls:6 trnnk:2 ].
 [fsimilar] # C: [ a:4 ar:2 as:1 fs:1 ftpl:4 h:1 hf:1 kntrl:4 pl:2 pst:2 ptr:2 sxr:2 t:4 ].
 [fsimilar] # C: [ amprf:2 ftpl:2 kntrl:2 pl:2 skls:2 sxr:4 t:2 trls:4 ].
-[fsimilar] # C: [ :1 0n:1 0r:1 ak:1 amprf:2 an:2 ant:2 fk:1 ft:2 h:1 hf:1 kntrl:2 ls:2 mnts:2 pl:2 t:2 tk:2 tn:1 tr:1 ].
+[fsimilar] # C: [ 0n:1 0r:1 ak:1 amprf:2 an:2 ant:2 fk:1 ft:2 h:1 hf:1 kntrl:2 ls:2 mnts:2 pl:2 t:2 tk:2 tn:1 tr:1 ].
 [fsimilar] # C: [ amprf:2 antrs:2 fr:2 h:1 hf:1 kntrl:2 pl:2 prr:2 prt:2 sxr:2 t:2 trls:2 ].
 [fsimilar] # C: [ amprf:2 ant:2 kn:2 kntrl:2 pl:2 sxr:2 t:2 tknk:2 trl:2 trls:2 trplnk:2 ].
 [fsimilar] # C: [ amprf:2 antrs:2 h:1 hf:1 kntrl:2 pl:2 prr:2 prt:2 sxr:2 t:4 trl:2 ].
@@ -80,7 +80,7 @@
 [fsimilar] # C: [ amprf:2 frst:2 ftpl:2 h:1 hf:1 kntrl:2 p:2 pl:4 sxr:2 t:2 tk:2 trls:2 trplnk:2 ].
 [fsimilar] # C: [ 0:1 altmt:2 amprf:2 h:1 hf:1 kntrl:2 pl:2 t:3 tk:2 trls:2 ].
 [fsimilar] # C: [ amprf:2 ar:2 frkkrs:1 frkkrts:1 h:1 hf:1 kntrl:2 p:2 pl:2 sxr:2 t:2 trks:2 trplnks:2 ].
-[fsimilar] # C: [ :1 amprf:2 as:1 fs:1 h:1 hf:1 kntrl:2 m:2 pl:2 sxr:2 t:2 tk:2 xknk:2 ].
+[fsimilar] # C: [ amprf:2 as:1 fs:1 h:1 hf:1 kntrl:2 m:2 pl:2 sxr:2 t:2 tk:2 xknk:2 ].
 [fsimilar] # C: [ amprf:2 arslf:2 h:1 hf:1 kntrl:4 p:2 pl:4 sxr:6 t:2 trls:4 ].
 [fsimilar] # C: [ :1 amprf:2 an:4 ar:2 h:1 hf:1 kntrl:2 mnts:2 pl:2 sxr:2 t:2 ].
 [fsimilar] # C: [ :1 0n:1 amprf:2 an:2 ar:2 h:1 hf:1 kntrl:2 ls:2 mnts:2 pl:2 skls:2 sxr:2 t:2 tn:1 ].
@@ -104,10 +104,10 @@
 [fsimilar] # C: [ prfkt:2 sxr:2 trk:2 tt:2 xts:2 ].
 [fsimilar] # C: [ a:4 a0:2 ft:2 ftpl:2 h:2 hf:2 kk:2 pl:2 pr:4 sxr:2 t:4 xt:2 ].
 [fsimilar] # C: [ :1 a:2 fr:2 h:1 hf:1 k:2 kk:2 krf:2 ntkn:2 pl:2 t:2 ttrl:2 xt:2 ].
-[fsimilar] # C: [ :1 a:2 ftpl:2 h:1 hf:1 kk:2 kknk:2 pl:2 sxr:4 t:2 tknk:2 xtnk:2 ].
-[fsimilar] # C: [ :1 0s:1 a:2 an:1 ankrtpl:2 fn:1 frl:1 ftpl:2 plf:2 prl:1 t:2 ts:1 ].
+[fsimilar] # C: [ a:2 ftpl:2 h:1 hf:1 kk:2 kknk:2 pl:2 sxr:4 t:2 tknk:2 xtnk:2 ].
+[fsimilar] # C: [ 0s:1 a:2 an:1 ankrtpl:2 fn:1 frl:1 ftpl:2 plf:2 prl:1 t:2 ts:1 ].
 [fsimilar] # C: [ 0:3 a0:1 af:2 an:2 atst:2 ff:2 ft:3 ftpl:2 h:1 hf:1 sxr:2 t:5 trnr:2 xt:2 ].
-[fsimilar] # C: [ :1 a0:1 ft:1 ftpl:2 h:1 hf:1 lrn:2 prssn:1 prsxn:1 sxr:2 t:2 xt:2 ].
+[fsimilar] # C: [ a0:1 ft:1 ftpl:2 h:1 hf:1 lrn:2 prssn:1 prsxn:1 sxr:2 t:2 xt:2 ].
 [fsimilar] # C: [ a:4 ar:4 ftpl:4 h:2 hf:2 kk:2 pl:4 sxr:4 t:4 xt:2 ].
 [fsimilar] # C: [ a:2 h:1 hf:1 krsxn:2 lk:2 nklpl:2 rnlt:2 t:2 ttrl:2 xt:2 ].
 [fsimilar] # C: [ a:4 a0:1 akrs:2 ant:2 ft:1 ftpl:2 h:2 hf:2 kk:2 pl:2 pr:2 sxr:4 t:4 ttrl:2 xt:2 xts:2 ].
@@ -121,7 +121,7 @@
 [fsimilar] # C: [ :1 a:6 a0:1 akrs:2 ft:1 ftpl:2 h:2 hf:2 kk:2 lk:2 pl:2 pr:4 sxr:2 t:4 tps:2 xt:2 ].
 [fsimilar] # C: [ a:2 aprhmfk:2 fr:2 h:1 hf:1 kk:2 lk:2 pr:2 sltn:2 t:2 ttrl:2 xt:2 ].
 [fsimilar] # C: [ a:2 a0:1 ak:2 amprf:2 an:2 ar:6 fk:2 ft:5 ftpl:2 h:2 hf:2 pl:2 sxr:4 t:4 xt:2 ].
-[fsimilar] # C: [ :1 0:1 h:1 hf:1 pnlt:2 prfkt:2 t:3 tk:2 ].
+[fsimilar] # C: [ 0:1 h:1 hf:1 pnlt:2 prfkt:2 t:3 tk:2 ].
 [fsimilar] # C: [ a:4 a0:1 ft:1 h:2 hf:2 kk:2 pl:4 pr:2 sxr:4 t:4 xt:2 ].
 [fsimilar] # C: [ :1 afr:2 fstst:2 tp:2 xts:2 ].
 [fsimilar] # C: [ :1 a:4 h:1 hf:1 kk:2 kks:2 mst:2 n:1 nf:1 pl:2 sxr:4 t:2 ].
@@ -138,21 +138,21 @@
 [fsimilar] # C: [ klkpr:2 kls:2 tps:2 trls:2 trnnk:2 xts:2 ].
 [fsimilar] # C: [ 0:1 h:1 hf:1 klkpr:2 pt:2 t:3 ttrl:2 ].
 [fsimilar] # C: [ ant:2 arkts:1 fr:4 frkts:1 ftpl:4 kts:2 sxr:4 trnnk:8 ].
-[fsimilar] # C: [ :1 a:1 fs:1 j:1 klkpr:2 ps:1 xlnj:1 xlnk:1 ].
+[fsimilar] # C: [ a:1 fs:1 j:1 klkpr:2 ps:1 xlnj:1 xlnk:1 ].
 [fsimilar] # C: [ apk:2 frkkrs:1 frkkrts:1 fs:1 klkpr:2 pr:2 ps:1 ptl:2 sxr:2 ].
 [fsimilar] # C: [ a:1 an:2 anftt:2 ant:2 f:1 hlk:2 klkpr:2 pnlt:2 pt:2 t:2 trks:2 ].
 [fsimilar] # C: [ :1 0:1 as:1 fs:1 ftpl:2 kpr:2 pt:2 sxr:2 t:3 ].
-[fsimilar] # C: [ :1 a0:1 afr:2 arjnl:1 arknl:1 ft:1 skt:2 strlnk:2 sxr:2 tp:2 xtt:2 ].
+[fsimilar] # C: [ a0:1 afr:2 arjnl:1 arknl:1 ft:1 skt:2 strlnk:2 sxr:2 tp:2 xtt:2 ].
 [fsimilar] # C: [ ftplrs:2 klkprs:2 t:2 tstrnk:2 ].
 [fsimilar] # C: [ an:2 fs:1 kpr:2 krn:1 krnr:1 mn:2 ps:1 rpt:2 s:2 ].
-[fsimilar] # C: [ :1 0:1 af:2 al:2 ant:2 fnst:2 kl:2 pst:2 sxr:2 t:1 tm:2 ].
+[fsimilar] # C: [ 0:1 af:2 al:2 ant:2 fnst:2 kl:2 pst:2 sxr:2 t:1 tm:2 ].
 [fsimilar] # C: [ :1 a:2 as:1 fr:2 fs:1 kks:2 klkpr:2 pt:4 t:2 ttrl:2 ].
 [fsimilar] # C: [ :1 0:1 as:2 ff:2 h:1 hf:1 kpr:2 prt:2 pt:2 t:3 ttrl:2 ].
 [fsimilar] # C: [ fn:1 klkpr:2 kmplxn:2 pn:1 ].
 [fsimilar] # C: [ a:2 ftpl:2 h:1 hf:1 klkpr:2 pt:2 t:2 ttrl:2 ].
 [fsimilar] # C: [ 0:1 a:2 a0:1 an:4 f:2 ft:1 ftpl:2 h:2 hf:2 klkpr:2 kls:2 kpr:2 mr:2 pt:2 skr:2 sxr:2 t:5 ].
 [fsimilar] # C: [ 0:1 h:1 hf:1 kk:2 klkpr:2 pt:2 t:3 tp:2 ].
-[fsimilar] # C: [ :1 klkpnk:2 sm:2 xlnj:1 xlnk:1 ].
+[fsimilar] # C: [ klkpnk:2 sm:2 xlnj:1 xlnk:1 ].
 [fsimilar] # C: [ a:2 an:2 atk:2 f:4 ftpl:2 h:2 hf:2 klkpr:2 pt:2 sxr:2 t:4 ].
 [fsimilar] # C: [ a:6 an:4 ftpl:2 h:3 hf:3 kk:2 pnlt:6 skr:2 sxr:2 t:6 tk:2 xt:2 ].
 [fsimilar] # C: [ 0:1 an:7 jn:1 klkpr:2 mt:2 ps:2 t:3 tps:2 ].
@@ -169,9 +169,9 @@
 [fsimilar] # C: [ :1 an:2 ftpl:2 hstr:2 klkpr:2 kls:2 krs:2 tp:2 ].
 [fsimilar] # C: [ 0:1 a:2 aft:2 alkl:2 an:4 ftpl:4 h:2 hf:2 ht:2 mk:2 t:5 tkl:2 ].
 [fsimilar] # C: [ a:2 an:6 ftpl:4 h:3 hf:3 sxr:4 t:6 tfnt:2 tkl:4 ].
-[fsimilar] # C: [ :1 an:2 ftpl:2 h:1 hf:1 mkrt:2 nfl:2 s:2 skl:2 sl:2 t:2 tkl:4 tns:2 ].
+[fsimilar] # C: [ an:2 ftpl:2 h:1 hf:1 krt:2 mk:2 nfl:2 s:2 skl:2 sl:2 t:2 tkl:4 tns:2 ].
 [fsimilar] # C: [ :1 kfs:2 tkl:2 trls:2 ].
-[fsimilar] # C: [ :1 a:1 f:1 ftpl:2 htnk:2 p:2 rk:2 trl:2 trn:2 ].
+[fsimilar] # C: [ a:1 f:1 ftpl:2 htnk:2 p:2 rk:2 trl:2 trn:2 ].
 [fsimilar] # C: [ :1 a0:1 anr:1 at:1 ftpl:2 jnr:1 mnts:2 prf:1 prff:1 sprts:2 tkl:2 ].
 [fsimilar] # C: [ :1 an:2 ftpl:4 h:1 hf:1 sft:2 t:2 tkl:2 tp:2 tps:2 ].
 [fsimilar] # C: [ shks:2 tklnk:2 ].
@@ -185,7 +185,7 @@
 [fsimilar] # C: [ aft:4 an:2 anxt:2 ftpl:4 kntkt:2 pnk:2 t:2 tkl:2 tklt:2 ].
 [fsimilar] # C: [ a:2 an:2 ftpl:2 h:2 hf:2 pl:2 prs:2 t:4 tfnsf:2 tkl:4 ].
 [fsimilar] # C: [ an:2 ftpl:4 h:1 hf:1 krktl:2 prkts:2 t:2 tkl:2 tps:2 trls:2 ].
-[fsimilar] # C: [ ftpl:2 h:1 hf:1 kkp:1 kxp:1 t:2 tkl:2 tps:2 ].
+[fsimilar] # C: [ ap:2 ftpl:2 h:1 hf:1 kk:2 t:2 tkl:2 tps:2 ].
 [fsimilar] # C: [ an:2 ftpl:2 h:1 hf:1 hrtr:2 ht:2 t:2 ].
 [fsimilar] # C: [ fls:2 ftpl:2 fts:2 krs:2 krts:2 prtl:2 rt:2 tkl:2 ].
 [fsimilar] # C: [ ap:2 hts:2 tkl:2 tknk:2 ].
@@ -212,7 +212,7 @@
 [fsimilar] # C: [ slt:1 sxr:2 tkl:2 xlt:1 ].
 [fsimilar] # C: [ a:2 an:2 f:2 h:1 hf:1 hs:2 pk:2 plr:2 t:4 tfnt:2 ].
 [fsimilar] # C: [ fls:2 hrt:2 kmplxn:2 sxr:2 tkl:2 ].
-[fsimilar] # C: [ :1 af:2 an:2 ftpl:4 hm:2 pst:2 sltnk:1 tkls:2 xltnk:1 ].
+[fsimilar] # C: [ af:2 an:2 ftpl:4 hm:2 pst:2 sltnk:1 tkls:2 xltnk:1 ].
 [fsimilar] # C: [ af:2 asnxl:2 plk:2 sxr:2 tkl:2 tknks:2 ].
 [fsimilar] # C: [ a0:1 ft:1 ftpl:2 krt:2 mmnts:2 prtl:2 rt:2 tkl:2 trt:2 ].
 [fsimilar] # C: [ an:2 h:1 hf:1 slt:1 sxr:4 t:2 tkl:2 tps:2 xlt:1 ].
@@ -234,7 +234,7 @@
 [fsimilar] # C: [ an:2 h:1 hf:1 slt:1 sxr:4 t:2 tkl:2 tps:2 xlt:1 ].
 [fsimilar] # C: [ :1 krst:2 plk:2 rmpn:2 sxr:2 tkl:2 tp:2 ].
 [fsimilar] # C: [ an:2 h:1 hf:1 skls:2 sxr:4 t:2 tkl:2 ].
-[fsimilar] # C: [ :1 jrls:1 krls:1 krs:2 slt:1 sxr:2 tkl:2 xlt:1 ].
+[fsimilar] # C: [ jrls:1 krls:1 krs:2 slt:1 sxr:2 tkl:2 xlt:1 ].
 [fsimilar] # C: [ aktm:2 anln:2 atfnst:2 f:2 lrn:2 psk:2 sxr:2 tfntnk:2 tknks:2 ].
 [fsimilar] # C: [ a0:1 ft:1 h:1 hf:1 pks:2 slt:1 sxr:2 t:2 tkl:2 trls:2 xlt:1 xnn:2 ].
 [fsimilar] # C: [ 0:1 af:4 al:2 art:2 ftpl:2 pst:2 t:1 tfntnk:2 tkls:2 tm:2 ].
@@ -250,7 +250,7 @@
 [fsimilar] # C: [ :1 amprf:2 an:2 ar:2 ftrk:2 h:1 hf:1 mnts:2 sxr:2 t:2 ttrl:2 ].
 [fsimilar] # C: [ amprf:2 frst:2 h:1 hf:1 kntrl:2 pl:2 sxr:2 t:2 tk:2 trls:2 trplnk:2 ].
 [fsimilar] # C: [ :1 apnnt:2 as:1 fs:1 ftpl:2 nm:2 prs:2 skls:2 t:2 trpl:2 ].
-[fsimilar] # C: [ :1 amprf:2 an:2 anstntl:2 ar:2 h:1 hf:1 n:1 nf:1 ptr:2 rt:2 skls:2 sxr:2 t:2 trpl:2 trplnk:2 ].
+[fsimilar] # C: [ amprf:2 an:2 anstntl:2 ar:2 h:1 hf:1 n:1 nf:1 ptr:2 rt:2 skls:2 sxr:2 t:2 trpl:2 trplnk:2 ].
 [fsimilar] # C: [ :1 fr:2 ftpl:4 ptr:2 skls:4 sxr:4 tp:2 trls:4 trplnk:4 ].
 [fsimilar] # C: [ 0:2 a:2 a0:1 apt:2 ft:1 h:1 hf:1 mfs:4 pl:2 pst:2 sxr:6 t:4 tr0:1 trpl:2 trt:1 ].
 [fsimilar] # C: [ :1 afr:2 asnxl:2 mstr:2 plr:2 trls:2 trplnk:2 xlt:2 ].
@@ -277,7 +277,7 @@
 [fsimilar] # C: [ a0:1 aktm:2 anln:2 ap:2 ar:2 ft:1 h:1 hf:1 ht:2 sxr:4 t:2 trls:2 trpl:2 ].
 [fsimilar] # C: [ a:4 h:1 hf:1 pjnrs:1 pknrs:1 pl:2 sxr:4 t:2 trnnk:2 trpl:2 ].
 [fsimilar] # C: [ :1 a:2 mfs:2 n:1 nf:1 nt:2 sxr:2 t:2 tp:2 trplnk:2 ].
-[fsimilar] # C: [ :1 0:1 aklnk:1 fr:2 ftpl:2 jklnk:1 kts:2 pjnrs:1 pknrs:1 psks:2 sxr:2 t:1 ttrl:2 ].
+[fsimilar] # C: [ 0:1 aklnk:1 fr:2 ftpl:2 jklnk:1 kts:2 pjnrs:1 pknrs:1 psks:2 sxr:2 t:1 ttrl:2 ].
 [fsimilar] # C: [ a:2 an:2 h:2 hf:2 pl:2 prkrsf:2 sxr:6 t:4 trnnk:2 trpl:4 ].
 [fsimilar] # C: [ fr:2 h:1 hf:1 kts:2 skls:2 sxr:2 t:2 ttrl:2 xlt:2 ].
 [fsimilar] # C: [ :1 0:1 an:2 apnnts:2 ff:4 h:2 hf:2 pl:2 prtkt:2 px:2 t:5 tps:2 trks:2 ttrl:2 ].
@@ -291,7 +291,7 @@
 [fsimilar] # C: [ 0:1 h:1 hf:1 pl:2 prtkt:2 sxr:2 t:3 ].
 [fsimilar] # C: [ akrsn:2 mnl:2 sxr:2 xltnk:2 ].
 [fsimilar] # C: [ :1 0:1 alpk:1 alt:2 an:2 ar:2 flpk:1 h:1 hf:1 kn:2 pl:2 r:2 t:3 tks:1 tn:2 txs:1 xlt:2 ].
-[fsimilar] # C: [ :1 0:1 an:6 ant:2 h:1 hf:1 pl:2 sxr:2 t:3 tfntr:2 trn:2 xlt:2 ].
+[fsimilar] # C: [ 0:1 an:6 ant:2 h:1 hf:1 pl:2 sxr:2 t:3 tfntr:2 trn:2 xlt:2 ].
 [fsimilar] # C: [ 0:2 an:2 ant:2 f:2 h:1 hf:1 pl:2 plr:2 sxr:2 t:4 tfnt:6 ].
 [fsimilar] # C: [ 0:1 pl:2 sxr:2 t:1 trls:2 xltnk:2 ].
 [fsimilar] # C: [ a:2 an:2 f:2 h:1 hf:1 hs:2 pk:2 plr:2 t:4 tfnt:2 ].
@@ -302,12 +302,12 @@
 [fsimilar] # C: [ 0:1 pl:2 t:1 trl:2 xltnk:2 ].
 [fsimilar] # C: [ :1 0:1 a0:1 ff:2 ft:1 l:2 ls:2 lt:2 nfr:2 pl:4 pssn:2 skr:2 t:1 ttrl:2 xltnk:2 ].
 [fsimilar] # C: [ 0:1 an:2 h:1 hf:1 pl:2 sxr:2 t:3 tps:2 xlt:2 ].
-[fsimilar] # C: [ :1 0:2 af:2 kn:2 pl:2 r:2 skl:2 t:2 tmnstrts:2 xltnk:2 ].
+[fsimilar] # C: [ 0:2 af:2 kn:2 pl:2 r:2 skl:2 t:2 tmnstrts:2 xltnk:2 ].
 [fsimilar] # C: [ a:4 afktf:2 an:2 as:2 ftpl:2 km:2 mfs:2 pst:2 pt:2 skls:2 sxr:4 t:4 tfntr:2 trks:2 ].
-[fsimilar] # C: [ :1 0:1 asn:2 f:2 lk:2 mx:2 pl:2 skls:2 t:1 xlt:2 ].
+[fsimilar] # C: [ 0:1 asn:2 f:2 lk:2 mx:2 pl:2 skls:2 t:1 xlt:2 ].
 [fsimilar] # C: [ 0:1 a:2 h:2 hf:2 pl:4 sxr:4 t:5 trpl:2 xlt:2 ].
 [fsimilar] # C: [ 0:1 af:2 amprf:2 pl:2 sxr:4 t:3 tp:2 trl:2 trls:2 xltnk:2 ].
-[fsimilar] # C: [ :1 0:1 h:1 hf:1 pl:2 sxr:2 t:3 xlt:2 ].
+[fsimilar] # C: [ 0:1 h:1 hf:1 pl:2 sxr:2 t:3 xlt:2 ].
 [fsimilar] # C: [ :1 krst:2 rmpn:2 sxr:2 tp:2 xltnk:2 ].
 [fsimilar] # C: [ ft:1 kn:2 pt:1 sxr:4 trl:2 trnnk:4 xltnk:2 ].
 [fsimilar] # C: [ 0:1 a:2 an:2 ftpl:2 h:2 hf:2 pl:4 prtkt:2 sxr:2 t:5 xlt:2 ].
@@ -320,18 +320,18 @@
 [fsimilar] # C: [ :1 0:1 an:2 apnnts:2 ff:4 h:2 hf:2 pl:2 prtkt:2 px:2 t:5 tps:2 trks:2 ttrl:2 ].
 [fsimilar] # C: [ 0:1 apnnts:2 ar:2 frm:2 h:1 hf:1 pl:2 ps:2 t:3 trplnk:2 xlt:2 ].
 [fsimilar] # C: [ 0:1 h:1 hf:1 pl:2 skls:2 sxr:4 t:3 xlt:2 ].
-[fsimilar] # C: [ :1 aksrss:2 klts:2 ktt:2 pr0nk:1 prtnk:1 ].
-[fsimilar] # C: [ :1 0:1 aksrsss:2 fr:2 h:1 hf:1 lrn:2 pr0nk:1 prtnk:1 pst:2 ptr:2 snjnk:1 snk:2 snknk:1 t:3 ].
+[fsimilar] # C: [ aksrss:2 klts:2 ktt:2 pr0nk:1 prtnk:1 ].
+[fsimilar] # C: [ 0:1 aksrsss:2 fr:2 h:1 hf:1 lrn:2 pr0nk:1 prtnk:1 pst:2 ptr:2 snjnk:1 snk:2 snknk:1 t:3 ].
 [fsimilar] # C: [ ak:2 aksrss:2 fr:2 pjnrs:1 pknrs:1 pr0nk:1 prtnk:1 smpl:2 ].
 [fsimilar] # C: [ :1 0:1 aksrss:2 h:1 hf:1 pr0nk:1 prfrm:2 prtnk:1 t:3 ].
 [fsimilar] # C: [ :1 af:2 aksrss:2 hp:2 mnt:2 pr0nk:1 prtnk:1 st:2 tp:2 ].
 [fsimilar] # C: [ aksrsss:2 apl:2 ar:2 arkt:1 fr:2 frkt:1 lnks:2 p:2 pr0nk:1 prtnk:1 pt:2 ptr:2 rn:2 strnk0nnk:1 strnktnnk:1 t:4 ttl:2 ].
-[fsimilar] # C: [ :1 ak:2 aksrss:2 mst:2 pr0nk:1 prfl:2 prnm:2 prtnk:1 ].
+[fsimilar] # C: [ ak:2 aksrss:2 mst:2 pr0nk:1 prfl:2 prnm:2 prtnk:1 ].
 [fsimilar] # C: [ aksrss:2 hl0:1 hlt:1 kp:2 lnks:2 mntl:2 pr0nk:1 prpr:2 prtnk:1 strnk0n:1 strnktn:1 t:4 tr:2 ].
 [fsimilar] # C: [ aksrsss:2 al:2 h:1 hf:1 pr0:1 pr0nk:2 prpr:2 prt:1 prtnk:2 rnnk:2 t:2 tknk:2 ].
 [fsimilar] # C: [ aksrsss:2 ankst:2 ar:2 fr:2 klmnk:2 ktt:2 mttxn:2 pr0:1 prt:1 rlksxn:2 slp:1 tp:2 tprsn:2 xlp:1 ].
 [fsimilar] # C: [ :1 a:4 af:2 an:4 aslp:2 ast:1 hlp:2 jst:1 klms:2 mnt:2 nt:2 pr0nk:1 prtnk:1 sknts:2 t:2 tknk:2 ].
-[fsimilar] # C: [ :1 a0:1 aksrsss:2 aps:2 frm:2 ft:1 h:1 hf:1 kt:2 pr0nk:1 prtnk:1 sltks:2 smpl:2 t:2 ].
+[fsimilar] # C: [ a0:1 aksrsss:2 aps:2 frm:2 ft:1 h:1 hf:1 kt:2 pr0nk:1 prtnk:1 sltks:2 smpl:2 t:2 ].
 [fsimilar] # C: [ a0:1 aksrsss:2 fr:2 ft:1 hlnk:2 ktt:2 mttxn:2 pr0nk:1 prtnk:1 rlksxn:2 sprt:2 tp:2 ].
 [fsimilar] # C: [ ftns:2 h:1 hf:1 lnjr:1 lnkr:1 pp:2 psr:2 rn:2 t:2 tps:6 tst:6 ].
 [fsimilar] # C: [ a:2 mttxn:2 pr0nk:1 prtnk:1 smp0tk:1 smpttk:1 ].
@@ -363,7 +363,7 @@
 [fsimilar] # C: [ a:2 fr:2 h:1 hf:1 kts:2 pl:2 sxr:2 t:2 ttrl:2 xt:2 ].
 [fsimilar] # C: [ :1 a:2 fr:2 h:1 hf:1 k:2 kk:2 krf:2 ntkn:2 pl:2 t:2 ttrl:2 xt:2 ].
 [fsimilar] # C: [ 0:1 a0:1 ft:1 h:1 hf:1 pl:2 pr:2 strknk:2 sxr:4 t:3 tknk:2 xtnk:4 ].
-[fsimilar] # C: [ :1 a:2 ftpl:2 h:1 hf:1 kk:2 kknk:2 pl:2 sxr:4 t:2 tknk:2 xtnk:2 ].
+[fsimilar] # C: [ a:2 ftpl:2 h:1 hf:1 kk:2 kknk:2 pl:2 sxr:4 t:2 tknk:2 xtnk:2 ].
 [fsimilar] # C: [ 0:1 an:2 h:1 hf:1 lsns:2 mf:2 sxr:2 t:3 xt:2 ].
 [fsimilar] # C: [ a:2 a0:1 ft:1 h:1 hf:1 pl:2 pr:2 sxr:2 t:2 xt:2 ].
 [fsimilar] # C: [ a:4 ar:4 ftpl:4 h:2 hf:2 kk:2 pl:4 sxr:4 t:4 xt:2 ].
@@ -391,13 +391,13 @@
 [fsimilar] # C: [ :1 ant:2 ftpl:4 lfl:2 nkst:2 skls:8 sxr:4 ].
 [fsimilar] # C: [ 0:1 h:1 hf:1 klkpr:2 pt:2 t:3 ttrl:2 ].
 [fsimilar] # C: [ ant:2 arkts:1 fr:4 frkts:1 ftpl:4 kts:2 sxr:4 trnnk:8 ].
-[fsimilar] # C: [ :1 a:1 fs:1 j:1 klkpr:2 ps:1 xlnj:1 xlnk:1 ].
+[fsimilar] # C: [ a:1 fs:1 j:1 klkpr:2 ps:1 xlnj:1 xlnk:1 ].
 [fsimilar] # C: [ 0r:1 a:2 afr:2 an:2 asst:2 ftpl:2 kl:2 klkpr:2 lnjst:1 lnkst:1 p:2 sxr:2 trf:1 ].
 [fsimilar] # C: [ :1 0:1 ff:2 h:1 hf:1 klkpr:2 pt:2 t:5 ttrl:2 ].
 [fsimilar] # C: [ 0:1 al:2 atk:2 ft:2 h:1 hf:1 klkpr:2 pt:2 t:3 ].
 [fsimilar] # C: [ a:1 an:2 anftt:2 ant:2 f:1 hlk:2 klkpr:2 pnlt:2 pt:2 t:2 trks:2 ].
-[fsimilar] # C: [ :1 a0:1 afr:2 arjnl:1 arknl:1 ft:1 skt:2 strlnk:2 sxr:2 tp:2 xtt:2 ].
-[fsimilar] # C: [ :1 a:3 amsnk:2 f:1 klkpr:2 kn:2 pr:2 pt:2 sfs:2 sm:2 xts:2 ].
+[fsimilar] # C: [ a0:1 afr:2 arjnl:1 arknl:1 ft:1 skt:2 strlnk:2 sxr:2 tp:2 xtt:2 ].
+[fsimilar] # C: [ a:3 amsnk:2 f:1 klkpr:2 kn:2 pr:2 pt:2 sfs:2 sm:2 xts:2 ].
 [fsimilar] # C: [ ftplrs:2 klkprs:2 t:2 tstrnk:2 ].
 [fsimilar] # C: [ a:1 an:5 ans:2 fn:1 h:1 hf:1 hrt:2 j:1 klkpr:2 pr:2 t:2 tps:2 ].
 [fsimilar] # C: [ 0:1 an:2 arlt:1 frlt:1 fs:1 klkprs:2 krsxn:2 ps:1 pst:2 rnlt:2 t:3 ].
@@ -407,7 +407,7 @@
 [fsimilar] # C: [ a:2 ftpl:2 h:1 hf:1 klkpr:2 pt:2 t:2 ttrl:2 ].
 [fsimilar] # C: [ 0:1 a:2 a0:1 an:4 f:2 ft:1 ftpl:2 h:2 hf:2 klkpr:2 kls:2 kpr:2 mr:2 pt:2 skr:2 sxr:2 t:5 ].
 [fsimilar] # C: [ 0:1 h:1 hf:1 kk:2 klkpr:2 pt:2 t:3 tp:2 ].
-[fsimilar] # C: [ :1 klkpnk:2 sm:2 xlnj:1 xlnk:1 ].
+[fsimilar] # C: [ klkpnk:2 sm:2 xlnj:1 xlnk:1 ].
 [fsimilar] # C: [ a:2 an:2 atk:2 f:4 ftpl:2 h:2 hf:2 klkpr:2 pt:2 sxr:2 t:4 ].
 [fsimilar] # C: [ a:6 an:4 ftpl:2 h:3 hf:3 kk:2 pnlt:6 skr:2 sxr:2 t:6 tk:2 xt:2 ].
 [fsimilar] # C: [ :1 klkpr:2 pst:2 sfs:2 t:2 ].
@@ -418,17 +418,17 @@
 [fsimilar] # C: [ :1 0:2 ff:2 h:2 hf:2 hm:2 kk:2 klkpr:2 klx:1 lx:1 pst:2 pt:2 t:6 tps:2 trks:2 trpl:2 ttrl:2 ].
 [fsimilar] # C: [ antrkfr:2 as:2 atflt:2 ftpl:2 klkprs:2 kprs:2 plrs:2 ].
 [fsimilar] # C: [ :1 ahks:1 ajks:1 as:2 astpn:2 fn:2 ft:2 ftpl:2 kks:2 klkpr:2 kpr:2 ].
-[fsimilar] # C: [ :1 akl:2 ankrtt:2 fstfl:2 klkpr:2 rpt:2 xlnj:1 xlnk:1 ].
+[fsimilar] # C: [ :1 akl:2 an:2 fstfl:2 klkpr:2 krtt:2 rpt:2 xlnj:1 xlnk:1 ].
 [fsimilar] # C: [ a:4 a0:1 akrs:2 ant:2 fr:2 ft:1 ftpl:2 h:2 hf:2 pjnrs:1 pknrs:1 pl:2 pr:2 prfktl:2 sxr:2 t:4 xt:4 ].
 [fsimilar] # C: [ a:2 an:2 frrt:2 ftpl:2 h:3 hf:3 kls:2 mr:2 pkm:2 pl:2 ptr:2 skr:2 strkr:4 t:6 ].
 [fsimilar] # C: [ :1 fls:2 klkpr:2 plntrs:2 tp:2 ].
 [fsimilar] # C: [ :1 an:2 ftpl:2 hstr:2 klkpr:2 kls:2 krs:2 tp:2 ].
 [fsimilar] # C: [ :1 0:1 ff:2 fs:1 ftks:2 h:1 hf:1 k:2 klkpr:2 p:2 ps:1 pt:2 t:3 tps:2 trks:2 ttrl:2 ].
-[fsimilar] # C: [ :1 af:2 ak:1 amprf:2 ar:2 fk:1 hnt:4 psktpl:2 tflpmnt:2 trls:2 ].
+[fsimilar] # C: [ af:2 ak:1 amprf:2 ar:2 fk:1 hnt:4 psktpl:2 tflpmnt:2 trls:2 ].
 [fsimilar] # C: [ :1 amprf:2 ar:2 h:1 hf:1 kr:2 pt:2 stf:2 t:2 trls:2 trplnk:2 ].
 [fsimilar] # C: [ :1 amprf:2 arkt:1 frkt:1 hntlnk:2 mnt:2 pl:2 psktpl:2 skls:2 tknk:1 txnk:1 ].
 [fsimilar] # C: [ :1 a:2 amprf:2 fst:2 ftpl:2 mn:2 sxr:2 t:2 trls:4 trplnk:2 ].
-[fsimilar] # C: [ :1 amprf:2 ar:2 h:1 hf:1 t:2 trplnk:2 ].
+[fsimilar] # C: [ amprf:2 ar:2 h:1 hf:1 t:2 trplnk:2 ].
 [fsimilar] # C: [ a:2 ak:1 amprf:2 ar:2 fk:1 h:2 hf:2 hnt:2 psktpl:2 sns:2 t:4 trpl:2 trplnk:2 xt:2 ].
 [fsimilar] # C: [ amprf:2 ar:2 h:1 hf:1 kk:2 t:2 tp:2 trplnk:2 ].
 [fsimilar] # C: [ :1 af:2 amprf:2 ar:2 h:1 hf:1 stls:2 t:2 tps:2 trplnk:4 ].
@@ -442,23 +442,23 @@
 [fsimilar] # C: [ :1 amprf:2 ar:2 h:1 hf:1 hntlnk:2 mnt:2 pl:2 pr:2 rtn:2 t:2 tl:2 trnnk:2 trplnk:2 ].
 [fsimilar] # C: [ amprf:2 frst:2 h:1 hf:1 kntrl:2 pl:2 sxr:2 t:2 tk:2 trls:2 trplnk:2 ].
 [fsimilar] # C: [ :1 altmt:2 amprf:2 an:2 ff:2 h:1 hf:1 mf:2 pk:2 skl:2 t:2 tm:2 tps:2 trk:2 trks:2 trplnk:2 ttrl:2 ].
-[fsimilar] # C: [ :1 amprf:2 an:2 anstntl:2 ar:2 h:1 hf:1 n:1 nf:1 ptr:2 rt:2 skls:2 sxr:2 t:2 trpl:2 trplnk:2 ].
+[fsimilar] # C: [ amprf:2 an:2 anstntl:2 ar:2 h:1 hf:1 n:1 nf:1 ptr:2 rt:2 skls:2 sxr:2 t:2 trpl:2 trplnk:2 ].
 [fsimilar] # C: [ amprf:2 ar:2 fr:2 h:1 hf:1 hnt:2 lft:2 lps:2 pltn:2 psktpl:2 srkt:2 t:2 tl:2 tr:2 trl:2 trplnk:2 ].
 [fsimilar] # C: [ :1 fr:2 ftpl:4 ptr:2 skls:4 sxr:4 tp:2 trls:4 trplnk:4 ].
 [fsimilar] # C: [ 0:2 a:2 a0:1 apt:2 ft:1 h:1 hf:1 mfs:4 pl:2 pst:2 sxr:6 t:4 tr0:1 trpl:2 trt:1 ].
 [fsimilar] # C: [ amprf:2 an:2 antrs:2 h:1 hf:1 prr:2 prt:2 skls:2 sxr:2 t:2 trl:2 trplnk:2 ].
-[fsimilar] # C: [ :1 ak:1 fk:1 hnt:2 trls:2 trplnk:2 ].
+[fsimilar] # C: [ ak:1 fk:1 hnt:2 trls:2 trplnk:2 ].
 [fsimilar] # C: [ a0:1 afrt:2 amprf:2 an:2 ant:2 ft:1 ftpl:2 ftsl:2 h:1 hf:1 skls:2 sr:2 sxr:2 t:2 trplnk:4 ].
 [fsimilar] # C: [ amprf:2 ar:2 h:1 hf:1 skls:2 t:2 trplnk:2 ttrl:2 ].
 [fsimilar] # C: [ amprf:2 ar:2 at:2 h:1 hf:1 hm:2 skls:2 sxr:2 t:2 trplnk:2 ].
-[fsimilar] # C: [ :1 amprf:2 ar:2 h:1 hf:1 psktpl:2 skls:2 spt:2 t:2 trl:2 trpl:2 trplnk:2 ].
+[fsimilar] # C: [ amprf:2 ar:2 h:1 hf:1 psktpl:2 skls:2 spt:2 t:2 trl:2 trpl:2 trplnk:2 ].
 [fsimilar] # C: [ aktm:2 amprf:2 anln:2 krt:2 n:1 nf:1 sxr:4 t:2 trl:2 trplnk:2 ].
-[fsimilar] # C: [ :1 amprf:2 ar:2 at:2 h:1 hf:1 hm:2 hntlnk:2 pl:2 t:2 ].
+[fsimilar] # C: [ amprf:2 ar:2 at:2 h:1 hf:1 hm:2 hntlnk:2 pl:2 t:2 ].
 [fsimilar] # C: [ amprf:2 an:2 h:1 hf:1 krl:2 prt:2 sxr:2 t:4 tn:2 trplnk:2 ].
 [fsimilar] # C: [ amprf:2 an:2 ar:2 h:1 hf:1 krsfr:4 psktpl:2 t:2 trls:2 trplnk:2 ].
 [fsimilar] # C: [ :1 0s:1 a:2 al:1 amprf:2 anls:2 ant:2 ar:2 as:2 fl:1 ftpl:2 nt:2 skls:4 skrt:2 sxr:2 ts:1 ].
 [fsimilar] # C: [ amprf:2 ar:2 h:1 hf:1 t:2 tps:2 trplnk:2 ].
-[fsimilar] # C: [ :1 a:2 h:1 hf:1 prkrsn:2 psktpl:2 ptr:2 t:2 trls:2 trpl:2 trplnk:2 ].
+[fsimilar] # C: [ a:2 h:1 hf:1 prkrsn:2 psktpl:2 ptr:2 t:2 trls:2 trpl:2 trplnk:2 ].
 [fsimilar] # C: [ amprf:2 an:4 h:1 hf:1 krl:2 prt:2 sxr:2 t:2 tn:2 trplnk:2 ].
 [fsimilar] # C: [ amprf:2 frst:2 ftpl:2 h:1 hf:1 kntrl:2 p:2 pl:4 sxr:2 t:2 tk:2 trls:2 trplnk:2 ].
 [fsimilar] # C: [ amprf:2 ar:2 frkkrs:1 frkkrts:1 h:1 hf:1 kntrl:2 p:2 pl:2 sxr:2 t:2 trks:2 trplnks:2 ].

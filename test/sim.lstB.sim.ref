@@ -1,39 +1,38 @@
 [fsimilar]  n='LayoutTest', e='.java', s='1', d='test/sim/'
-[fsimilar] +: Simhash of 10243504347631627045 added.
+[fsimilar] +: Simhash of 12550758099387727855 added.
 [fsimilar]  n='ColoredGrayBunny', e='.ogg', s='1', d='test/sim/'
-[fsimilar] +: Simhash of 18158477407485570565 added.
+[fsimilar] +: Simhash of 13519048236786134021 added.
 [fsimilar]  n='GNU - 2001 - Python Standard Library', e='.pdf', s='1', d='test/sim/'
 [fsimilar] +: Simhash of 6184610222622303958 added.
 [fsimilar]  n='PopupTest', e='.java', s='1', d='test/sim/'
-[fsimilar] +: Simhash of 14970983775264877413 added.
+[fsimilar] +: Simhash of 17280311215093825405 added.
 [fsimilar]  n='(eBook) GNU - Python Standard Library 2001', e='.pdf', s='1', d='test/sim/'
-[fsimilar] =: Simhash of 15408527565704554007 ignored for 6184610222622303958 (11).
+[fsimilar] =: Simhash of 6185454664763697054 ignored for 6184610222622303958 (10).
 [fsimilar]  n='GNU - Python Standard Library (2001)', e='.rar', s='1', d='test/sim/'
-[fsimilar] =: Simhash of 15994039566447601623 ignored for 6184610222622303958 (9).
+[fsimilar] =: Simhash of 6184610222622303958 ignored for 6184610222622303958 (0).
 [fsimilar]  n='Python Standard Library', e='.zip', s='1', d='test/sim/'
 [fsimilar] =: Simhash of 6175699711939618002 ignored for 6184610222622303958 (11).
 [fsimilar]  n='Audio Book - The Grey Coloured Bunnie', e='.mp3', s='1', d='test/sim/'
 [fsimilar] +: Simhash of 17941753769783835998 added.
 [fsimilar] Deal Dups
 
-[fsimilar] # Item: {15408527565704554007 0}.
-[fsimilar]   Neighbors true: [{6184610222622303958 11}].
+[fsimilar] # Item: {6185454664763697054 0}.
+[fsimilar]   Neighbors true: [{6184610222622303958 10}].
        1 test/sim/(eBook) GNU - Python Standard Library 2001.pdf
        1 test/sim/GNU - 2001 - Python Standard Library.pdf
+       1 test/sim/GNU - Python Standard Library (2001).rar
 
 [fsimilar] # Item: {17941753769783835998 0}.
 [fsimilar]   No similar items at this hash
-[fsimilar] # Item: {18158477407485570565 0}.
+[fsimilar] # Item: {13519048236786134021 0}.
 [fsimilar]   No similar items at this hash
 [fsimilar] # Item: {6184610222622303958 0}.
 [fsimilar]   Visited hash ignored
-[fsimilar] # Item: {15994039566447601623 0}.
-[fsimilar]   Neighbors true: [{6184610222622303958 9}].
-       1 test/sim/GNU - Python Standard Library (2001).rar
-
-[fsimilar] # Item: {10243504347631627045 0}.
+[fsimilar] # Item: {6184610222622303958 1}.
+[fsimilar]   Visited hash ignored
+[fsimilar] # Item: {12550758099387727855 0}.
 [fsimilar]   No similar items at this hash
-[fsimilar] # Item: {14970983775264877413 0}.
+[fsimilar] # Item: {17280311215093825405 0}.
 [fsimilar]   No similar items at this hash
 [fsimilar] # Item: {6175699711939618002 0}.
 [fsimilar]   Neighbors true: [{6184610222622303958 11}].

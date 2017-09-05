@@ -6,10 +6,10 @@
 [fsimilar] # C: [ ball:1 documentary:1 protection:1 totti:1 ].
 [fsimilar] # C: [ a:1 goalkeeper:1 how:1 in:1 make:1 save:1 skills:2 soccer:3 to:1 ].
 [fsimilar] # C: [ 15:1 ball:1 challenge:1 dribble:1 dribbling:1 face:1 fifa:1 legendary:1 protect:1 skill:1 skills:1 the:1 tutorial:1 up:1 ].
-[fsimilar] # C: [ :1 ever:1 original:1 scott:1 shootout:1 soccer:1 sterling:1 top:1 with:1 ].
+[fsimilar] # C: [ ever:1 original:1 scott:1 shootout:1 soccer:1 sterling:1 top:1 with:1 ].
 [fsimilar] # C: [ 17:1 back:1 ball:1 fifa:1 new:1 protect:1 push:1 secret:1 shielding:1 tech:1 technique:1 the:1 tips:1 tricks:1 tutorial:1 ].
 [fsimilar] # C: [ 12:1 2003:1 ball:1 danny:1 how:1 in:1 keane:1 old:1 roy:1 shield:1 teaches:1 the:1 to:1 welbeck:1 year:1 ].
-[fsimilar] # C: [ :1 and:1 any:1 ball:1 defender:1 how:1 in:1 on:1 shield:1 soccer:1 the:1 to:1 turn:1 ].
+[fsimilar] # C: [ and:1 any:1 ball:1 defender:1 how:1 in:1 on:1 shield:1 soccer:1 the:1 to:1 turn:1 ].
 [fsimilar] # C: [ 1v1:1 and:1 ball:1 defend:3 how:1 in:1 player:1 soccer:1 the:2 to:1 ].
 [fsimilar] # C: [ ball:1 how:1 lessons:1 shield:1 soccer:1 the:1 to:1 ].
 [fsimilar] # C: [ how:1 in:1 shield:1 skills:1 soccer:2 to:1 ].
@@ -19,7 +19,7 @@
 [fsimilar] # C: [ 15:1 16:1 advanced:1 back:1 ball:1 fifa:1 protect:1 the:1 tutorial:1 use:1 your:1 ].
 [fsimilar] # C: [ a:2 beat:1 best:1 defender:1 effective:1 football:1 game:1 in:1 moves:1 skills:1 soccer:2 to:2 tricks:1 use:1 ].
 [fsimilar] # C: [ a:1 ball:1 goalkeeper:1 how:1 parry:1 soccer:1 to:1 training:1 ].
-[fsimilar] # C: [ :1 ball:1 essien:1 fa:1 like:1 match:1 shield:1 skills:1 the:1 ].
+[fsimilar] # C: [ ball:1 essien:1 fa:1 like:1 match:1 shield:1 skills:1 the:1 ].
 [fsimilar] # C: [ 14:1 ball:1 dribbling:1 effective:1 fifa:1 g:1 how:1 phdx:1 protect:1 the:1 to:2 tutorial:1 use:2 when:1 ].
 [fsimilar] # C: [ a:1 ball:2 dribble:1 how:2 shield:1 soccer:2 the:1 to:2 ].
 [fsimilar] # C: [ a:1 ball:2 football:1 how:2 in:1 protect:1 shield:1 soccer:1 the:1 to:2 ].
@@ -28,7 +28,7 @@
 [fsimilar] # C: [ ball:1 drill:1 how:1 lahm:1 like:1 philipp:1 shield:1 soccer:1 the:1 to:1 ].
 [fsimilar] # C: [ 16:2 ball:1 fifa:2 how:2 in:1 opponents:1 protect:1 push:1 the:1 tips:1 to:2 trick:1 tricks:1 tutorial:1 ].
 [fsimilar] # C: [ football:1 free:1 helium:1 insane:1 kicks:1 saves:1 ].
-[fsimilar] # C: [ 100:1 6:1 balls:1 bouncy:1 can:1 concrete:1 drop:1 from:1 ft:1 gizmo:1 iphone:1 onto:1 protect:1 slip:1 test:1 ].
+[fsimilar] # C: [ 100:1 6:1 balls:1 bouncy:1 can:1 concrete:1 drop:1 from:1 ft:1 gizmo:1 i:1 onto:1 phone:1 protect:1 slip:1 test:1 ].
 [fsimilar] # C: [ ball:1 defender:1 from:1 shield:1 soccer:1 the:2 tips:1 ].
 [fsimilar] # C: [ 15:1 16:1 ball:1 by:1 effective:1 fifa:1 g:1 phdx:1 protect:1 the:1 tips:1 tricks:1 tutorial:1 very:1 ].
 [fsimilar] # C: [ ball:1 by:1 control:1 dribblings:1 freekickerz:1 how:1 improve:1 soccer:1 to:1 tricks:1 your:1 ].
@@ -46,21 +46,21 @@
 [fsimilar] # C: [ 3:1 ball:1 basic:1 control:1 improve:1 juan:1 mata:1 the:1 to:1 ways:1 your:1 ].
 [fsimilar] # C: [ andreas:1 ball:1 control:1 drills:1 how:1 improve:1 part:1 pereira:1 soccer:1 three:1 to:1 ].
 [fsimilar] # C: [ ball:1 control:1 f2:1 first:1 football:1 freestylers:1 how:1 improve:1 skills:1 to:1 touch:1 your:1 ].
-[fsimilar] # C: [ :1 7:1 a:1 ball:1 basketball:1 better:1 biggest:1 dribble:1 handling:1 improve:1 instantly:1 keys:1 the:1 to:1 your:1 ].
-[fsimilar] # C: [ :1 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
+[fsimilar] # C: [ 7:1 a:1 ball:1 basketball:1 better:1 biggest:1 dribble:1 handling:1 improve:1 instantly:1 keys:1 the:1 to:1 your:1 ].
+[fsimilar] # C: [ 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
 [fsimilar] # C: [ ball:1 beginner:1 control:1 first:1 how:1 improve:1 to:1 touch:1 tutorial:1 your:1 ].
 [fsimilar] # C: [ andreas:1 ball:1 control:1 drills:1 how:1 improve:1 part:1 pereira:1 six:1 soccer:1 to:1 ].
 [fsimilar] # C: [ and:1 football:2 for:1 free:1 kids:1 soccer:2 training:4 workouts:1 ].
 [fsimilar] # C: [ ball:1 control:1 crowley:1 dan:1 how:1 improve:1 part:1 to:1 two:1 ].
 [fsimilar] # C: [ 16:1 and:1 ball:1 control:1 drills:1 fast:1 footwork:1 improve:1 soccer:1 speed:1 to:1 top:1 touch:1 ].
 [fsimilar] # C: [ a:1 air:1 ball:1 control:1 how:2 improve:1 in:1 skills:1 soccer:2 the:1 to:2 ].
-[fsimilar] # C: [ :1 ball:1 control:1 drills:1 fifa:1 improve:1 soccer:1 to:1 trainer:1 ].
+[fsimilar] # C: [ ball:1 control:1 drills:1 fifa:1 improve:1 soccer:1 to:1 trainer:1 ].
 [fsimilar] # C: [ ball:1 control:1 drills:2 football:1 improve:1 soccer:1 sorry:1 to:1 ].
 [fsimilar] # C: [ ball:1 control:1 dribbling:1 drills:1 first:1 how:1 improve:1 soccer:1 to:1 touch:1 ].
 [fsimilar] # C: [ ball:2 control:2 drills:3 football:1 for:1 improve:1 soccer:2 to:1 training:1 ].
 [fsimilar] # C: [ a:2 ball:1 best:1 better:1 control:2 football:2 how:1 or:1 soccer:1 to:2 ways:1 ].
 [fsimilar] # C: [ ball:1 control:1 drills:2 football:1 improve:1 skills:1 soccer:2 to:1 ].
-[fsimilar] # C: [ :1 and:1 ball:1 control:1 foot:1 how:1 improve:1 in:1 less:1 minutes:1 then:1 three:1 to:1 touch:1 weak:1 ].
+[fsimilar] # C: [ and:1 ball:1 control:1 foot:1 how:1 improve:1 in:1 less:1 minutes:1 then:1 three:1 to:1 touch:1 weak:1 ].
 [fsimilar] # C: [ andreas:1 ball:1 control:1 drills:1 four:1 how:1 improve:1 part:1 pereira:1 soccer:1 to:1 ].
 [fsimilar] # C: [ and:1 ball:1 cone:1 control:1 dribbling:1 drill:1 drills:1 improve:1 soccer:1 technique:1 to:1 ].
 [fsimilar] # C: [ andreas:1 ball:1 control:1 drill:1 how:1 improve:1 part:1 pereira:1 soccer:1 to:1 two:1 ].
@@ -80,10 +80,10 @@
 [fsimilar] # C: [ ball:1 bull:1 by:1 control:1 dribbling:1 drills:1 first:1 football:1 how:1 improve:1 soccer:1 to:1 touch:1 ].
 [fsimilar] # C: [ ball:1 control:1 drills:1 how:1 improve:1 the:1 to:1 touch:1 ultimate:1 ].
 [fsimilar] # C: [ ball:1 by:1 control:1 dribblings:1 freekickerz:1 how:1 improve:1 soccer:1 to:1 tricks:1 your:1 ].
-[fsimilar] # C: [ :1 ball:1 control:1 how:1 improve:1 my:1 shocking:1 soccer:1 to:1 touch:1 was:1 ].
+[fsimilar] # C: [ ball:1 control:1 how:1 improve:1 my:1 shocking:1 soccer:1 to:1 touch:1 was:1 ].
 [fsimilar] # C: [ ball:2 by:1 control:2 drills:2 how:1 improve:1 soccer:3 to:1 yourself:1 ].
 [fsimilar] # C: [ 10:1 ball:1 control:1 how:1 improve:1 in:2 minutes:1 soccer:1 to:1 your:1 ].
-[fsimilar] # C: [ :1 5:1 ball:1 control:1 how:1 improve:1 in:1 less:1 minutes:1 skills:1 soccer:1 than:1 to:1 your:1 ].
+[fsimilar] # C: [ 5:1 ball:1 control:1 how:1 improve:1 in:1 less:1 minutes:1 skills:1 soccer:1 than:1 to:1 your:1 ].
 [fsimilar] # C: [ 25:1 free:1 goals:1 instagram:1 kicks:1 top:1 vine:1 ].
 [fsimilar] # C: [ 10:1 best:1 corner:1 football:1 goals:1 in:1 kick:1 top:1 ].
 [fsimilar] # C: [ how:1 on:1 run:1 shoot:1 the:1 to:1 ].
@@ -93,7 +93,7 @@
 [fsimilar] # C: [ a:1 ball:1 by:1 freekickerz:1 how:1 power:1 shoot:1 soccer:1 to:1 tutorial:1 with:1 ].
 [fsimilar] # C: [ di:1 how:1 like:1 maria:1 modric:1 outside:1 pass:1 quaresma:1 shoot:1 shot:1 to:1 trivela:1 tutorial:1 ].
 [fsimilar] # C: [ a:3 ball:2 football:2 how:3 kick:2 or:1 shoot:1 soccer:2 to:3 ].
-[fsimilar] # C: [ :1 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
+[fsimilar] # C: [ 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
 [fsimilar] # C: [ and:1 football:2 for:1 free:1 kids:1 soccer:2 training:4 workouts:1 ].
 [fsimilar] # C: [ accuracy:1 how:1 pro:1 shoot:1 soccer:1 tips:1 to:1 with:1 ].
 [fsimilar] # C: [ a:1 accuracy:1 and:1 ball:1 far:1 from:1 how:1 power:1 shoot:1 soccer:1 to:1 with:1 ].
@@ -104,10 +104,10 @@
 [fsimilar] # C: [ dude:1 perfect:1 shots:1 soccer:1 trick:1 ].
 [fsimilar] # C: [ a:2 ball:1 football:1 how:2 kick:1 power:2 shoot:1 soccer:1 to:2 with:2 ].
 [fsimilar] # C: [ a:1 ball:1 curve:1 free:1 g:1 how:1 kick:1 ndogan:1 shoot:1 to:1 tutorial:1 w:1 ].
-[fsimilar] # C: [ :1 a:1 ball:1 football:1 how:1 kick:1 kicking:1 shooting:1 soccer:2 technique:1 to:1 ].
-[fsimilar] # C: [ :1 believe:1 football:1 incredible:1 t:1 this:1 viral:1 won:1 you:1 ].
+[fsimilar] # C: [ a:1 ball:1 football:1 how:1 kick:1 kicking:1 shooting:1 soccer:2 technique:1 to:1 ].
+[fsimilar] # C: [ believe:1 football:1 incredible:1 t:1 this:1 viral:1 won:1 you:1 ].
 [fsimilar] # C: [ fifa:1 foot:1 football:1 how:1 in:1 of:1 outside:1 shoot:1 soccer:1 the:3 to:1 trainer:1 with:1 ].
-[fsimilar] # C: [ :1 football:1 how:1 learn:1 precision:1 shoot:1 soccer:1 to:1 with:1 ].
+[fsimilar] # C: [ football:1 how:1 learn:1 precision:1 shoot:1 soccer:1 to:1 with:1 ].
 [fsimilar] # C: [ a:2 ball:2 football:2 how:2 kick:1 or:2 shoot:1 soccer:2 to:2 ].
 [fsimilar] # C: [ a:1 cristiano:1 how:1 knuckleball:1 like:1 ronaldo:1 shoot:1 to:1 tutorial:1 ].
 [fsimilar] # C: [ a:2 accuracy:1 and:1 ball:1 football:1 how:2 kick:1 power:1 shoot:1 shots:1 soccer:2 to:2 tutorial:1 with:1 ].
@@ -121,7 +121,7 @@
 [fsimilar] # C: [ 5:1 a:3 accuracy:1 ball:1 football:1 how:2 kick:1 like:1 power:1 pro:1 shoot:1 soccer:1 tips:1 to:2 with:1 ].
 [fsimilar] # C: [ a:1 free:1 how:1 ibrahimovic:1 kick:1 like:1 power:1 shoot:1 to:1 tutorial:1 zlatan:1 ].
 [fsimilar] # C: [ a:1 ball:1 foot:2 football:1 how:2 improve:1 in:1 or:1 shoot:1 soccer:2 to:2 weak:2 with:1 your:2 ].
-[fsimilar] # C: [ :1 how:1 penalty:1 perfect:1 take:1 the:1 to:1 ].
+[fsimilar] # C: [ how:1 penalty:1 perfect:1 take:1 the:1 to:1 ].
 [fsimilar] # C: [ a:2 ball:2 how:2 kick:1 power:1 shoot:1 soccer:2 to:2 with:1 ].
 [fsimilar] # C: [ 10:1 ever:1 fastest:1 shots:1 top:1 ].
 [fsimilar] # C: [ 3:1 a:1 ball:1 how:1 kick:1 kicks:1 know:1 must:1 soccer:2 to:1 you:1 ].
@@ -132,27 +132,27 @@
 [fsimilar] # C: [ a:2 curve:1 free:1 how:1 in:1 kick:1 match:1 pro:1 shoot:1 to:1 tutorial:1 ].
 [fsimilar] # C: [ beckham:1 changers:1 david:1 game:1 masterclass:1 s:1 shooting:1 ].
 [fsimilar] # C: [ 2017:1 a:1 game:1 goalkeeper:1 how:1 humiliate:1 in:1 like:1 messi:1 neymar:1 ronaldo:1 skills:1 to:1 ].
-[fsimilar] # C: [ :1 2015:1 2016:1 best:1 doesn:1 exist:1 fear:1 goalkeeper:1 hd:1 saves:1 t:1 ].
+[fsimilar] # C: [ 2015:1 2016:1 best:1 doesn:1 exist:1 fear:1 goalkeeper:1 hd:1 saves:1 t:1 ].
 [fsimilar] # C: [ a:2 beat:1 in:1 keeper:1 on:1 one:2 soccer:1 strategies:1 three:1 to:1 ].
-[fsimilar] # C: [ :1 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
+[fsimilar] # C: [ 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
 [fsimilar] # C: [ close:1 drills:1 goalkeeper:1 shots:1 tips:1 training:1 ].
 [fsimilar] # C: [ beat:1 goalkeeper:1 how:1 the:1 to:1 tutorial:1 ].
 [fsimilar] # C: [ and:1 football:2 for:1 free:1 kids:1 soccer:2 training:4 workouts:1 ].
-[fsimilar] # C: [ :1 challenge:1 goalkeeper:1 jj:1 vs:1 ].
+[fsimilar] # C: [ challenge:1 goalkeeper:1 jj:1 vs:1 ].
 [fsimilar] # C: [ battle:1 epic:1 freekickerz:1 goalkeeper:1 pro:1 soccer:1 vs:1 ].
 [fsimilar] # C: [ and:1 beat:1 goalkeeper:1 hulk:1 in:1 innovated:1 penalty:1 to:1 tricks:1 way:1 ].
 [fsimilar] # C: [ 5:1 beat:1 football:1 keeper:1 soccer:1 the:1 to:1 ways:1 ].
-[fsimilar] # C: [ :1 ever:1 original:1 scott:1 shootout:1 soccer:1 sterling:1 top:1 with:1 ].
+[fsimilar] # C: [ ever:1 original:1 scott:1 shootout:1 soccer:1 sterling:1 top:1 with:1 ].
 [fsimilar] # C: [ destroying:1 footballers:1 goalkeepers:1 hd:1 ].
 [fsimilar] # C: [ an:1 garnier:1 keeper:1 man:1 robot:1 s:1 vs:1 ].
-[fsimilar] # C: [ :1 all:1 and:1 best:1 funniest:1 goalie:1 of:1 soccer:1 the:1 time:1 ].
+[fsimilar] # C: [ all:1 and:1 best:1 funniest:1 goalie:1 of:1 soccer:1 the:1 time:1 ].
 [fsimilar] # C: [ 6:1 a:1 beat:1 free:1 goalkeeper:1 kicks:1 pt:1 to:1 tutorial:1 ways:1 ].
-[fsimilar] # C: [ :1 1:1 14:1 beat:1 easy:1 fifa:1 how:1 keeper:1 part:1 the:1 to:1 tutorial:1 ].
+[fsimilar] # C: [ 1:1 14:1 beat:1 easy:1 fifa:1 how:1 keeper:1 part:1 the:1 to:1 tutorial:1 ].
 [fsimilar] # C: [ compilation:1 goalkeeper:1 vine:1 ].
 [fsimilar] # C: [ a:1 beat:1 football:1 goalkeeper:1 how:1 to:1 tutorial:1 ].
 [fsimilar] # C: [ 1v1:1 a:1 beat:1 football:1 goalkeeper:1 goals:1 how:2 in:2 keeper:1 more:1 score:1 soccer:1 the:1 to:2 with:1 ].
 [fsimilar] # C: [ beat:1 goalkeeper:1 how:1 quick:1 the:1 tip:1 to:1 ].
-[fsimilar] # C: [ :1 challenge:1 goalkeeping:1 sumo:1 ].
+[fsimilar] # C: [ challenge:1 goalkeeping:1 sumo:1 ].
 [fsimilar] # C: [ 1v1:2 a:1 attack:1 beat:1 football:1 goalkeeper:1 how:2 in:1 soccer:1 to:2 ].
 [fsimilar] # C: [ a:3 football:1 how:3 in:2 kick:1 penalty:3 score:1 shoot:1 soccer:1 take:1 to:3 ].
 [fsimilar] # C: [ goalkeeper:1 juan:1 mata:1 on:1 one:2 pass:1 the:1 tips:1 to:1 ].
@@ -169,9 +169,9 @@
 [fsimilar] # C: [ 13:1 crazy:1 football:1 goalkeeper:1 goals:1 history:1 in:1 top:1 ].
 [fsimilar] # C: [ a:1 avoid:1 football:2 hit:1 how:2 illegal:1 in:2 make:1 tackle:1 the:1 to:2 ].
 [fsimilar] # C: [ a:1 defend:1 do:1 football:2 how:3 in:3 soccer:2 tackle:2 to:2 ].
-[fsimilar] # C: [ :1 cell:1 football:1 how:1 in:1 mccourty:1 nfl:1 s:1 sickle:1 tackle:2 to:1 twins:1 ].
+[fsimilar] # C: [ cell:1 courty:1 football:1 how:1 in:1 mc:1 nfl:1 s:1 sickle:1 tackle:2 to:1 twins:1 ].
 [fsimilar] # C: [ 2012:1 cavs:1 drills:1 tackle:1 ].
-[fsimilar] # C: [ :1 drill:1 football:1 hitting:1 pee:1 train:1 wee:1 wreck:1 ].
+[fsimilar] # C: [ drill:1 football:1 hitting:1 pee:1 train:1 wee:1 wreck:1 ].
 [fsimilar] # C: [ 2016:1 60:1 football:1 january:1 minutes:1 preview:1 sports:1 tackle:1 youth:1 ].
 [fsimilar] # C: [ 10:1 football:2 how:1 in:1 safety:1 tackle:1 tips:1 to:1 top:1 ].
 [fsimilar] # C: [ seahawks:1 tackling:1 ].
@@ -185,7 +185,7 @@
 [fsimilar] # C: [ avoid:2 being:1 contact:1 football:2 in:1 initiate:1 tackle:1 tackled:1 to:1 ].
 [fsimilar] # C: [ a:1 defensive:1 football:1 how:2 in:1 play:1 pursue:1 tackle:2 to:2 ].
 [fsimilar] # C: [ correctly:1 drills:1 football:2 how:1 in:1 practice:1 tackle:1 tips:1 to:1 ].
-[fsimilar] # C: [ coachup:1 football:1 how:1 tackle:1 tips:1 to:1 ].
+[fsimilar] # C: [ coach:1 football:1 how:1 tackle:1 tips:1 to:1 up:1 ].
 [fsimilar] # C: [ football:1 harder:1 hit:1 how:1 in:1 to:1 ].
 [fsimilar] # C: [ brutal:1 cards:1 crazy:1 fights:1 football:1 fouls:1 red:1 tackle:1 ].
 [fsimilar] # C: [ heads:1 tackle:1 technique:1 up:1 ].
@@ -201,7 +201,7 @@
 [fsimilar] # C: [ a:1 football:2 hit:1 how:1 in:2 make:1 tackle:1 tackling:1 to:2 when:1 where:1 ].
 [fsimilar] # C: [ a:1 before:1 body:1 football:2 how:1 in:2 make:1 position:1 tackle:1 tackling:1 to:1 ].
 [fsimilar] # C: [ american:1 football:1 how:1 in:1 tackle:1 to:1 ].
-[fsimilar] # C: [ :1 10:1 14:1 2013:1 breaking:1 college:1 football:1 hd:1 in:1 runs:1 tackle:1 top:1 ].
+[fsimilar] # C: [ 10:1 14:1 2013:1 breaking:1 college:1 football:1 hd:1 in:1 runs:1 tackle:1 top:1 ].
 [fsimilar] # C: [ tackling:1 techniques:1 ].
 [fsimilar] # C: [ a:1 defend:1 do:1 football:2 how:3 in:3 soccer:2 tackle:2 to:2 ].
 [fsimilar] # C: [ aggressive:2 and:1 be:1 drills:1 how:1 on:1 play:1 soccer:3 tips:1 to:1 training:1 ].
@@ -212,7 +212,7 @@
 [fsimilar] # C: [ slide:1 soccer:1 tackle:1 ].
 [fsimilar] # C: [ 1v1:1 back:1 defend:1 has:1 how:1 player:1 to:2 when:1 you:1 ].
 [fsimilar] # C: [ compilation:1 fouls:1 hard:1 soccer:1 tackle:1 ].
-[fsimilar] # C: [ :1 best:1 football:2 home:1 in:1 of:1 sliding:1 tackles:1 ].
+[fsimilar] # C: [ best:1 football:2 home:1 in:1 of:1 sliding:1 tackles:1 ].
 [fsimilar] # C: [ block:1 essential:1 of:1 soccer:1 tackle:1 techniques:1 ].
 [fsimilar] # C: [ brutal:1 card:1 dirty:1 football:1 moments:1 red:1 tackle:1 with:1 ].
 [fsimilar] # C: [ how:1 in:1 slide:1 soccer:2 tackle:1 tips:1 to:1 ].
@@ -234,14 +234,14 @@
 [fsimilar] # C: [ how:1 in:1 slide:1 soccer:2 tackle:1 tips:1 to:1 ].
 [fsimilar] # C: [ 10:1 block:1 christie:1 rampone:1 soccer:1 tackle:1 tip:1 ].
 [fsimilar] # C: [ how:1 in:1 skills:1 soccer:2 tackle:1 to:1 ].
-[fsimilar] # C: [ :1 crazy:1 girls:1 slide:1 soccer:1 tackle:1 ].
+[fsimilar] # C: [ crazy:1 girls:1 slide:1 soccer:1 tackle:1 ].
 [fsimilar] # C: [ 1v1:1 academy:1 advanced:1 basic:1 defending:1 learn:1 online:1 soccer:1 techniques:1 ].
 [fsimilar] # C: [ boxx:1 drills:1 how:1 shannon:1 slide:1 soccer:1 tackle:1 to:1 with:1 ].
 [fsimilar] # C: [ all:1 art:1 best:1 defending:1 football:1 of:2 tackles:1 the:1 time:1 ].
 [fsimilar] # C: [ 3:1 dribble:1 guide:1 how:1 speed:1 step:1 to:1 with:1 ].
-[fsimilar] # C: [ :1 5:1 dribbling:1 drills:2 fast:1 football:1 improve:1 mean:1 soccer:1 to:1 u:1 ].
+[fsimilar] # C: [ 5:1 dribbling:1 drills:2 fast:1 football:1 improve:1 mean:1 soccer:1 to:1 u:1 ].
 [fsimilar] # C: [ 3:1 dribbling:2 how:1 improve:1 of:1 styles:1 tips:1 to:1 your:1 ].
-[fsimilar] # C: [ :1 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
+[fsimilar] # C: [ 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
 [fsimilar] # C: [ dribble:1 dribbles:1 dribbling:1 explained:1 how:1 like:1 lionel:2 messi:3 skills:1 to:1 tutorial:1 ].
 [fsimilar] # C: [ and:1 football:2 for:1 free:1 kids:1 soccer:2 training:4 workouts:1 ].
 [fsimilar] # C: [ a:2 ball:1 dribble:2 how:1 like:1 pro:1 soccer:1 to:1 tutorial:1 ].
@@ -250,7 +250,7 @@
 [fsimilar] # C: [ 4:1 footwork:1 how:1 improve:1 in:1 minutes:1 soccer:1 to:1 tutorial:1 your:1 ].
 [fsimilar] # C: [ ball:1 control:1 dribbling:1 drills:1 first:1 how:1 improve:1 soccer:1 to:1 touch:1 ].
 [fsimilar] # C: [ 23:1 dribble:1 football:1 nwame:1 opponent:1 perez:1 skills:1 to:1 ways:1 ].
-[fsimilar] # C: [ :1 better:1 dribble:1 dribbling:1 how:1 improve:1 in:1 instantly:1 now:1 right:1 skills:1 soccer:1 to:1 your:1 ].
+[fsimilar] # C: [ better:1 dribble:1 dribbling:1 how:1 improve:1 in:1 instantly:1 now:1 right:1 skills:1 soccer:1 to:1 your:1 ].
 [fsimilar] # C: [ 4:1 better:1 dribbling:2 drills:2 football:2 for:1 skills:2 soccer:2 top:1 ].
 [fsimilar] # C: [ a:1 about:1 ball:1 best:1 dribble:1 how:1 moves:2 soccer:3 the:2 to:1 truth:1 with:1 ].
 [fsimilar] # C: [ 5:1 dribbling:1 drills:1 essential:1 every:1 master:1 player:1 should:1 ].
@@ -259,7 +259,7 @@
 [fsimilar] # C: [ dribbling:1 how:1 improve:1 skills:1 to:1 tutorial:1 your:1 ].
 [fsimilar] # C: [ 1:1 control:1 dribble:1 football:1 tricks:1 tutorial:1 ].
 [fsimilar] # C: [ 2016:1 crazy:1 dribbling:1 football:1 skills:1 tricks:1 ].
-[fsimilar] # C: [ :1 12:1 an:1 dribble:1 football:1 garnier:1 how:1 like:1 me:1 move:1 s:1 seanfreestyle:1 skills:1 to:1 triangle:1 ].
+[fsimilar] # C: [ 12:1 an:1 dribble:1 football:1 garnier:1 how:1 like:1 me:1 move:1 s:1 seanfreestyle:1 skills:1 to:1 triangle:1 ].
 [fsimilar] # C: [ defenders:1 dribble:1 football:1 learn:1 like:1 lionel:1 messi:1 past:1 skills:1 soccer:1 to:1 ].
 [fsimilar] # C: [ ball:1 beginners:1 dribble:1 dribbling:1 for:1 how:1 soccer:1 the:1 tips:1 to:1 ].
 [fsimilar] # C: [ aliser:1 au:1 dribble:1 football:1 r:1 un:1 ].
@@ -277,7 +277,7 @@
 [fsimilar] # C: [ academy:1 dribble:1 drills:1 head:1 how:1 online:1 soccer:2 to:1 up:1 with:1 your:1 ].
 [fsimilar] # C: [ a:1 ball:1 beginners:1 dribble:1 how:1 soccer:2 to:1 training:1 u8:1 ].
 [fsimilar] # C: [ 3:1 dribbling:1 know:1 moves:1 need:1 soccer:1 to:1 top:1 you:1 ].
-[fsimilar] # C: [ :1 basics:1 beginners:1 football:1 for:1 juggling:1 kids:1 soccer:1 the:1 tutorial:1 ].
+[fsimilar] # C: [ basics:1 beginners:1 football:1 for:1 juggling:1 kids:1 soccer:1 the:1 tutorial:1 ].
 [fsimilar] # C: [ a:1 ball:1 dribble:2 how:2 in:1 progressive:1 soccer:3 to:2 training:1 ].
 [fsimilar] # C: [ for:1 how:1 kids:1 shield:1 skills:1 soccer:1 to:1 tutorial:1 ].
 [fsimilar] # C: [ 16:2 ball:1 fifa:2 how:2 in:1 opponents:1 protect:1 push:1 the:1 tips:1 to:2 tricks:1 tutorial:1 ].
@@ -291,7 +291,7 @@
 [fsimilar] # C: [ ball:1 how:1 protect:1 soccer:1 the:1 to:1 ].
 [fsimilar] # C: [ aggression:1 manual:1 shielding:1 soccer:1 ].
 [fsimilar] # C: [ 12:1 2003:1 ball:1 danny:1 how:1 in:1 keane:1 old:1 roy:1 shield:1 teaches:1 the:1 to:1 welbeck:1 year:1 ].
-[fsimilar] # C: [ :1 and:1 any:1 ball:1 defender:1 how:1 in:1 on:1 shield:1 soccer:1 the:1 to:1 turn:1 ].
+[fsimilar] # C: [ and:1 any:1 ball:1 defender:1 how:1 in:1 on:1 shield:1 soccer:1 the:1 to:1 turn:1 ].
 [fsimilar] # C: [ 1v1:1 and:1 ball:1 defend:3 how:1 in:1 player:1 soccer:1 the:2 to:1 ].
 [fsimilar] # C: [ ball:1 drills:1 shielding:1 soccer:1 the:1 ].
 [fsimilar] # C: [ 1v1:1 back:1 defend:1 has:1 how:1 player:1 to:2 when:1 you:1 ].
@@ -302,12 +302,12 @@
 [fsimilar] # C: [ ball:1 drill:1 shielding:1 the:1 ].
 [fsimilar] # C: [ 17:1 ball:2 fifa:1 l2:1 lose:1 lt:1 never:1 possession:1 secure:1 shielding:1 the:1 tutorial:1 with:1 ].
 [fsimilar] # C: [ ball:1 how:1 in:1 shield:1 soccer:1 the:1 tips:1 to:1 ].
-[fsimilar] # C: [ :1 ball:1 demonstrates:1 keane:1 of:1 roy:1 shielding:1 skill:1 the:2 ].
+[fsimilar] # C: [ ball:1 demonstrates:1 keane:1 of:1 roy:1 shielding:1 skill:1 the:2 ].
 [fsimilar] # C: [ a:2 beat:1 best:1 defender:1 effective:1 football:1 game:1 in:1 moves:1 skills:1 soccer:2 to:2 tricks:1 use:1 ].
-[fsimilar] # C: [ :1 ball:1 essien:1 fa:1 like:1 match:1 shield:1 skills:1 the:1 ].
+[fsimilar] # C: [ ball:1 essien:1 fa:1 like:1 match:1 shield:1 skills:1 the:1 ].
 [fsimilar] # C: [ a:1 ball:2 dribble:1 how:2 shield:1 soccer:2 the:1 to:2 ].
 [fsimilar] # C: [ ball:1 drill:1 drills:1 improve:1 of:1 shielding:1 soccer:2 the:1 to:1 top:1 ].
-[fsimilar] # C: [ :1 ball:1 how:1 shield:1 soccer:1 the:1 to:1 ].
+[fsimilar] # C: [ ball:1 how:1 shield:1 soccer:1 the:1 to:1 ].
 [fsimilar] # C: [ 3:1 christie:1 rampone:1 shielding:1 soccer:1 tip:1 ].
 [fsimilar] # C: [ cone:1 drill:1 shielding:1 soccer:2 training:2 video:1 ].
 [fsimilar] # C: [ a:1 ball:2 football:1 how:2 in:1 protect:1 shield:1 soccer:1 the:1 to:2 ].
@@ -320,18 +320,18 @@
 [fsimilar] # C: [ 15:2 ball:1 fifa:2 how:2 in:1 opponents:1 protect:1 push:1 the:1 tips:1 to:2 tricks:1 tutorial:1 ].
 [fsimilar] # C: [ ball:1 dribbling:1 from:1 how:1 opponents:1 pes:1 shield:1 the:1 to:1 your:1 ].
 [fsimilar] # C: [ ball:1 how:1 shield:1 skills:1 soccer:2 the:1 to:1 ].
-[fsimilar] # C: [ :1 breathing:1 clouds:1 exercise:1 guided:1 ].
-[fsimilar] # C: [ :1 best:1 better:1 breathing:1 exercises:1 for:1 how:1 learn:1 sing:1 singing:1 the:1 to:1 ].
+[fsimilar] # C: [ breathing:1 clouds:1 exercise:1 guided:1 ].
+[fsimilar] # C: [ best:1 better:1 breathing:1 exercises:1 for:1 how:1 learn:1 sing:1 singing:1 the:1 to:1 ].
 [fsimilar] # C: [ beginners:1 breathing:1 exercise:1 for:1 simple:1 yoga:1 ].
 [fsimilar] # C: [ 4:1 7:1 8:1 breathing:1 exercise:1 how:1 perform:1 the:1 to:1 ].
 [fsimilar] # C: [ 15:1 breathing:1 city:1 deep:1 exercise:1 hope:1 minute:1 of:1 ].
 [fsimilar] # C: [ able:1 be:1 better:1 body:1 breathing:1 exercises:1 for:1 lungs:1 run:1 strengthening:1 to:2 total:1 workout:1 your:1 ].
-[fsimilar] # C: [ :1 breathing:1 exercise:1 most:1 powerful:1 pranayama:1 yoga:1 ].
+[fsimilar] # C: [ breathing:1 exercise:1 most:1 powerful:1 pranayama:1 yoga:1 ].
 [fsimilar] # C: [ breathing:1 dr:1 exercise:1 healthy:1 keep:1 lungs:1 mandell:1 proper:1 strengthen:1 to:2 ].
 [fsimilar] # C: [ breathe:1 breathing:2 exercises:1 how:1 proper:1 running:1 technique:1 to:1 while:1 ].
 [fsimilar] # C: [ anxiety:1 breath:1 calming:1 deep:1 depression:1 exercises:1 for:1 guided:1 meditation:1 or:1 relaxation:1 sleep:1 ].
 [fsimilar] # C: [ 4:1 60:1 7:1 8:1 a:1 asleep:1 breathing:1 claims:1 help:1 in:2 just:1 minute:1 nod:1 off:1 seconds:1 technique:1 to:1 you:1 ].
-[fsimilar] # C: [ :1 abs:1 breathing:1 exercises:1 from:1 get:1 how:1 simple:1 souletics:1 to:1 with:1 ].
+[fsimilar] # C: [ abs:1 breathing:1 exercises:1 from:1 get:1 how:1 simple:1 souletics:1 to:1 with:1 ].
 [fsimilar] # C: [ breathing:1 deep:1 exercises:1 for:1 guided:1 healing:1 meditation:1 relaxation:1 spirit:1 with:1 ].
 [fsimilar] # C: [ beep:1 fitness:1 how:1 longer:1 pacer:1 run:1 test:3 tips:3 to:1 ].
 [fsimilar] # C: [ a:1 breathing:1 meditation:1 sympathetic:1 ].
@@ -351,7 +351,7 @@
 [fsimilar] # C: [ 6:1 a:1 ball:1 crucial:1 every:1 how:1 master:1 needs:1 player:1 shoot:1 shooting:1 skills:1 soccer:2 to:2 ].
 [fsimilar] # C: [ a:1 accuracy:1 and:1 ball:1 how:1 power:1 shoot:1 soccer:1 to:1 tutorial:1 with:1 ].
 [fsimilar] # C: [ a:3 ball:2 football:2 how:3 kick:2 or:1 shoot:1 soccer:2 to:3 ].
-[fsimilar] # C: [ :1 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
+[fsimilar] # C: [ 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
 [fsimilar] # C: [ a:1 bale:1 by:1 dip:1 free:1 freekickerz:1 how:1 kick:1 like:1 ronaldo:1 shoot:1 spin:1 to:1 top:1 ].
 [fsimilar] # C: [ a:1 and:1 ball:1 how:1 improve:1 practicing:1 shoot:1 shooting:1 shots:1 soccer:3 technique:1 to:1 ].
 [fsimilar] # C: [ and:1 football:2 for:1 free:1 kids:1 soccer:2 training:4 workouts:1 ].
@@ -363,7 +363,7 @@
 [fsimilar] # C: [ a:1 ball:1 for:1 how:1 kids:1 shoot:1 soccer:1 to:1 tutorial:1 ].
 [fsimilar] # C: [ a:1 ball:1 curve:1 free:1 g:1 how:1 kick:1 ndogan:1 shoot:1 to:1 tutorial:1 w:1 ].
 [fsimilar] # C: [ ball:1 how:1 power:1 shooting:2 soccer:2 striking:1 technique:1 the:1 to:1 with:1 ].
-[fsimilar] # C: [ :1 a:1 ball:1 football:1 how:1 kick:1 kicking:1 shooting:1 soccer:2 technique:1 to:1 ].
+[fsimilar] # C: [ a:1 ball:1 football:1 how:1 kick:1 kicking:1 shooting:1 soccer:2 technique:1 to:1 ].
 [fsimilar] # C: [ how:1 lessons:1 move:1 on:1 shoot:1 soccer:1 the:1 to:1 ].
 [fsimilar] # C: [ a:1 ball:1 how:1 power:1 shoot:1 soccer:1 to:1 with:1 ].
 [fsimilar] # C: [ a:2 ball:2 football:2 how:2 kick:1 or:2 shoot:1 soccer:2 to:2 ].
@@ -388,16 +388,16 @@
 [fsimilar] # C: [ a:2 ball:2 how:3 kick:1 like:1 ronaldo:1 shoot:2 soccer:2 to:3 ].
 [fsimilar] # C: [ beckham:1 changers:1 david:1 game:1 masterclass:1 s:1 shooting:1 ].
 [fsimilar] # C: [ 2017:1 a:1 game:1 goalkeeper:1 how:1 humiliate:1 in:1 like:1 messi:1 neymar:1 ronaldo:1 skills:1 to:1 ].
-[fsimilar] # C: [ :1 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
+[fsimilar] # C: [ 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
 [fsimilar] # C: [ beat:1 goalkeeper:1 how:1 the:1 to:1 tutorial:1 ].
 [fsimilar] # C: [ and:1 football:2 for:1 free:1 kids:1 soccer:2 training:4 workouts:1 ].
-[fsimilar] # C: [ :1 challenge:1 goalkeeper:1 jj:1 vs:1 ].
+[fsimilar] # C: [ challenge:1 goalkeeper:1 jj:1 vs:1 ].
 [fsimilar] # C: [ a:1 assist:1 by:1 ever:1 football:1 goal:1 goalkeeper:1 in:1 longest:1 soccer:1 throw:1 ].
 [fsimilar] # C: [ 12:1 beat:1 fifa:1 goalkeeper:1 hd:1 how:1 the:1 to:1 tutorial:1 ].
 [fsimilar] # C: [ all:1 attack:1 beat:1 ft:1 goalkeeper:1 how:1 the:1 to:1 ].
 [fsimilar] # C: [ and:1 beat:1 goalkeeper:1 hulk:1 in:1 innovated:1 penalty:1 to:1 tricks:1 way:1 ].
-[fsimilar] # C: [ :1 ever:1 original:1 scott:1 shootout:1 soccer:1 sterling:1 top:1 with:1 ].
-[fsimilar] # C: [ :1 a:1 amazing:1 beat:1 can:1 goalkeeper:1 pro:1 saves:1 semi:1 shots:1 we:1 ].
+[fsimilar] # C: [ ever:1 original:1 scott:1 shootout:1 soccer:1 sterling:1 top:1 with:1 ].
+[fsimilar] # C: [ a:1 amazing:1 beat:1 can:1 goalkeeper:1 pro:1 saves:1 semi:1 shots:1 we:1 ].
 [fsimilar] # C: [ destroying:1 footballers:1 goalkeepers:1 hd:1 ].
 [fsimilar] # C: [ goalkeeper:1 hart:1 how:1 joe:1 on:1 one:1 ones:1 pro:1 tips:1 to:1 win:1 ].
 [fsimilar] # C: [ best:1 cristiano:1 goalkeepers:1 hd:1 in:1 ronaldo:1 the:1 vs:1 world:1 ].
@@ -407,7 +407,7 @@
 [fsimilar] # C: [ a:1 beat:1 football:1 goalkeeper:1 how:1 to:1 tutorial:1 ].
 [fsimilar] # C: [ 1v1:1 a:1 beat:1 football:1 goalkeeper:1 goals:1 how:2 in:2 keeper:1 more:1 score:1 soccer:1 the:1 to:2 with:1 ].
 [fsimilar] # C: [ beat:1 goalkeeper:1 how:1 quick:1 the:1 tip:1 to:1 ].
-[fsimilar] # C: [ :1 challenge:1 goalkeeping:1 sumo:1 ].
+[fsimilar] # C: [ challenge:1 goalkeeping:1 sumo:1 ].
 [fsimilar] # C: [ 1v1:2 a:1 attack:1 beat:1 football:1 goalkeeper:1 how:2 in:1 soccer:1 to:2 ].
 [fsimilar] # C: [ a:3 football:1 how:3 in:2 kick:1 penalty:3 score:1 shoot:1 soccer:1 take:1 to:3 ].
 [fsimilar] # C: [ 2015:1 best:1 goalkeeper:1 hd:1 saves:1 ].
@@ -418,47 +418,47 @@
 [fsimilar] # C: [ 16:1 beat:1 dribble:1 fifa:1 gk:1 glitch:1 goalkeeper:1 him:1 how:2 past:1 the:2 tips:1 to:2 tricks:1 tutorial:1 ].
 [fsimilar] # C: [ as:1 football:1 goalkeepers:1 keepers:1 outfield:1 players:1 undercover:1 ].
 [fsimilar] # C: [ 2011:1 ajax:1 az:1 esteban:1 fan:1 fight:1 football:1 goalkeeper:1 keeper:1 kicks:1 ].
-[fsimilar] # C: [ 2013:1 challenge:1 festival:1 goalkeeper:1 robot:1 ucl:1 unicredit:1 ].
+[fsimilar] # C: [ 2013:1 challenge:1 credit:1 festival:1 goalkeeper:1 robot:1 ucl:1 uni:1 ].
 [fsimilar] # C: [ a:2 accuracy:1 and:1 ball:1 beginners:1 football:1 for:1 how:2 perfectly:1 power:1 shoot:2 soccer:1 to:2 with:1 ].
 [fsimilar] # C: [ a:1 become:1 better:1 football:1 forward:1 goals:1 how:3 in:1 more:1 play:1 score:1 striker:2 to:3 ].
 [fsimilar] # C: [ 10:1 blunders:1 fails:1 goalkeeper:1 top:1 ].
 [fsimilar] # C: [ 13:1 crazy:1 football:1 goalkeeper:1 goals:1 history:1 in:1 top:1 ].
 [fsimilar] # C: [ 1:2 15:1 16:1 beat:1 by:1 fifa:1 g:1 goalkeeper:1 how:1 phdx:1 the:1 tips:1 to:1 tricks:1 tutorial:1 vs:1 ].
-[fsimilar] # C: [ :1 basketball:1 development:1 drills:1 hand:2 improve:1 off:1 weak:1 your:1 ].
+[fsimilar] # C: [ basketball:1 development:1 drills:1 hand:2 improve:1 off:1 weak:1 your:1 ].
 [fsimilar] # C: [ 2:1 curry:1 dribbling:1 drills:1 how:1 improve:1 pt:1 steph:1 to:1 your:1 ].
 [fsimilar] # C: [ 15:1 ball:1 basketball:1 handling:1 improve:1 minute:1 skills:1 teaching:1 workout:1 ].
-[fsimilar] # C: [ :1 5:1 dribbling:1 drills:2 fast:1 football:1 improve:1 mean:1 soccer:1 to:1 u:1 ].
-[fsimilar] # C: [ :1 dribbling:1 how:1 improve:1 to:1 your:1 ].
+[fsimilar] # C: [ 5:1 dribbling:1 drills:2 fast:1 football:1 improve:1 mean:1 soccer:1 to:1 u:1 ].
+[fsimilar] # C: [ dribbling:1 how:1 improve:1 to:1 your:1 ].
 [fsimilar] # C: [ a:1 basketball:1 dribble:1 dribbling:1 hand:1 how:2 improve:1 science:1 shot:1 to:2 weak:1 your:1 ].
 [fsimilar] # C: [ dribbling:1 how:1 improve:1 quick:1 tip:1 to:1 your:1 ].
 [fsimilar] # C: [ 3:1 dribbling:2 how:1 improve:1 of:1 styles:1 tips:1 to:1 your:1 ].
 [fsimilar] # C: [ dribbling:1 drills:1 hand:2 how:1 improve:1 to:1 weak:2 your:1 ].
 [fsimilar] # C: [ 11:1 dribbling:2 drills:2 improve:1 skills:1 soccer:3 to:1 ].
-[fsimilar] # C: [ :1 7:1 a:1 ball:1 basketball:1 better:1 biggest:1 dribble:1 handling:1 improve:1 instantly:1 keys:1 the:1 to:1 your:1 ].
+[fsimilar] # C: [ 7:1 a:1 ball:1 basketball:1 better:1 biggest:1 dribble:1 handling:1 improve:1 instantly:1 keys:1 the:1 to:1 your:1 ].
 [fsimilar] # C: [ basketball:1 dribble:1 faster:1 how:1 moves:1 to:1 ].
-[fsimilar] # C: [ :1 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
+[fsimilar] # C: [ 2016:2 2017:2 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
 [fsimilar] # C: [ and:1 football:2 for:1 free:1 kids:1 soccer:2 training:4 workouts:1 ].
 [fsimilar] # C: [ 4:1 footwork:1 how:1 improve:1 in:1 minutes:1 soccer:1 to:1 tutorial:1 your:1 ].
 [fsimilar] # C: [ 5:1 ball:1 daily:1 dribbling:1 handling:1 how:1 improve:1 minute:1 pro:1 routine:1 to:1 training:1 your:1 ].
 [fsimilar] # C: [ ball:1 control:1 dribbling:1 drills:1 first:1 how:1 improve:1 soccer:1 to:1 touch:1 ].
-[fsimilar] # C: [ :1 17:1 back:1 drag:1 dribbling:1 fifa:1 how:1 improve:1 in:1 move:1 skill:1 team:1 tips:1 to:1 tricks:1 tutorial:1 ultimate:1 ].
-[fsimilar] # C: [ :1 better:1 dribble:1 dribbling:1 how:1 improve:1 in:1 instantly:1 now:1 right:1 skills:1 soccer:1 to:1 your:1 ].
+[fsimilar] # C: [ 17:1 back:1 drag:1 dribbling:1 fifa:1 how:1 improve:1 in:1 move:1 skill:1 team:1 tips:1 to:1 tricks:1 tutorial:1 ultimate:1 ].
+[fsimilar] # C: [ better:1 dribble:1 dribbling:1 how:1 improve:1 in:1 instantly:1 now:1 right:1 skills:1 soccer:1 to:1 your:1 ].
 [fsimilar] # C: [ baldwin:1 basketball:1 circuit:1 daily:1 dre:1 dribbling:1 drill:1 for:1 hand:1 how:1 improve:1 layups:1 left:1 to:1 your:1 ].
 [fsimilar] # C: [ 4:1 better:1 dribbling:2 drills:2 football:2 for:1 skills:2 soccer:2 top:1 ].
 [fsimilar] # C: [ a:1 about:1 ball:1 best:1 dribble:1 how:1 moves:2 soccer:3 the:2 to:1 truth:1 with:1 ].
 [fsimilar] # C: [ andreas:1 dribbling:1 drill:1 how:1 improve:1 one:1 part:1 pereira:1 skills:1 soccer:1 to:1 ].
-[fsimilar] # C: [ :1 dribbling:1 drills:1 hand:1 weak:1 ].
+[fsimilar] # C: [ dribbling:1 drills:1 hand:1 weak:1 ].
 [fsimilar] # C: [ and:1 dribbling:2 effort:1 football:1 futsal:1 how:1 improve:1 in:1 skills:1 soccer:1 to:1 with:1 zero:1 ].
 [fsimilar] # C: [ dribbling:1 how:1 improve:1 skills:1 to:1 tutorial:1 your:1 ].
 [fsimilar] # C: [ at:1 dribbling:1 home:1 how:1 improve:1 skills:1 soccer:1 to:1 your:1 ].
-[fsimilar] # C: [ :1 basketball:1 dribble:1 dribbling:1 drill:1 how:1 improve:1 skills:1 speed:1 to:1 your:1 ].
+[fsimilar] # C: [ basketball:1 dribble:1 dribbling:1 drill:1 how:1 improve:1 skills:1 speed:1 to:1 your:1 ].
 [fsimilar] # C: [ academy:1 cardio:1 dribbling:1 drill:1 improve:1 new:1 online:1 soccer:2 to:1 ].
-[fsimilar] # C: [ :1 at:1 ball:1 handling:1 home:1 how:1 improve:1 to:1 your:1 ].
+[fsimilar] # C: [ at:1 ball:1 handling:1 home:1 how:1 improve:1 to:1 your:1 ].
 [fsimilar] # C: [ crowley:1 dan:1 dribbling:1 how:1 improve:1 in:1 part:1 soccer:1 to:1 two:1 ].
 [fsimilar] # C: [ basketball:1 crossover:2 dribbling:1 drills:1 how:1 improve:1 in:1 to:1 your:1 ].
 [fsimilar] # C: [ 1:1 and:1 football:1 improve:1 not:1 secret:1 skills:2 soccer:1 this:1 unless:1 use:1 will:1 you:1 your:1 ].
 [fsimilar] # C: [ dribbling:1 how:1 improve:1 tips:1 to:1 your:1 ].
-[fsimilar] # C: [ :1 a:1 basketball:1 better:1 dribble:1 dribbling:1 drills:1 how:1 progression:1 to:1 ].
+[fsimilar] # C: [ a:1 basketball:1 better:1 dribble:1 dribbling:1 drills:1 how:1 progression:1 to:1 ].
 [fsimilar] # C: [ crowley:1 dan:1 dribbling:1 how:1 improve:1 in:1 one:1 part:1 soccer:1 to:1 ].
 [fsimilar] # C: [ ball:1 bull:1 by:1 control:1 dribbling:1 drills:1 first:1 football:1 how:1 improve:1 soccer:1 to:1 touch:1 ].
 [fsimilar] # C: [ ball:1 by:1 control:1 dribblings:1 freekickerz:1 how:1 improve:1 soccer:1 to:1 tricks:1 your:1 ].
@@ -476,7 +476,7 @@
 [fsimilar] # C: [ 12:1 ball:2 by:1 control:2 drills:2 how:1 improve:1 soccer:3 to:1 yourself:1 ].
 [fsimilar] # C: [ 30:1 drills:1 how:1 perfect:1 skill:1 soccer:1 the:1 to:1 trapping:1 ].
 [fsimilar] # C: [ 33:1 at:1 ball:1 control:1 from:1 pros:1 speed:1 the:1 tips:1 ].
-[fsimilar] # C: [ :1 09:1 ball:1 control:1 drills:1 fifa:1 improve:1 soccer:1 to:1 trainer:1 ].
+[fsimilar] # C: [ 09:1 ball:1 control:1 drills:1 fifa:1 improve:1 soccer:1 to:1 trainer:1 ].
 [fsimilar] # C: [ 10:1 a:1 do:1 how:1 laces:1 shoe:1 soccer:1 to:1 trap:1 with:1 your:1 ].
 [fsimilar] # C: [ 18:1 1st:1 control:1 football:1 how:1 improve:1 in:1 learn:1 play:1 school:1 soccer:1 strskill:1 to:2 touch:1 your:1 ].
 [fsimilar] # C: [ 36:1 a:1 air:1 ball:2 control:2 for:1 how:1 in:1 soccer:2 the:1 tips:1 to:1 ].
@@ -485,7 +485,7 @@
 [fsimilar] # C: [ 27:1 a:1 ball:1 chest:1 how:1 soccer:1 to:1 ].
 [fsimilar] # C: [ 31:1 air:1 and:1 ball:1 control:1 foot:1 how:1 of:2 out:1 outside:1 soccer:1 the:3 to:1 trap:1 with:1 your:1 ].
 [fsimilar] # C: [ 05:1 academy:1 air:1 ball:1 control:1 how:1 of:1 online:1 out:1 soccer:2 the:2 to:1 ].
-[fsimilar] # C: [ :1 26:1 5:1 500:1 a:1 ball:1 from:1 how:1 juggle:1 soccer:1 to:2 ].
+[fsimilar] # C: [ 26:1 5:1 500:1 a:1 ball:1 from:1 how:1 juggle:1 soccer:1 to:2 ].
 [fsimilar] # C: [ 29:1 ball:1 control:1 drills:1 for:1 kids:1 soccer:2 ].
 [fsimilar] # C: [ 1:1 37:1 and:1 football:1 improve:1 not:1 secret:1 skills:2 soccer:1 this:1 unless:1 use:1 will:1 you:1 your:1 ].
 [fsimilar] # C: [ 23:1 ball:1 control:1 dribbling:1 drills:1 first:1 how:1 improve:1 soccer:1 to:1 touch:1 ].
@@ -493,10 +493,10 @@
 [fsimilar] # C: [ 32:1 6:1 a:1 academy:1 ball:1 control:1 key:1 online:1 points:1 soccer:1 thigh:1 with:1 your:1 ].
 [fsimilar] # C: [ 02:1 ball:1 by:1 control:1 dribblings:1 freekickerz:1 how:1 improve:1 soccer:1 to:1 tricks:1 your:1 ].
 [fsimilar] # C: [ 24:1 ball:1 control:1 drills:1 how:1 improve:1 soccer:2 to:1 u8:1 youth:1 ].
-[fsimilar] # C: [ :1 2016:2 2017:2 39:1 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
+[fsimilar] # C: [ 2016:2 2017:2 39:1 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
 [fsimilar] # C: [ 19:1 5:1 ball:1 control:1 exercises:1 first:1 football:1 improve:1 simple:1 soccer:1 touch:1 tutorial:1 your:1 ].
 [fsimilar] # C: [ 07:1 a:1 air:1 ball:1 control:1 how:2 improve:1 in:1 skills:1 soccer:2 the:1 to:2 ].
-[fsimilar] # C: [ :1 08:1 5:1 ball:1 control:1 how:1 improve:1 in:1 less:1 minutes:1 skills:1 soccer:1 than:1 to:1 your:1 ].
+[fsimilar] # C: [ 08:1 5:1 ball:1 control:1 how:1 improve:1 in:1 less:1 minutes:1 skills:1 soccer:1 than:1 to:1 your:1 ].
 [fsimilar] # C: [ 13:1 a:1 ball:1 dribble:2 how:2 in:1 progressive:1 soccer:3 to:2 training:1 ].
 [fsimilar] # C: [ 17:1 ball:1 control:1 drills:1 improve:1 soccer:1 to:1 ].
 [fsimilar] # C: [ 40:1 a:2 ball:1 best:1 better:1 control:2 football:2 how:1 or:1 soccer:1 to:2 ways:1 ].
@@ -511,13 +511,13 @@
 [fsimilar] # C: [ 02:1 a:1 after:1 ball:1 by:1 control:1 cross:1 football:1 freekickerz:1 how:1 pass:1 the:1 to:1 tutorial:1 ].
 [fsimilar] # C: [ 17:1 5:1 ball:1 control:1 exercises:1 first:1 football:1 improve:1 simple:1 soccer:1 touch:1 tutorial:1 your:1 ].
 [fsimilar] # C: [ 29:1 andreas:1 ball:1 control:1 drill:1 how:1 improve:1 one:1 part:1 pereira:1 soccer:1 to:1 ].
-[fsimilar] # C: [ :1 10:1 ball:1 control:1 drills:1 fifa:1 improve:1 soccer:1 to:1 trainer:1 ].
+[fsimilar] # C: [ 10:1 ball:1 control:1 drills:1 fifa:1 improve:1 soccer:1 to:1 trainer:1 ].
 [fsimilar] # C: [ 04:1 1st:1 control:1 football:1 how:1 improve:1 in:1 learn:1 play:1 school:1 soccer:1 strskill:1 to:2 touch:1 your:1 ].
 [fsimilar] # C: [ 30:1 7mlc:1 ball:1 control:1 elite:1 how:1 like:1 ronaldinho:1 the:1 tip:1 to:1 training:1 ].
 [fsimilar] # C: [ 1:1 34:1 and:1 football:1 improve:1 not:1 secret:1 skills:2 soccer:1 this:1 unless:1 use:1 will:1 you:1 your:1 ].
 [fsimilar] # C: [ 20:1 foot:1 football:1 how:1 improve:1 skills:1 soccer:1 to:1 touch:1 weak:1 your:1 ].
-[fsimilar] # C: [ :1 09:1 5:1 ball:1 control:1 how:1 improve:1 in:1 less:1 minutes:1 skills:1 soccer:1 than:1 to:1 your:1 ].
-[fsimilar] # C: [ :1 06:1 a:1 control:1 football:1 incredible:1 to:1 ways:1 ].
+[fsimilar] # C: [ 09:1 5:1 ball:1 control:1 how:1 improve:1 in:1 less:1 minutes:1 skills:1 soccer:1 than:1 to:1 your:1 ].
+[fsimilar] # C: [ 06:1 a:1 control:1 football:1 incredible:1 to:1 ways:1 ].
 [fsimilar] # C: [ 16:1 ball:2 control:2 drills:3 football:1 for:1 improve:1 soccer:2 to:1 training:1 ].
 [fsimilar] # C: [ 11:1 ball:1 control:1 f2:1 first:1 football:1 freestylers:1 how:1 improve:1 skills:1 to:1 touch:1 your:1 ].
 [fsimilar] # C: [ 05:1 a:1 amazing:1 control:1 f2:1 football:1 freestylers:1 to:1 ways:1 ].
@@ -526,17 +526,17 @@
 [fsimilar] # C: [ 14:1 a:1 ball:1 beginners:1 for:1 juggling:1 soccer:1 training:1 ].
 [fsimilar] # C: [ 2:1 27:1 control:1 dribble:1 football:1 tricks:1 tutorial:1 ].
 [fsimilar] # C: [ 28:1 air:1 ball:1 control:1 football:1 in:1 learn:1 skills:1 soccer:1 the:2 to:1 ].
-[fsimilar] # C: [ :1 2016:2 2017:2 36:1 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
+[fsimilar] # C: [ 2016:2 2017:2 36:1 and:1 football:2 level:1 next:1 skills:4 soccer:2 ].
 [fsimilar] # C: [ 18m:1 25:1 awesome:1 ball:1 control:1 high:1 lifting:1 lionel:1 messi:1 record:1 s:1 world:1 ].
 [fsimilar] # C: [ 32:1 a:1 air:1 ball:1 control:1 foot:1 how:1 in:1 like:1 ozil:1 soccer:1 the:1 to:1 with:1 your:1 ].
 [fsimilar] # C: [ 07:1 1:1 control:1 dribble:1 football:1 tricks:1 tutorial:1 ].
 [fsimilar] # C: [ 35:1 and:1 football:2 for:1 free:1 kids:1 soccer:2 training:4 workouts:1 ].
-[fsimilar] # C: [ :1 21:1 challenge:1 control:1 crazy:1 football:1 no:1 shooting:1 ].
+[fsimilar] # C: [ 21:1 challenge:1 control:1 crazy:1 football:1 no:1 shooting:1 ].
 [fsimilar] # C: [ 01:1 a:1 ball:2 control:2 football:2 futsal:1 how:2 improve:1 in:1 or:2 soccer:2 to:2 ].
 [fsimilar] # C: [ 26:1 ball:1 control:1 football:1 ground:1 how:1 improve:1 learn:1 on:1 skills:1 soccer:1 the:1 to:1 ].
 [fsimilar] # C: [ 22:1 ball:1 best:1 control:1 ever:1 football:1 skills:1 ].
 [fsimilar] # C: [ 37:1 a:2 ball:1 best:1 better:1 control:2 football:2 how:1 or:1 soccer:1 to:2 ways:1 ].
-[fsimilar] # C: [ :1 15:1 and:1 ball:1 control:1 foot:1 how:1 improve:1 in:1 less:1 minutes:1 then:1 three:1 to:1 touch:1 weak:1 ].
+[fsimilar] # C: [ 15:1 and:1 ball:1 control:1 foot:1 how:1 improve:1 in:1 less:1 minutes:1 then:1 three:1 to:1 touch:1 weak:1 ].
 [fsimilar] # C: [ 24:1 and:1 control:1 football:1 improve:1 learn:1 passing:1 play:1 soccer:1 to:1 ].
 [fsimilar] # S: [1 282].
 100 47818821 FIFA 16 How to Protect the Ball Tutorial _ How to Push Opponents in FIFA 16 _ Tips & Tricks.mp4	./how to protect the ball in football/
@@ -686,8 +686,8 @@
 
 [fsimilar] # S: [56 478 513].
 100 60720805 Soccer Drills To Improve Ball Control _ FifaTrainer .mp4	./how to improve ball control/
- 95 60720805 09 - Soccer Drills To Improve Ball Control _ FifaTrainer .mp4	./how to control a soccer ball/
- 95 60720805 10 - Soccer Drills To Improve Ball Control _ FifaTrainer .mp4	./how to control a football/
+ 94 60720805 09 - Soccer Drills To Improve Ball Control _ FifaTrainer .mp4	./how to control a soccer ball/
+ 94 60720805 10 - Soccer Drills To Improve Ball Control _ FifaTrainer .mp4	./how to control a football/
 
 [fsimilar] # S: [58 250 442 490].
 100 22794807 How To IMPROVE BALL CONTROL _ Dribbling, First Touch Drills Soccer.mp4	./how to improve ball control/
@@ -757,8 +757,8 @@
 
 [fsimilar] # S: [85 498 518].
 100 47397078 How to Improve Your Ball Control & Soccer Skills in Less than 5 Minutes!.mp4	./how to improve ball control/
- 97 47397078 08 - How to Improve Your Ball Control & Soccer Skills in Less than 5 Minutes!.mp4	./how to control a soccer ball/
- 97 47397078 09 - How to Improve Your Ball Control & Soccer Skills in Less than 5 Minutes!.mp4	./how to control a football/
+ 96 47397078 08 - How to Improve Your Ball Control & Soccer Skills in Less than 5 Minutes!.mp4	./how to control a soccer ball/
+ 96 47397078 09 - How to Improve Your Ball Control & Soccer Skills in Less than 5 Minutes!.mp4	./how to control a football/
 
 [fsimilar] # S: [88 346].
 100 51652641 How to Shoot on the Run.mp4	./how to shoot a football/
