@@ -1,0 +1,41 @@
+[fsimilar]  n='Audio Book - The Grey Coloured Bunnie', e='.mp3', s='1', d='test/sim/'
+[fsimilar] +: Simhash of 590636788820426686 added.
+[fsimilar]  n='GNU - Python Standard Library (2001)', e='.rar', s='1', d='test/sim/'
+[fsimilar] +: Simhash of 14691758330613907389 added.
+[fsimilar]  n='PopupTest', e='.java', s='1', d='test/sim/'
+[fsimilar] +: Simhash of 15617897572914288503 added.
+[fsimilar]  n='(eBook) GNU - Python Standard Library 2001', e='.pdf', s='1', d='test/sim/'
+[fsimilar] =: Simhash of 10044043446448144317 ignored for 14691758330613907389 (4).
+[fsimilar]  n='Python Standard Library', e='.zip', s='1', d='test/sim/'
+[fsimilar] +: Simhash of 15612724672816807933 added.
+[fsimilar]  n='GNU - 2001 - Python Standard Library', e='.pdf', s='1', d='test/sim/'
+[fsimilar] =: Simhash of 14691758330613907389 ignored for 14691758330613907389 (0).
+[fsimilar]  n='LayoutTest', e='.java', s='1', d='test/sim/'
+[fsimilar] +: Simhash of 15618201070671213951 added.
+[fsimilar]  n='ColoredGrayBunny', e='.ogg', s='1', d='test/sim/'
+[fsimilar] =: Simhash of 590636788820414130 ignored for 590636788820426686 (5).
+[fsimilar] Deal Dups
+
+[fsimilar] # Item: {10044043446448144317 0}.
+[fsimilar]   Neighbors true: [{14691758330613907389 4}].
+       1 test/sim/(eBook) GNU - Python Standard Library 2001.pdf
+       1 test/sim/GNU - 2001 - Python Standard Library.pdf
+       1 test/sim/GNU - Python Standard Library (2001).rar
+
+[fsimilar] # Item: {590636788820426686 0}.
+[fsimilar]   No similar items at this hash
+[fsimilar] # Item: {590636788820414130 0}.
+[fsimilar]   Neighbors true: [{590636788820426686 5}].
+       1 test/sim/ColoredGrayBunny.ogg
+
+[fsimilar] # Item: {14691758330613907389 1}.
+[fsimilar]   Visited hash ignored
+[fsimilar] # Item: {14691758330613907389 0}.
+[fsimilar]   Visited hash ignored
+[fsimilar] # Item: {15618201070671213951 0}.
+[fsimilar]   No similar items at this hash
+[fsimilar] # Item: {15617897572914288503 0}.
+[fsimilar]   No similar items at this hash
+[fsimilar] # Item: {15612724672816807933 0}.
+[fsimilar]   No similar items at this hash
+

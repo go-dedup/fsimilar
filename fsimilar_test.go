@@ -69,6 +69,13 @@ func TestExec(t *testing.T) {
 	testIt(t, "test1.sim", "sim -i test1.lst -S -d 6 -vv")
 	testIt(t, "test2.sim", "sim -i test2.lst -S -d 6 -vv")
 
+	// == Test Simhash Phonetic Function tests
+	t.Logf("\n\n== Testing Simhash Phonetic Functions\n\n")
+	// -- sim
+	testIt(t, "sim.lstA.sim.phonetic", "sim -i sim.lstA -d 12 -p -vv")
+	testIt(t, "sim.lstB.sim.phonetic", "sim -i sim.lstB -d 12 -p -vv")
+	testIt(t, "sim.lstS.sim.phonetic", "sim -i sim.lstS -d 12 -p -vv")
+
 	// == Test Vector Space Basic Function tests
 	t.Logf("\n\n== Testing Vector Space Basic Functions\n\n")
 	// -- sim
