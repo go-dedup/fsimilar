@@ -1,2 +1,4 @@
-{{range .}}{{printf "%8d" .Size}} {{.Dir}}{{.Name}}{{.Ext}}
+### #{{.Opts.Ndx}}: {{.Opts.File1st}}
+
+{{range .Similars}}{{printf "%8d" .Size}} {{.Dir}}{{.Name}}{{.Ext}}
 {{end}}

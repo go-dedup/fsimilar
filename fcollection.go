@@ -13,6 +13,7 @@ package main
 
 // The FileT type defines all the necessary info for a file.
 type FileT struct {
+	Org  string // the original file name string
 	Name string
 	Ext  string
 	Size int

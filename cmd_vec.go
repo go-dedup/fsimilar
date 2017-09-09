@@ -9,8 +9,6 @@ package main
 import (
 	"io"
 
-	"github.com/go-dedup/text"
-
 	"github.com/mkideal/cli"
 )
 
@@ -27,14 +25,7 @@ func vecCLI(ctx *cli.Context) error {
 		rootArgv.SizeGiven, rootArgv.QuerySize,
 		rootArgv.Phonetic, rootArgv.Final, rootArgv.Verbose.Value()
 	simTh = argv.Threshold
-	if Opts.Phonetic {
-		doc2words = text.GetDoubleMetaphoneFactory(text.Decorators(
-			text.SplitCamelCase,
-			text.RemovePunctuation,
-			text.Compact,
-			text.Trim,
-		))
-	}
+	cmdInit()
 
 	return cmdVec(rootArgv.Filei)
 }
@@ -42,6 +33,7 @@ func vecCLI(ctx *cli.Context) error {
 func cmdVec(cin io.Reader) error {
 	processFileInfo(cin, buildVecs)
 
+	Opts.Ndx = 0
 	for _, f := range fv {
 		verbose(1, "# C: %v.", f.Conc.String())
 	}
@@ -86,7 +78,10 @@ func cmdVec(cin io.Reader) error {
 			for kk := range similar {
 				files[kk] = fv[similar[kk]]
 			}
+			Opts.File1st = files[0].Org
+			Opts.Ndx++
 			outputSimilars(tmplFileName[Opts.Final], files, true)
+			outputFinal(files)
 		}
 	}
 

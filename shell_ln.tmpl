@@ -1,0 +1,4 @@
+### #{{.Opts.Ndx}}: {{.Opts.File1st}}
+
+{{range $ii, $xx := .Similars}}{{if ne $ii 0}}{{if eq $xx.Ext (Ext $.Opts.File1st)}}  [ "$FSIM_MIN" ] && [ {{printf "%3d" $xx.Similarity}} -ge "$FSIM_MIN" ] && $FSIM_SHOW ln -sf {{ ToRel $xx.Dir $.Opts.File1st | Quote}} {{Quote $xx.Org}}{{else}}  # [{{$ii}}] Extension '{{$xx.Ext}}' of {{Quote $xx.Org}} different than original, skipping{{end}}
+{{end}}{{end}}

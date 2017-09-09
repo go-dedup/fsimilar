@@ -18,12 +18,16 @@
 
 [fsimilar] # Item: {10044043446448144317 0}.
 [fsimilar]   Neighbors true: [{14691758330613907389 4}].
+### #1: test/sim/(eBook) GNU - Python Standard Library 2001.pdf
+
        1 test/sim/(eBook) GNU - Python Standard Library 2001.pdf
        1 test/sim/GNU - 2001 - Python Standard Library.pdf
        1 test/sim/GNU - Python Standard Library (2001).rar
 
 [fsimilar] # Item: {590636788820426686 0}.
 [fsimilar]   Neighbors true: [{590636788820414130 5}].
+### #2: test/sim/Audio Book - The Grey Coloured Bunnie.mp3
+
        1 test/sim/Audio Book - The Grey Coloured Bunnie.mp3
        1 test/sim/ColoredGrayBunny.ogg
 

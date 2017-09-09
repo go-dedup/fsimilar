@@ -15,10 +15,14 @@
 [fsimilar] # C: [ lprr:2 p0n:1 ptn:1 stntrt:2 ].
 [fsimilar] # C: [ 0:1 at:2 klrt:2 kr:2 pk:2 pn:2 t:1 ].
 [fsimilar] # S: [1 7].
+### #1: test/sim/ColoredGrayBunny.ogg
+
        1 test/sim/ColoredGrayBunny.ogg
        1 test/sim/Audio Book - The Grey Coloured Bunnie.mp3
 
 [fsimilar] # S: [2 4 5 6].
+### #2: test/sim/GNU - 2001 - Python Standard Library.pdf
+
        1 test/sim/GNU - 2001 - Python Standard Library.pdf
        1 test/sim/(eBook) GNU - Python Standard Library 2001.pdf
        1 test/sim/GNU - Python Standard Library (2001).rar

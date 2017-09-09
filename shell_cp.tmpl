@@ -1,0 +1,6 @@
+### #{{.Opts.Ndx}}: {{.Opts.File1st}}
+
+{{range $ii, $xx := .Similars}}#### {{$ii}}
+{{$xx.Ext}} {{(Ext $.Opts.File1st)}} {{ne $xx.Ext (Ext $.Opts.File1st)}}
+[ "$FSIM_MIN" ] && [ {{printf "%3d" $xx.Similarity}} -ge "$FSIM_MIN" ] && echo cp {{ ToRel $xx.Dir $.Opts.File1st | Quote}} {{Quote $xx.Org}}
+{{end}}

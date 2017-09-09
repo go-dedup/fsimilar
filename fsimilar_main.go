@@ -10,9 +10,11 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"os"
 	"path/filepath"
 	"strings"
+	"time"
 
 	"github.com/go-dedup/text"
 	"github.com/labstack/gommon/color"
@@ -32,6 +34,11 @@ type OptsT struct {
 	ExecPath  string
 	CfgPath   string
 	Verbose   int
+
+	// For template output
+	File1st  string // first file in the f-similiar group
+	TmpFileP string // temp file prefix
+	Ndx      int
 }
 
 ////////////////////////////////////////////////////////////////////////////
@@ -59,6 +66,22 @@ var (
 
 ////////////////////////////////////////////////////////////////////////////
 // Function definitions
+
+func cmdInit() {
+	if Opts.Phonetic {
+		doc2words = text.GetDoubleMetaphoneFactory(text.Decorators(
+			text.SplitCamelCase,
+			text.RemovePunctuation,
+			text.Compact,
+			text.Trim,
+		))
+	}
+	rand.Seed(time.Now().UTC().UnixNano())
+	// temp file prefix
+	Opts.TmpFileP = fmt.Sprintf("%s/%s.%d.",
+		os.TempDir(), progname, 99999999-rand.Int31n(90000000))
+	os.Mkdir(Opts.TmpFileP+"Del", 0750)
+}
 
 //==========================================================================
 // Main dispatcher

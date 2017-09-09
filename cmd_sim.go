@@ -11,16 +11,13 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"math/rand"
 	"os"
 	"path/filepath"
 	"regexp"
 	"sort"
-	"time"
 
 	"github.com/go-dedup/simhash"
 	"github.com/go-dedup/simhash/sho"
-	"github.com/go-dedup/text"
 
 	"github.com/mkideal/cli"
 )
@@ -57,21 +54,12 @@ func simCLI(ctx *cli.Context) error {
 		rootArgv.SizeGiven, rootArgv.QuerySize,
 		rootArgv.Phonetic, rootArgv.Final, rootArgv.Verbose.Value()
 	r = argv.Distance
-	if Opts.Phonetic {
-		doc2words = text.GetDoubleMetaphoneFactory(text.Decorators(
-			text.SplitCamelCase,
-			text.RemovePunctuation,
-			text.Compact,
-			text.Trim,
-		))
-	}
+	cmdInit()
 
 	return fSimilar(rootArgv.Filei)
 }
 
 func fSimilar(cin io.Reader) error {
-	rand.Seed(time.Now().UTC().UnixNano())
-	//tmpfile := fmt.Sprintf("%s.%d", file, 99999999-rand.Int31n(90000000))
 	processFileInfo(cin, buildOracle)
 	return dealDups()
 }
@@ -103,7 +91,7 @@ func processFileInfo(cin io.Reader, fp processFileInfoFunc) error {
 			file.Size = 1
 		}
 		p, n := filepath.Split(fn)
-		file.Dir, file.Name, file.Ext = p, Basename(n), filepath.Ext(n)
+		file.Org, file.Dir, file.Name, file.Ext = fn, p, Basename(n), filepath.Ext(n)
 		verbose(2, " n='%s', e='%s', s='%d', d='%s'",
 			file.Name, file.Ext, file.Size, file.Dir)
 		fp(fn, file)
@@ -133,6 +121,7 @@ func dealDups() error {
 	verbose(2, "Deal Dups\n")
 
 	// process all, the sorted fAll map
+	Opts.Ndx = 0
 	visited := make(HVisited)
 	var keys []string
 	for k := range fAll {
@@ -187,7 +176,10 @@ func dealDups() error {
 
 		// One group of similar items found, output
 		sort.Sort(files)
+		Opts.File1st = files[0].Org
+		Opts.Ndx++
 		outputSimilars(tmplFileName[Opts.Final], files, true)
+		outputFinal(files)
 	}
 
 	return nil

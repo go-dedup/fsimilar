@@ -18,6 +18,8 @@
 
 [fsimilar] # Item: {6185454664763697054 0}.
 [fsimilar]   Neighbors true: [{6184610222622303958 10}].
+### #1: test/sim/(eBook) GNU - Python Standard Library 2001.pdf
+
        1 test/sim/(eBook) GNU - Python Standard Library 2001.pdf
        1 test/sim/GNU - 2001 - Python Standard Library.pdf
        1 test/sim/GNU - Python Standard Library (2001).rar
@@ -36,6 +38,8 @@
 [fsimilar]   No similar items at this hash
 [fsimilar] # Item: {6175699711939618002 0}.
 [fsimilar]   Neighbors true: [{6184610222622303958 11}].
+### #2: test/sim/Python Standard Library.zip
+
        1 test/sim/Python Standard Library.zip
 
 
