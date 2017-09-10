@@ -1,0 +1,4 @@
+### #{{.Opts.Ndx}}: {{.Opts.File1st}}
+
+{{range $ii, $xx := .Similars}}{{if ne $ii 0}}  [ "$FSIM_MIN" ] && [ {{printf "%3d" $xx.Similarity}} -ge "$FSIM_MIN" ] && $FSIM_SHOW mv -vf {{Quote $xx.Org}} {{$.Opts.TmpFileP}}Del
+{{end}}{{end}}

@@ -1,4 +1,4 @@
 ### #{{.Opts.Ndx}}: {{.Opts.File1st}}
 
-{{range $ii, $xx := .Similars}}{{if ne $ii 0}}{{if ne $xx.Ext (Ext $.Opts.File1st)}}  [ "$FSIM_MIN" ] && [ {{printf "%3d" $xx.Similarity}} -ge "$FSIM_MIN" ] && $FSIM_SHOW rm -vf {{Quote $xx.Org}}{{else}}  # [{{$ii}}] Extension '{{$xx.Ext}}' of {{Quote $xx.Org}} same as original, retained{{end}}
+{{range $ii, $xx := .Similars}}{{if ne $ii 0}}  [ "$FSIM_MIN" ] && [ {{printf "%3d" $xx.Similarity}} -ge "$FSIM_MIN" ] && $FSIM_SHOW rm -vf {{Quote $xx.Org}}
 {{end}}{{end}}

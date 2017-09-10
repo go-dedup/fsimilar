@@ -32,8 +32,8 @@
     - [Using `fsimilar`](#using-`fsimilar`)
       - [> head -58 test/shell_test.ref](#-head--58-testshell_testref)
     - [The recommendations and decisions](#the-recommendations-and-decisions)
-      - [$ head -18 test/shell_ln.tmpl.sh](#-head--18-testshell_lntmplsh)
-      - [$ head -18 test/shell_mv.tmpl.sh](#-head--18-testshell_mvtmplsh)
+      - [> head -18 test/shell_ln.tmpl.sh](#-head--18-testshell_lntmplsh)
+      - [> head -18 test/shell_mv.tmpl.sh](#-head--18-testshell_mvtmplsh)
       - [The approach](#the-approach)
     - [Binary releases](#binary-releases)
 - [Download/Install](#downloadinstall)
@@ -65,7 +65,7 @@ Before we look at _what_ the tools is doing, let’s take a look at _how_ it is 
 
 # Prefix, the near-duplicate detection algorithms
 
-There is a famous article by mozilla on the [near-duplicate detection problem and algorithms](https://moz.com/devblog/near-duplicate-detection/). Let me quote the algorithm listing part as the quick summary, but please do give the article a careful read as it contains the most valuable explanation for the algorithms and their evolvements. 
+There is a famous article by mozilla on the [near-duplicate detection problem and algorithms](https://moz.com/devblog/near-duplicate-detection/). Let me quote the algorithm listing part as the quick summary, but please do give the article a careful read as it contains the most valuable explanation for the algorithms and their evolvements.
 
 ## How to Identify Duplication
 
@@ -216,7 +216,7 @@ This is sub-command `vec` level help, which uses Vector Space for similarity che
 
 ### Usage example
 
-Let take a look at how to use `fsimilar`. There are three test files in the `test/` directory, all generated with the same `find test/sim -type f` command. The only different between them is the actual file order in the list files. We'll use the first one for explanation in the following scenarios.
+Let's take a look at how to use `fsimilar`. There are three test files in the `test/` directory, all generated with the same `find test/sim -type f` command. The only different between them is the actual file order in the list files. We'll use the first one for explanation in the following scenarios.
 
 #### > test/sim.lstA
 ```sh
@@ -362,8 +362,8 @@ The above lists first 10 group of similar files, produced via the above _produce
 - The **first** column is the _confident level_, with 100 meaning 100% confident.
 - The **second** column is the _size_ of the file, which is an important factor in determining if the two files are the same.
 - The **third** column is the _name_ of the file, from which `fsimilar` tried to make the guess for the similarity.
-- The **forth** column is the _directory name_ where the file resides. If the file name and file size are the same, they must in different directory.
-- The *first listing* is always the files that every others compares to, thus its confident level will *always* be 100%.
+- The **forth** column is the _directory name_ where the file resides. If the file name and file size are the same, they must be in different directory.
+- The *first listing* is comparing to itself, thus its confident level will *always* be 100%.
 
 In the first group, we can see that the confident level for the second file is only 87%, because it's name is different than the first one. Group 3 has files with confident level at 87% as well. How to use this confident level will be explained next.
 
@@ -375,7 +375,7 @@ When instructed to _produce final output_, `fsimilar` will also generate a bunch
 - deleting the similar files by moving them into a "_trash_" folder.
 - for _straight deleting_ without saving, take a look at the [`rm` shell command](test/shell_rm.tmpl.sh).
 
-#### $ head -18 test/shell_ln.tmpl.sh
+#### > head -18 test/shell_ln.tmpl.sh
 ```sh
 ### #1: ./Soccer Tips & Soccer Advice/Soccer Positions Explained.mp4
 
@@ -397,7 +397,7 @@ When instructed to _produce final output_, `fsimilar` will also generate a bunch
   [ "$FSIM_MIN" ] && [ 100 -ge "$FSIM_MIN" ] && $FSIM_SHOW ln -sf '../Soccer Tips & Soccer Advice/Soccer Training Guide.webm' './How to improve Soccer dribbling skills and fast footwork/Soccer Training Guide.webm'
 ```
 
-#### $ head -18 test/shell_mv.tmpl.sh
+#### > head -18 test/shell_mv.tmpl.sh
 ```sh
 ### #1: ./Soccer Tips & Soccer Advice/Soccer Positions Explained.mp4
 
@@ -421,7 +421,9 @@ When instructed to _produce final output_, `fsimilar` will also generate a bunch
 
 #### The approach
 
-The above two listings list what/how `fsimilar` recommends to do, for the first three group of similar files. The `mv` shell command file turns out to be all-comments. If you try with the `test/sim.lstA` instead, the command/comment will actually be reversed for the `ln` and `mv` shell commands. In reality, maybe both will contain some commands and some comments.
+The above two listings list what/how `fsimilar` recommends to do, for the first three group of similar files. The `mv` shell command file is all-comments (1). If you try with the `test/sim.lstA` instead, the command/comment will actually be reversed for the `ln` and `mv` shell commands. In reality, maybe both will contain some commands and some comments.
+
+(1) The reason `mv` shell command file is all-comments is for travis CI testing to pass. If using the `shell_mv.tmpl.real` instead as the template, the output will be different in each run as the "_trash_" folder is different in each run (so as not to loose any files by accident).
 
 As stressed before, `fsimilar` only makes recommendation, not decisions. Now it is time for you, the end user, to determine how to make the decisions. The general rule of thumb is,
 
@@ -432,7 +434,8 @@ As stressed before, `fsimilar` only makes recommendation, not decisions. Now it 
 - Then use the `ln` shell command file to finally re-create the similar files by a symlink to the original.
 - Set `FSIM_SHOW` to `echo` to dry run the shell command before actually doing it (when `FSIM_SHOW=''`)
 - Set `FSIM_MIN` to `100` to deal with sure-duplicate files first, then lower it value gradually to deal with them in "waves". Or remove the 100% duplicates first so as to deal with a much shorter list later manually.
-
+- Note that both `FSIM_SHOW` and `FSIM_MIN` need to be `export`ed for the shell script to pick them up.
+- When the reporting threshold are set to too low to catch a certain file, manually copy & paste that specific command into console instead of dealing with the shell script as a whole.
 
 ## Binary releases
 
