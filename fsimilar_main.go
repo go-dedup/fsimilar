@@ -46,8 +46,8 @@ type OptsT struct {
 
 var (
 	progname = "fsimilar"
-	version  = "0.1.0"
-	date     = "2017-09-02"
+	version  = "0.9.0"
+	date     = "2017-09-10"
 )
 
 var (

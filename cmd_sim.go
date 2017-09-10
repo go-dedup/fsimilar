@@ -33,7 +33,7 @@ var (
 	sh     = simhash.NewSimhash()
 	r      = uint8(3)
 
-	empty = regexp.MustCompile(`^\s*$`)
+	empty = regexp.MustCompile(`^\s*$|^#`)
 	fAll  = make(FAll)       // the all file to FCItem map
 	fc    = NewFCollection() // the FCollection that holds everything
 )
