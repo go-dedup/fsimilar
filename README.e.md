@@ -202,25 +202,22 @@ As stressed before, `{{.Name}}` only makes recommendation, not decisions. Now it
 - Note that both `FSIM_SHOW` and `FSIM_MIN` need to be `export`ed for the shell script to pick them up.
 - When the reporting threshold are set to too low to catch a certain file, manually copy & paste that specific command into console instead of dealing with the shell script as a whole.
 
-## Binary releases
-
-_Coming soon_.
-
 # Download/Install
 
 ## Download binaries
 
 - The latest binary executables are available under  
-https://bintray.com/suntong/bin/{{.Name}}#files/{{.Name}}  
+https://bintray.com/suntong/bin/{{.Name}}/latest  
 as the result of the Continuous-Integration process.
-- I.e., they are built right from the source code during every git commit automatically by [travis-ci](https://travis-ci.org/).
-- Pick & choose the binary executable that suits your OS and its architecture. E.g., for Linux, it would most probably be the `{{.Name}}_linux_VER_amd64` file. If your OS and its architecture is not available in the download list, please let me know and I'll add it.
+- I.e., they are built right from the source code during _every_ git commit _automatically_ by [travis-ci](https://travis-ci.org/).
+- Pick & choose the binary executable that suits your OS and its architecture. E.g., for Linux, it would most probably be the `{{.Name}}-linux-amd64` file. If your OS and its architecture is not available in the download list, please let me know and I'll add it.
 - You may want to rename it to a shorter name instead, e.g., `{{.Name}}`, after downloading it.
 
 
 ## Debian package
 
-Available at https://dl.bintray.com/suntong/deb.
+Debian package _repo_ is available at https://dl.bintray.com/suntong/deb.
+The _browse-able_ repo view is at https://bintray.com/suntong/deb.
 
 ```
 echo "deb [trusted=yes] https://dl.bintray.com/suntong/deb all main" | sudo tee /etc/apt/sources.list.d/suntong-debs.list
