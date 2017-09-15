@@ -24,6 +24,7 @@ type rootT struct {
 	Filei     *clix.Reader `cli:"*i,input" usage:"input from stdin or the given file (mandatory)"`
 	Phonetic  bool         `cli:"p,phonetic" usage:"use phonetic as words for further error tolerant"`
 	Final     bool         `cli:"F,final" usage:"produce final output, the recommendations"`
+	Ext       string       `cli:"e,ext" usage:"extension to override all files' to (for ffcvt)"`
 	CfgPath   string       `cli:"c,cp" usage:"config path, path that hold all template files" dft:"$FSIM_CP"`
 	Verbose   cli.Counter  `cli:"v,verbose" usage:"verbose mode (multiple -v increase the verbosity)"`
 }
@@ -41,15 +42,33 @@ var root = &cli.Command{
 
 // Template for main starts here
 ////////////////////////////////////////////////////////////////////////////
+// Constant and data type/structure definitions
+
+// The OptsT type defines all the configurable options from cli.
+//  type OptsT struct {
+//  	SizeGiven	bool
+//  	QuerySize	bool
+//  	Filei	*clix.Reader
+//  	Phonetic	bool
+//  	Final	bool
+//  	Ext	string
+//  	CfgPath	string
+//  	Verbose	cli.Counter
+//  	Verbose int
+//  }
+
+////////////////////////////////////////////////////////////////////////////
 // Global variables definitions
 
 //  var (
 //          progname  = "fsimilar"
 //          version   = "0.1.0"
-//          date = "2017-09-02"
-//  )
+//          date = "2017-09-14"
 
-//  var rootArgv *rootT
+//  	rootArgv *rootT
+//  	// Opts store all the configurable options
+//  	Opts OptsT
+//  )
 
 ////////////////////////////////////////////////////////////////////////////
 // Function definitions
@@ -88,6 +107,8 @@ var root = &cli.Command{
 //  	rootArgv = ctx.RootArgv().(*rootT)
 //  	argv := ctx.Argv().(*simT)
 //  	fmt.Printf("[sim]:\n  %+v\n  %+v\n  %v\n", rootArgv, argv, ctx.Args())
+//  	Opts.SizeGiven, Opts.QuerySize, Opts.Filei, Opts.Phonetic, Opts.Final, Opts.Ext, Opts.CfgPath, Opts.Verbose, Opts.Verbose =
+//  		rootArgv.SizeGiven, rootArgv.QuerySize, rootArgv.Filei, rootArgv.Phonetic, rootArgv.Final, rootArgv.Ext, rootArgv.CfgPath, rootArgv.Verbose, rootArgv.Verbose.Value()
 //  	return nil
 //  }
 
@@ -112,6 +133,8 @@ var simDef = &cli.Command{
 //  	rootArgv = ctx.RootArgv().(*rootT)
 //  	argv := ctx.Argv().(*vecT)
 //  	fmt.Printf("[vec]:\n  %+v\n  %+v\n  %v\n", rootArgv, argv, ctx.Args())
+//  	Opts.SizeGiven, Opts.QuerySize, Opts.Filei, Opts.Phonetic, Opts.Final, Opts.Ext, Opts.CfgPath, Opts.Verbose, Opts.Verbose =
+//  		rootArgv.SizeGiven, rootArgv.QuerySize, rootArgv.Filei, rootArgv.Phonetic, rootArgv.Final, rootArgv.Ext, rootArgv.CfgPath, rootArgv.Verbose, rootArgv.Verbose.Value()
 //  	return nil
 //  }
 

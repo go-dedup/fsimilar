@@ -92,6 +92,11 @@ func processFileInfo(cin io.Reader, fp processFileInfoFunc) error {
 		}
 		p, n := filepath.Split(fn)
 		file.Org, file.Dir, file.Name, file.Ext = fn, p, Basename(n), filepath.Ext(n)
+		if Opts.Ext != "" {
+			file.Ext = Opts.Ext
+			// replace the file.Ext for file.Org as well // + string(os.PathSeparator)
+			file.Org = file.Dir + file.Name + file.Ext
+		}
 		verbose(2, " n='%s', e='%s', s='%d', d='%s'",
 			file.Name, file.Ext, file.Size, file.Dir)
 		fp(fn, file)

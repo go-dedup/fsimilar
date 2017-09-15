@@ -21,9 +21,10 @@ func vecCLI(ctx *cli.Context) error {
 	rootArgv = ctx.RootArgv().(*rootT)
 	argv := ctx.Argv().(*vecT)
 	// fmt.Printf("[vec]:\n  %+v\n  %+v\n  %v\n", rootArgv, argv, ctx.Args())
-	Opts.SizeGiven, Opts.QuerySize, Opts.Phonetic, Opts.Final, Opts.Verbose =
-		rootArgv.SizeGiven, rootArgv.QuerySize,
-		rootArgv.Phonetic, rootArgv.Final, rootArgv.Verbose.Value()
+	Opts.SizeGiven, Opts.QuerySize, Opts.Phonetic,
+		Opts.Final, Opts.Ext, Opts.CfgPath, Opts.Verbose =
+		rootArgv.SizeGiven, rootArgv.QuerySize, rootArgv.Phonetic,
+		rootArgv.Final, rootArgv.Ext, rootArgv.CfgPath, rootArgv.Verbose.Value()
 	simTh = argv.Threshold
 	cmdInit()
 

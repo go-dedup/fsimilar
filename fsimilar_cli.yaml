@@ -38,6 +38,11 @@ Options:
     Flag: F,final
     Usage: produce final output, the recommendations
 
+  - Name: Ext
+    Type: string
+    Flag: e,ext
+    Usage: "extension to override all files' to (for ffcvt)"
+
   - Name: CfgPath
     Type: string
     Flag: c,cp

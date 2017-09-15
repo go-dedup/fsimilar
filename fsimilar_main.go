@@ -30,6 +30,7 @@ type OptsT struct {
 	QuerySize bool
 	Phonetic  bool
 	Final     bool
+	Ext       string
 	Template  string
 	ExecPath  string
 	CfgPath   string
